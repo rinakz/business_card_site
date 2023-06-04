@@ -1,0 +1,57 @@
+@use '../mixins' as m
+@use '../config/Colors.module.sass' as c
+
+
+.photoMarchenko
+    width: 350px
+    margin-top: 20px
+    @include m.media(tablet)
+        width: 200px
+    @include m.media(phone)
+        width: 100%
+
+
+.contentAboutMe
+    display: flex
+    @include m.media(phone)
+        flex-direction: column
+.historyAboutMe
+    margin: 0 30px
+    text-align: justify
+    justify-content: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    p
+    @include m.media(tablet, phone)
+        font-size: 14px
+        margin: 0 10px
+        
+
+.cardAboutMe
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
+    display: flex
+    padding: 10px
+    margin: 40px 0
+    max-width: 700px
+    // justify-content: space-between
+    .cardContent
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin: 0 30px
+        @include m.media(tablet, phone)
+            margin: 0 10px
+    .info
+        display: flex
+        align-items: center
+    p
+        font-size: 14px
+        margin-left: 10px
+        @include m.media(tablet, phone)
+            font-size: 11px
+
+    @include m.media(tablet)
+        margin: 20px 20px 20px 0
+        width: 200px
+        flex-wrap: wrap

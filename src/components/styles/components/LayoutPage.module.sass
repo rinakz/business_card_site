@@ -1,0 +1,33 @@
+@use '../mixins' as m
+
+.container
+    min-height: calc( 100vh - 75px  ) 
+    margin: 30px auto 25px auto
+
+    @include m.media(fullWidth)
+        max-width: 90%
+    @include m.media(fullWidth, desktop, tablet, laptop)
+        width: 100%
+    @include m.media(phone)
+        max-width: 100%
+
+.wrapper
+  margin-right: auto
+  margin-left: auto
+  padding-right: 25px
+  padding-left: 25px
+  @include m.media(phone)
+    min-width: 320px
+  @include m.media(tablet)
+    max-width: 640px
+  @include m.media(laptop)
+    max-width: 1200px
+  @include m.media(desktop)
+    max-width: 1800px
+  @include m.media(fullWidth)
+    max-width: 2400px
+
+
+
+
+

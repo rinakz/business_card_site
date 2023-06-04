@@ -1,0 +1,21 @@
+{
+    "en": {
+      "translation": {
+        "main": {
+            "hello": "Hi, my name is", 
+            "katya": "Katya", 
+            "frontendDeveloper": "I'm a Frontend Developer"
+        },
+        "header": {
+            "aboutMe": "About me", 
+            "contacts": "Contacts",
+            "projects": "Projects"
+        },
+        "drawer": {
+          "myHome": "Room"
+      } 
+      }
+    }
+}
+
+

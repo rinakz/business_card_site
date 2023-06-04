@@ -1,0 +1,19 @@
+{
+    "ru": {
+      "translation": {
+        "main": {
+            "hello": "Привет, меня зовут", 
+            "katya": "Katya", 
+            "frontendDeveloper": "Я — Frontend-разработчик"
+        },
+        "header": {
+            "aboutMe": "Обо мне", 
+            "contacts": "Контакты",
+            "projects": "Проекты"
+        },
+        "drawer": {
+            "myHome": "Комната"
+        } 
+      }
+    }
+}
