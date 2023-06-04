@@ -7,9 +7,18 @@ import { Projects } from '../projects';
 import { Contacts } from '../contacts';
 import cn from 'classnames'
 import Joyride from 'react-joyride';
+import { IconTehnology } from '../icons/iconTehnology';
 
 
 export function Main() {
+
+  const [tehnology, setTehnology] = useState([
+    {name: 'Typescript', margin: 0}, 
+    {name: 'React', margin: '100px'}, 
+    {name: 'Joyride', margin: '50px'},  
+    {name: 'Material-UI', margin: '140px'}, 
+    {name: 'i18next', margin: '250px'}
+  ])
 
 
     const { t } = useTranslation();
@@ -112,9 +121,20 @@ export function Main() {
       }}
        />
     <div className={stls.bgMain}>
+      <div className={stls.welcome}>
         <h1 style={{display: 'flex'}}>{t('main.hello')}<div style={{color: colors.theta}}> &nbsp;{t('main.katya')}</div>!</h1>
         <h1>{t('main.frontendDeveloper')}</h1>
-        <div style={{marginTop: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+      </div>
+      <div className={stls.message}>
+        {tehnology.map((el: any) => 
+          <div style={{left: el.margin}} className={stls.elemMess}>
+            <IconTehnology />
+            <span>{el.name}</span>
+          </div>
+        )}
+      </div>
+        
+        {/* <div style={{marginTop: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <div style={{cursor: 'pointer', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
           {themes.map((el: any) => 
             <div id={el.name} onClick={() => toggleTheme(el.name)} className={cn(stls.themeCard, stls[el.name])} style={{ display: 'flex', textAlign: 'center', flexDirection: 'column'}} key={el.id}>
@@ -132,9 +152,7 @@ export function Main() {
           <h2 style={{color: colors.theta}}>
             Выберите тему 
           </h2>
-
-          
-        </div>
+        </div> */}
     </div>
     <hr style={{margin: '45px', border: `0.5px solid ${colors.epsilon}`}} />
     <AboutMe />
