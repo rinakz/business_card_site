@@ -1,6 +1,7 @@
 @use '../mixins' as m
 @use '../config/Colors.module.sass' as c
 
+
 .bgMain
     background-image: url('../../../../public/google.jpeg')
     position: relative
@@ -13,9 +14,15 @@
         background-image: url('../../../../public/googlemobile.jpeg')
     @include m.media(laptop,tablet)
         background-image: url('../../../../public/googlelaptop.jpeg')
+    @include m.media(tablet)
+        flex-direction: column
     h1
         color: #F9F2FF
-        @include m.media(phone, tablet)
+        font-size: 36px
+        margin: 0 13px
+        @include m.media(tablet)
+            font-size: 30px
+        @include m.media(phone)
             font-size: 23px
 
 
@@ -34,31 +41,37 @@
     z-index: 2
 
 .welcome
-    width: 50%
+    width: 60%
     display: flex
     justify-content: center
     flex-direction: column
     text-align: center
     align-items: center
-    @include m.media(laptop,tablet)
+    @include m.media(laptop)
         width: 60%
-    @include m.media(phone)
+    @include m.media(phone, tablet)
         width: 100%
+    @include m.media(tablet)
+        margin-top: 10%
 
 
 
 .message
+    margin-top: 200px
     margin-left: 0
     animation: h 55s linear infinite, j 5s ease-in-out infinite alternate
     @include m.media(phone)
         display: none
-
+    @include m.media(tablet)
+        margin-top: 10%
+        display: flex
+        animation: i 10s ease-in-out infinite alternate, k 34s linear infinite
     svg
         width: 150px
         height: 150px
-        @include m.media(laptop,tablet)
-            width: 100px
-            height: 100px
+    a
+        text-decoration: none
+        color: inherit
 
 
 @keyframes h 
@@ -66,24 +79,47 @@
         top: 0
         opacity: 0
         transform: scale(0)
-
     5%
         top: 0
         opacity: 1
         transform: scale(1)
-
     100% 
-        top:-1000px
+        top:-80vh
 
 @keyframes j 
     0% 
-       margin-left: 0
+        margin-left: 0
     100% 
-        margin-left: 80px
+        top:-100px
+
+
+@keyframes i
+    0% 
+        top: 80px
+    100% 
+        top: 0
+
+@keyframes k
+    0%
+        left: 0
+        opacity: 0
+        transform: scale(0)
+    5%
+        top: 0
+        opacity: 1
+        transform: scale(1)
+    100% 
+        left:-100vh
+
+
 
 .elemMess
     position: relative
     text-align: center
+    &:hover
+        transform: scale(1.2)
+        transition: transform 0.2s ease-in-out
+
     span
         position: absolute
         top: 45%

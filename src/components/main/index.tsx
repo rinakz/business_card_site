@@ -8,16 +8,17 @@ import { Contacts } from '../contacts';
 import cn from 'classnames'
 import Joyride from 'react-joyride';
 import { IconTehnology } from '../icons/iconTehnology';
+import { Button } from '@mui/material';
 
 
 export function Main() {
 
   const [tehnology, setTehnology] = useState([
-    {name: 'Typescript', margin: 0}, 
-    {name: 'React', margin: '100px'}, 
-    {name: 'Joyride', margin: '50px'},  
-    {name: 'Material-UI', margin: '140px'}, 
-    {name: 'i18next', margin: '250px'}
+    {name: 'Typescript', margin: 0, link: 'https://www.typescriptlang.org/'}, 
+    {name: 'React', margin: '150%', link: 'https://react.dev/'}, 
+    {name: 'Joyride', margin: '-60%', link: 'https://react-joyride.com/'},  
+    {name: 'Material-UI', margin: '70%', link: 'https://mui.com/'}, 
+    {name: 'i18next', margin: '30%', link: 'https://react.i18next.com/'}
   ])
 
 
@@ -122,15 +123,21 @@ export function Main() {
        />
     <div className={stls.bgMain}>
       <div className={stls.welcome}>
-        <h1 style={{display: 'flex'}}>{t('main.hello')}<div style={{color: colors.theta}}> &nbsp;{t('main.katya')}</div>!</h1>
+        <h1 style={{display: 'flex'}}>{t('main.hello')}
+        {/* <div style={{color: colors.theta}}> &nbsp;{t('main.katya')}</div>! */}
+        </h1>
         <h1>{t('main.frontendDeveloper')}</h1>
+        <Button style={{marginTop: '14px', color: colors.theta}}>подробнее</Button>
       </div>
       <div className={stls.message}>
         {tehnology.map((el: any) => 
+        <a href={el.link}>
           <div style={{left: el.margin}} className={stls.elemMess}>
             <IconTehnology />
             <span>{el.name}</span>
           </div>
+        </a>
+          
         )}
       </div>
         

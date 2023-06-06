@@ -5,8 +5,8 @@ import { ThemeContext } from '../context/Theme_context';
 
 export function MobileFooter() {
 
-    const { navItemsPage} = useContext(HeaderContext)
-    const { colors} = useContext(ThemeContext)
+    const { navItemsPage } = useContext(HeaderContext)
+    const { colors } = useContext(ThemeContext)
 
 
     const [showCard, setShowCard] = useState(false);

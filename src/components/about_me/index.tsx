@@ -22,7 +22,7 @@ export function AboutMe() {
   return (
     <LayoutPage>
     <div id='aboutme' style={{display: 'flex', alignItems: 'center', justifyContent:'center', flexDirection: 'column'}}>
-      <h1 style={{color: colors.theta}}>Екатерина Марченко</h1>
+      <h1 style={{color: colors.theta, fontSize: '42px', margin: 0}}>Екатерина Марченко</h1>
       <div className={stls.contentAboutMe}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <img 
