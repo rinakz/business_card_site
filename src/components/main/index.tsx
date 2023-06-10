@@ -9,6 +9,7 @@ import cn from 'classnames'
 import Joyride from 'react-joyride';
 import { IconTehnology } from '../icons/iconTehnology';
 import { Button } from '@mui/material';
+import { ThemePage } from '../theme-page/ThemePage';
 
 
 export function Main() {
@@ -24,7 +25,7 @@ export function Main() {
 
     const { t } = useTranslation();
     
-    const { colors, toggleTheme, themes} = useContext(ThemeContext)
+    const { colors } = useContext(ThemeContext)
 
     const [currentStep, setCurrentStep] = useState(0);
 
@@ -127,7 +128,7 @@ export function Main() {
         {/* <div style={{color: colors.theta}}> &nbsp;{t('main.katya')}</div>! */}
         </h1>
         <h1>{t('main.frontendDeveloper')}</h1>
-        <Button style={{marginTop: '14px', color: colors.theta}}>подробнее</Button>
+        <Button href='#aboutme' style={{marginTop: '14px', color: colors.theta}}>подробнее</Button>
       </div>
       <div className={stls.message}>
         {tehnology.map((el: any) => 
@@ -140,28 +141,9 @@ export function Main() {
           
         )}
       </div>
-        
-        {/* <div style={{marginTop: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-          <div style={{cursor: 'pointer', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
-          {themes.map((el: any) => 
-            <div id={el.name} onClick={() => toggleTheme(el.name)} className={cn(stls.themeCard, stls[el.name])} style={{ display: 'flex', textAlign: 'center', flexDirection: 'column'}} key={el.id}>
-              <div className={stls.header}>{el.name}</div> 
-              <div style={{display: 'flex', alignItems: 'center'}}>
-                <div className={stls.photo}></div>
-                <div style={{textJustify: 'inter-word', margin: '5px'}}>
-                  <h6>Lorem Ipsum</h6>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa arcu, tincidunt eu nisl vitae, posuere maximus lorem. Pellentesque interdum eros eu velit iaculis, nec finibus felis maximus. Cras risus erat, sagittis a feugiat at, laoreet vel leo. Donec vel quam et eros placerat molestie sit amet eget felis.</p>
-                </div>
-              </div>
-            </div>
-          )}
-          </div>
-          <h2 style={{color: colors.theta}}>
-            Выберите тему 
-          </h2>
-        </div> */}
     </div>
     <hr style={{margin: '45px', border: `0.5px solid ${colors.epsilon}`}} />
+    <ThemePage />
     <AboutMe />
     <Projects />
     <Contacts />
