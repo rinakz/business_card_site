@@ -12,7 +12,8 @@
             "projects": "Projects"
         },
         "drawer": {
-          "myHome": "Room"
+          "myHome": "Room",
+          "settings": "Settings"
       } 
       }
     }

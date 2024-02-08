@@ -128,7 +128,9 @@ export function Main() {
         {/* <div style={{color: colors.theta}}> &nbsp;{t('main.katya')}</div>! */}
         </h1>
         <h1>{t('main.frontendDeveloper')}</h1>
-        <Button href='#aboutme' style={{marginTop: '14px', color: colors.theta}}>подробнее</Button>
+        <span style={{color: colors.kappa, marginLeft: '14px'}}>Приветствую вас на моем сайте - визитке. </span>
+        <span style={{color: colors.kappa, marginLeft: '14px'}}>Я фронтенд-разработчик, который любит создавать что-то новое и необычное.</span>
+        <Button href='#aboutme' style={{marginTop: '14px', color: colors.theta, width: '50%'}}>подробнее</Button>
       </div>
       <div className={stls.message}>
         {tehnology.map((el: any) => 
@@ -143,10 +145,10 @@ export function Main() {
       </div>
     </div>
     <hr style={{margin: '45px', border: `0.5px solid ${colors.epsilon}`}} />
-    <ThemePage />
     <AboutMe />
-    <Projects />
-    <Contacts />
+    <hr style={{margin: '45px', border: `0.5px solid ${colors.epsilon}`}} />
+    {/* <Projects />
+    <Contacts /> */}
     </div>
 
   )

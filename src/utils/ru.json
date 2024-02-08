@@ -4,7 +4,7 @@
         "main": {
             "hello": "КАТЯ МАРЧЕНКО", 
             "katya": "Katya", 
-            "frontendDeveloper": "FRONTEND-РАЗРАБОТЧИК"
+            "frontendDeveloper": "FRONTEND DEVELOPER"
         },
         "header": {
             "aboutMe": "Обо мне", 
@@ -12,7 +12,8 @@
             "projects": "Проекты"
         },
         "drawer": {
-            "myHome": "Комната"
+            "myHome": "Комната",
+            "settings": "Настройки"
         } 
       }
     }

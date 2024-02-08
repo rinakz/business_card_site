@@ -5,6 +5,8 @@ import useLocalStorage from '../hooks/useLocalStorage';
 import colorsLight from '../styles/config/Colors.module.sass'
 import colorsDark from  '../styles/config/DarkColors.module.sass'
 import colorsKaspersky from  '../styles/config/Kaspersky.module.sass'
+import colorsPink from  '../styles/config/PinkColors.module.sass'
+
 
 import { itemLanguage } from "../../utils";
 
@@ -18,11 +20,10 @@ function ThemeProvider(props: any) {
 
 const themes = [
   {id: 1, name: 'light'}, 
-  {id: 2, name: 'dark'}, 
-  {id: 3, name: 'Kaspersky'}, 
-  {id: 4, name: 'Sber'}, 
-  {id: 5, name: 'Yandex'}, 
-  {id: 6, name: 'Orthodox'}]
+  {id: 2, name: 'dark'},
+  {id: 3, name: 'pink'},  
+  {id: 4, name: 'Kaspersky'}
+]
 
 const [colorTheme, setColorTheme] = useLocalStorage('colorTheme', '')
 const [language, setLanguage] = useLocalStorage('language', '')
@@ -43,7 +44,7 @@ const [language, setLanguage] = useLocalStorage('language', '')
 
 
   useEffect(() => {
-    setColors(currentTheme == 'light' ? colorsLight : currentTheme == 'Kaspersky' ? colorsKaspersky : colorsDark)
+    setColors(currentTheme == 'light' ? colorsLight : currentTheme == 'Kaspersky' ? colorsKaspersky : currentTheme == 'pink' ? colorsPink : colorsDark)
   }, [currentTheme]);
 
   useEffect(() => {

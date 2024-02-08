@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 import { Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
 import TipsAndUpdatesOutlinedIcon from '@mui/icons-material/TipsAndUpdatesOutlined';
+import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
 import { HeaderContext } from '../context/Header_context';
 
 
@@ -30,7 +31,8 @@ export function Header() {
   const drawerWidth = 240;
 
   const drawerItems = [ 
-    {id: 1, name: t('drawer.myHome'), icon: <TipsAndUpdatesOutlinedIcon sx={{color: colors.zeta}} />, link: 'my_room'},
+    // {id: 1, name: t('drawer.myHome'), icon: <TipsAndUpdatesOutlinedIcon sx={{color: colors.zeta}} />, link: 'my_room'},
+    {id: 2, name: t('drawer.settings'), icon: <DisplaySettingsIcon sx={{color: colors.zeta}} />, link: 'settings'},
   ];
 
     const [mobileOpen, setMobileOpen] = React.useState(false);

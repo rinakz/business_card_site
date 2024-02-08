@@ -13,6 +13,7 @@ import { Projects } from "./components/projects";
 import { MobileFooter } from "./components/footer";
 import { HeaderProvider } from "./components/context/Header_context";
 import useWindowSize from "./components/hooks/useWindowSize";
+import { ThemePage } from "./components/theme-page/ThemePage";
 
 
 
@@ -33,13 +34,15 @@ export function App() {
     <ThemeProviderMui theme={themeMui}>
       <ThemeProvider theme={theme}>
         <HeaderProvider>
-      <BrowserRouter>
-        <CssBaseline />
-        <Header />
-        <main>
-            <Routes>
-              <Route path="/" element={<Main />} />
-              <Route path="/my_room" element={<Room />} />
+          <BrowserRouter>
+            <CssBaseline />
+            <Header />
+            <main>
+              <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="/my_room" element={<Room />} />
+                <Route path="/settings" element={<ThemePage />} />
+
 
               {/* <Route path="/about_me" element={<AboutMe />} />
               <Route path="/contacts" element={<Contacts />} />

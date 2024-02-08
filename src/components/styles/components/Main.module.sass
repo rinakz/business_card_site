@@ -17,7 +17,7 @@
     @include m.media(tablet)
         flex-direction: column
     h1
-        color: #F9F2FF
+        color: #fff8f2
         font-size: 36px
         margin: 0 13px
         @include m.media(tablet)
@@ -43,10 +43,8 @@
 .welcome
     width: 60%
     display: flex
-    justify-content: center
     flex-direction: column
-    text-align: center
-    align-items: center
+    margin-left: 60px
     @include m.media(laptop)
         width: 60%
     @include m.media(phone, tablet)
@@ -152,7 +150,20 @@
 
 
 .light
-    background: #F9F2FF 
+    background: #fff9f2
+    .header
+        background: #ffe7d5
+        color: #413849
+    h6
+        color: #ffad6e
+    p 
+        color: #282828
+    .photo
+        border-bottom: 2px solid #ffad6e
+        border-right: 2px solid #ffad6e
+
+.pink
+    background: #F9F2FF
     .header
         background: #EED5FF
         color: #413849
