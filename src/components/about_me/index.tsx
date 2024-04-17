@@ -1,26 +1,27 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { ThemeContext } from '../context/Theme_context'
 import { LayoutPage } from '../general/LayoutPage'
 import useWindowSize from '../hooks/useWindowSize'
-import stls from '../styles/components/AboutMe.module.sass'
+import stls from '../../styles/components/AboutMe.module.sass'
 import { CardAboutMe } from './CardAboutMe'
 import { Avatar, Card, ListItem, ListItemAvatar } from '@mui/material'
+import { AppContext } from '../context/App_context'
 
 
 export function AboutMe() {
+
+  const navigate = useNavigate();
+
   
   const { width, height} = useWindowSize()
 
   const { colors } = useContext(ThemeContext)
+  const { stories } = useContext(AppContext)
+
 
   const [mobile, setMobile] = useState(false);
-  const stories = [
-    {id: 1, ava: '/Apple.jpeg', alt: 'Work', text: 'Занимаюсь разработкой около 4-х лет. С удовольствием берусь за дополнительные проекты и постоянно развиваюсь.'},
-    {id: 2, ava: '/Elbrus.jpeg', alt: 'Elbrus', text: 'Диплом о высшем образовании защитила на отлично. Успешно завершила буткэмп с квалификацией JavaScript Developer.'},
-    {id: 3, ava: '/Kanal.jpeg', alt: 'Kanal', text: 'В 2022 году запустила свой телеграм-канал "Что-то на джуновском"'},
-    {id: 4, ava: '/Doggy.jpeg', alt: 'Shiba', text: 'Помимо работы и развития в сфере IT провожу время в путешествиях со своей любимой собакой.'},
-    {id: 5, ava: '/Croatia.jpeg', alt: 'Croatia', text: 'Основная жизненная цель — переезд в Хорватию.'},
-  ]
+
 
 
   useEffect(() => {
@@ -42,7 +43,7 @@ export function AboutMe() {
 
           {stories.map((el:any) => (
             <div className={stls.containerList}>
-            <ListItem style={{background: colors.beta}} className={stls.listItemStory}>
+            <ListItem style={{background: colors.beta}} onClick={() => navigate(el.path)} className={stls.listItemStory}>
                 <img alt={el.alt} src={el.ava} />
                 <div style={{padding: '10px 15px'}}><span className={stls.cardDetailsText}>{el.text}</span>
                   <div style={{background: colors.delta}} className={stls.listSlide}> <span style={{color: colors.iota}}>Узнать</span> <span style={{color: colors.iota}}>больше</span> </div>

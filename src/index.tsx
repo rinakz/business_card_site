@@ -1,8 +1,10 @@
 import ReactDOM from 'react-dom/client';
+import '../src/styles/base.sass';
 import { I18nextProvider } from 'react-i18next';
 import { App } from './App';
 import { ThemeProvider } from './components/context/Theme_context';
 import i18n from '../src/utils/i18n';
+import { AppProvider } from './components/context/App_context';
 
 
 
@@ -13,7 +15,9 @@ const Index = () => {
   return (
     <I18nextProvider i18n={i18n}>
       <ThemeProvider>
-        <App />
+        <AppProvider>
+          <App />
+        </AppProvider>
       </ThemeProvider>
     </I18nextProvider>
   );

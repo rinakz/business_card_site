@@ -21,7 +21,7 @@ function HeaderProvider(props: any) {
 
     const navItemsPage = [ 
         {id: 1, name: t('header.aboutMe'), link: '#aboutme'},
-        {id: 2, name: t('header.projects'), link: '#projects'},
+        // {id: 2, name: t('header.projects'), link: '#projects'},
         {id: 3, name: t('header.contacts'), link: '#contacts'},
       ];
     

@@ -8,7 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import { useContext } from 'react';
 import { ThemeContext } from '../context/Theme_context';
-import stls from '../styles/components/Headers.module.sass'
+import stls from '../../styles/components/Headers.module.sass'
 import { useTranslation } from 'react-i18next';
 import { Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
@@ -84,7 +84,7 @@ export function Header() {
         onClose={handleDrawerToggle}
         >
         <div style={{background: colors.beta, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-          <ListItemButton style={{fontWeight: 'bold', fontSize: '24px', color: colors.iota, display: 'flex', justifyContent: 'center'}} onClick={() => {navigate('/'); handleDrawerToggle()}}>RinaKZ</ListItemButton>
+          <ListItemButton style={{fontWeight: 'bold', fontSize: '24px', color: colors.iota, display: 'flex', justifyContent: 'center'}} onClick={() => {navigate('/'); handleDrawerToggle()}}>rinakz</ListItemButton>
           <IconButton onClick={handleDrawerToggle}>
             <ArrowCircleLeftOutlinedIcon sx={{color: colors.iota}} />
           </IconButton>

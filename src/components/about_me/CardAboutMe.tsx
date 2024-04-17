@@ -6,7 +6,7 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
-import stls from '../styles/components/AboutMe.module.sass'
+import stls from '../../styles/components/AboutMe.module.sass'
 import { IconCapricorn } from '../icons/IconCapricorn';
 
 
@@ -34,7 +34,7 @@ export function CardAboutMe() {
         <div className={stls.cardContent}>
             <div className={stls.info}>
                 <TimerOutlinedIcon />
-                <p style={{color: colors.iota}}>Возраст: 28</p>
+                <p style={{color: colors.iota}}>Возраст: 29</p>
             </div>
             <div className={stls.info}>
                 <IconCapricorn />

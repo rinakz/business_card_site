@@ -1,4 +1,4 @@
-import stls from '../styles/components/LayoutPage.module.sass'
+import stls from '../../styles/components/LayoutPage.module.sass'
 import cn from 'classnames'
 
 

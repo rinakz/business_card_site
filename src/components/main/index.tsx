@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '../context/Theme_context'
-import stls from '../styles/components/Main.module.sass'
+import stls from '../../styles/components/Main.module.sass'
 import { useTranslation } from 'react-i18next';
 import { AboutMe } from '../about_me';
 import { Projects } from '../projects';
@@ -88,7 +88,7 @@ export function Main() {
 
   return (
     <div>
-    <Joyride 
+    {/* <Joyride 
       steps={steps} 
       run={run} 
       disableOverlayClose={true}
@@ -121,7 +121,7 @@ export function Main() {
           padding: '20px 10px 10px 10px',
         },
       }}
-       />
+       /> */}
     <div className={stls.bgMain}>
       <div className={stls.welcome}>
         <h1 style={{display: 'flex'}}>{t('main.hello')}

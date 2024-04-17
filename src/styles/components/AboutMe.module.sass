@@ -13,19 +13,19 @@
 
 
 .listItemStory
-    height: 140px
+    height: 135px
     width: 100%
     cursor: pointer
-    margin-bottom: 20px
     width: 100%
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
     padding: 0 !important
     &:hover
         .listSlide
             -webkit-transform: translateX(-130px)
+            font-weight: bold
     img
         min-width: 190px
-        height: 140px
+        height: 135px
 
     .listSlide
         height: 100%
@@ -43,7 +43,7 @@
         -webkit-transform: translateX(-10px)
     .cardDetailsText
         height: 100%
-        font-size: 14px
+        white-space: pre-wrap
         @include m.media(phone)
             flex-direction: column
             font-size: 12px
@@ -63,6 +63,7 @@
     overflow: scroll 
     margin-left: 30px
     overflow-x: hidden
+    gap: 20px
     p
     @include m.media(tablet, phone)
         font-size: 14px
@@ -74,7 +75,7 @@
 .cardAboutMe
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
     display: flex
-    padding: 10px
+    padding: 21px
     margin: 40px 0
     max-width: 700px
     // justify-content: space-between
@@ -83,6 +84,7 @@
         flex-direction: column
         justify-content: space-between
         margin: 0 30px
+        gap: 20px
         @include m.media(tablet, phone)
             margin: 0 10px
     .info

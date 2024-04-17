@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../context/Theme_context'
-import stls from '../styles/components/Main.module.sass'
+import stls from '../../styles/components/Main.module.sass'
 import cn from 'classnames'
 
 

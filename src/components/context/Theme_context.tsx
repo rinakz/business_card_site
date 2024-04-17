@@ -2,10 +2,10 @@ import React, { useContext, useEffect } from 'react';
 import { themeLightMui, themeDarkMui } from '../theme/Theme'
 import { createTheme, styled } from '@mui/material/styles'
 import useLocalStorage from '../hooks/useLocalStorage';
-import colorsLight from '../styles/config/Colors.module.sass'
-import colorsDark from  '../styles/config/DarkColors.module.sass'
-import colorsKaspersky from  '../styles/config/Kaspersky.module.sass'
-import colorsPink from  '../styles/config/PinkColors.module.sass'
+import colorsLight from '../../styles/config/Colors.module.sass'
+import colorsDark from  '../../styles/config/DarkColors.module.sass'
+import colorsKaspersky from  '../../styles/config/Kaspersky.module.sass'
+import colorsPink from  '../../styles/config/PinkColors.module.sass'
 
 
 import { itemLanguage } from "../../utils";
