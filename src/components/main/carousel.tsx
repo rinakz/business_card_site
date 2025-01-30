@@ -1,10 +1,8 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "./styles.css";
 import stls from "../../styles/components/Main.module.sass";
 import { useContext } from "react";
 import { ThemeContext } from "../context/Theme_context";
-import { AppContext } from "../context/App_context";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const technology = [
   { name: "Typescript", link: "https://www.typescriptlang.org/" },
@@ -15,32 +13,22 @@ const technology = [
 
 const Slider = () => {
   const { colors } = useContext(ThemeContext);
-  const { responsive } = useContext(AppContext);
+
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   return (
-    <div className="parent">
-      <Carousel
-        responsive={responsive}
-        autoPlay={true}
-        swipeable={false}
-        draggable={true}
-        showDots={false}
-        infinite={true}
-        partialVisible={false}
-      >
-        {technology.map((el, index) => {
-          return (
-            <a key={index} href={el.link} >
-              <div
-                className={stls.tech}
-                style={{ background: colors.beta, color: colors.alpha }}
-              >
-                <span>{el.name}</span>
-              </div>
-            </a>
-          );
-        })}
-      </Carousel>
+    <div ref={emblaRef} style={{ overflow: "hidden" }}>
+      <div style={{ display: "flex" }}>
+        {technology.map((el, idx) => (
+          <div
+            className={stls.tech}
+            style={{ background: colors.beta, color: colors.alpha }}
+            key={idx}
+          >
+            <span>{el.name}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

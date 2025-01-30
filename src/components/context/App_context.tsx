@@ -44,29 +44,6 @@ function AppProvider(props: any) {
     },
   ];
 
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1101 },
-      items: 3,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1100, min: 968 },
-      items: 3,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-    laptop: {
-      breakpoint: { max: 967, min: 568 },
-      items: 2,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 300, min: 0 },
-      items: 1,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-  };
-
   const projects: ProjectType[] = [
     {
       name: "Айси Эйт",
@@ -108,7 +85,6 @@ function AppProvider(props: any) {
     <AppContext.Provider
       value={{
         stories,
-        responsive,
         projects,
       }}
       {...props}

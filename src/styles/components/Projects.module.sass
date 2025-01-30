@@ -16,8 +16,9 @@
     border-radius: 20px
     padding: 5px
     margin: 12px
+    min-width: 405px
     @include m.media(phone)
-        width: 320px
+        min-width: 320px
 
 .projectCard
     cursor: pointer
@@ -33,7 +34,7 @@
     .carouselTitle
         display: flex
         justify-content: space-between
-        span 
+        span
             font-family: Font-Over !important
     .title
         border-radius: 20px

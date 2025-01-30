@@ -1,6 +1,3 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "./styles.css";
 import { useContext } from "react";
 import { AppContext } from "../context/App_context";
 import stls from "../../styles/components/Projects.module.sass";
@@ -9,10 +6,14 @@ import { ThemeContext } from "../context/Theme_context";
 import { IconArrow } from "../icons/IconArrow";
 import { ProjectType } from "../../types/Projects";
 import { PATH } from "../../constants/common";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const ProjectSlider = () => {
-  const { responsive, projects } = useContext(AppContext);
+  const { projects } = useContext(AppContext);
   const { colors } = useContext(ThemeContext);
+
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   const navigate = useNavigate();
 
@@ -21,16 +22,8 @@ const ProjectSlider = () => {
   };
 
   return (
-    <div className="parent">
-      <Carousel
-        responsive={responsive}
-        autoPlay={true}
-        swipeable={false}
-        draggable={true}
-        showDots={false}
-        infinite={true}
-        partialVisible={false}
-      >
+    <div ref={emblaRef} style={{ overflow: "hidden" }}>
+      <div style={{ display: "flex" }}>
         {projects.map((el: ProjectType, index: number) => {
           return (
             <div
@@ -105,7 +98,7 @@ const ProjectSlider = () => {
             </div>
           );
         })}
-      </Carousel>
+      </div>
     </div>
   );
 };
