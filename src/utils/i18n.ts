@@ -8,6 +8,7 @@ i18n
     resources: {
       ...require('./en.json'),
       ...require('./ru.json'),
+      ...require('./hr.json'),
     },
     interpolation: {
       escapeValue: false,

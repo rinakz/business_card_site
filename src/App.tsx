@@ -1,67 +1,63 @@
 import { Header } from "./components/header";
-import { ThemeProvider as ThemeProviderMui } from '@mui/material/styles'
+import { ThemeProvider as ThemeProviderMui } from "@mui/material/styles";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/context/Theme_context";
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import { Main } from "./components/main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AboutMe } from "./components/about_me";
-import { Contacts } from "./components/contacts";
-import { Room } from "./components/room";
-import { Projects } from "./components/projects";
 import { MobileFooter } from "./components/footer";
 import { HeaderProvider } from "./components/context/Header_context";
 import useWindowSize from "./components/hooks/useWindowSize";
-import { ThemePage } from "./components/theme-page/ThemePage";
-import { AppContext } from "./components/context/App_context";
 import { StoryPage } from "./components/about_me/StoryPage";
+import FooterContacts from "./components/footer/FooterContacts";
+import { AboutMePage } from "./components/about_me/AboutMePage";
+import { ProjectsPage } from "./components/projects/ProjectsPage";
+import { PATH } from "./constants/common";
+import { ProjectPage } from "./components/projects/ProjectPage";
 
+export function MainRouter() {
+  const { theme, themeMui } = useContext(ThemeContext);
 
-
-
-export function App() {
-  const { theme, themeMui } = useContext(ThemeContext)
-  const { stories } = useContext(AppContext)
-  
-  const { width, height} = useWindowSize()
-
+  const { width } = useWindowSize();
 
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
-    setMobile(width < 600)
-  }, [width])
+    setMobile(width < 600);
+  }, [width]);
 
   return (
     <ThemeProviderMui theme={themeMui}>
       <ThemeProvider theme={theme}>
         <HeaderProvider>
-          <BrowserRouter>
-            <CssBaseline />
+          <CssBaseline />
+          <main>
             <Header />
-            <main>
-              <Routes>
-                <Route path="/" element={<Main />} />
-                <Route path="/my_room" element={<Room />} />
-                <Route path="/settings" element={<ThemePage />} />
-                <Route path="/settings" element={<ThemePage />} />
 
-                {stories.map((el: any) => { 
-                  return  <Route key={el.id} path={el.alt} element={<StoryPage story={el}  />} />
-                })}
+            <Routes>
+              <Route path={PATH.main} element={<Main />} />
+              {/* <Route path="/settings" element={<ThemePage />} /> */}
 
+              <Route path={PATH.aboutMe.root} element={<AboutMePage />}>
+                <Route path={PATH.aboutMe.id} element={<StoryPage />} />
+              </Route>
 
-              <Route path="/about_me" element={<AboutMe />} />
-              <Route path="/contacts" element={<Contacts />} />
-              <Route path="/projects" element={<Projects />} />
-
+              <Route path={PATH.projects.root} element={<ProjectsPage />}>
+                <Route path={PATH.projects.id} element={<ProjectPage />} />
+              </Route>
             </Routes>
-        </main>
-        {mobile && <MobileFooter />}
-        </BrowserRouter>
+            {mobile && <MobileFooter />}
+            <FooterContacts />
+          </main>
         </HeaderProvider>
       </ThemeProvider>
     </ThemeProviderMui>
   );
 }
+
+export const App = () => (
+  <BrowserRouter>
+    <MainRouter />
+  </BrowserRouter>
+);

@@ -1,6 +1,27 @@
+@use '../mixins' as m
+
 .buttonHome
-  -webkit-text-stroke: 1px black
-  color: white
-  font-size: 28px
   flex-grow: 1
+  display: flex
+  @include m.media(phone)
+    display: none
+
+.navigationButton
+  border-radius: 20px
+  font-size: 20px
+  padding: 12px 20px 8px 20px
+  height: 40px
+  display: flex
+  align-items: center
+  background: transparent
   cursor: pointer
+  font-family: Font-Over !important
+
+.navigationIcon 
+    border-radius: 20px
+    padding: 12px 20px
+    height: 40px
+    display: flex
+    align-items: center
+    background: transparent
+    cursor: pointer

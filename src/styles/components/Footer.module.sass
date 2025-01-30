@@ -1,0 +1,67 @@
+@use '../mixins' as m
+
+.footerContainer
+    display: flex
+    flex-direction: column
+    gap: 80px
+    @include m.media(phone)
+        gap: 40px
+
+.footerTitle
+    width: 50%
+    float: right
+    font-size: 60px
+    display: flex
+    align-items: end
+    gap: 16px
+    font-family: Font-Over !important
+    @include m.media(phone, tablet, laptop)
+        float: left
+        font-size: 36px
+
+.footerInfo
+    display: flex
+    justify-content: space-between
+    gap: 80px
+    p
+        width: 50%
+        max-width: 600px
+    @include m.media(laptop, tablet)
+        flex-wrap: wrap
+        gap: 40px
+        p
+            width: 100%
+    @include m.media(phone, tablet)
+        flex-direction: column
+        gap: 40px
+        p
+            width: 100%
+
+.button
+    padding: 12px 20px 8px 20px
+    border-radius: 40px
+    border: none
+    cursor: pointer
+    font-family: Font-Over !important
+    @include m.media(laptop)
+        margin: 40px 0
+
+.contacts
+    display: inline-flex
+    gap: 12px
+
+.buttonHome
+    flex-grow: 1
+    display: flex
+    justify-content: space-between
+
+.navigationButton
+    border-radius: 20px
+    font-size: 20px
+    padding: 12px 20px 8px 20px
+    height: 40px
+    display: flex
+    align-items: center
+    background: transparent
+    cursor: pointer
+    font-family: Font-Over !important

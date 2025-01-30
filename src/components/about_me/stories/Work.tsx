@@ -1,98 +1,61 @@
 import { Link } from "@mui/material";
-import React from "react";
+import stls from "../../../styles/components/AboutMe.module.sass";
+import { useTranslation } from "react-i18next";
 
 function Work() {
+  const { t } = useTranslation();
+
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "25px", textAlign: "justify" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "25px",
+        textAlign: "justify",
+      }}
+    >
+      <p dangerouslySetInnerHTML={{ __html: `${t("story.Work.start")}` }} />
+      <p>{t("story.Work.education")}</p>
+      <p dangerouslySetInnerHTML={{ __html: `${t("story.Work.js")}` }} />
+      <p dangerouslySetInnerHTML={{ __html: `${t("story.Work.frontend")}` }} />
       <p>
-        Окунаясь в истоки стоит отметить, что родилась я в Москве в пятницу 13 и
-        все детство проковырялась с братьями в компьютерах. Старший из нас —
-        преподаватель информатики. В школе училась в{" "}
-        <b>физико-математическом классе</b>.
-      </p>
-      <p>
-        Высшее образование получила в Российском университете кооперации защитив
-        диплом на отлично.
-      </p>
-
-      <p>
-        Также успешно прошла обучение в школе программирования, выпустившись с
-        дипломом <b>JavaScript разработчика</b>.
-      </p>
-
-      <p>
-        На текущий день <b>занимаюсь разработкой уже около четырех лет</b>. С
-        удовольствием берусь за дополнительные проекты и постоянно развиваюсь.
-      </p>
-
-      <p>
-        Мой первый личный проект — это была электронная библиотека. В процессе
-        поиска работы нужно было себя чем-то занять, и я начала писать.
+        {t("story.Work.lib")}
         <img
+          className={stls.storiesPhoto}
           style={{ width: " -webkit-fill-available", padding: "22px 0" }}
           src="/LibReg.jpeg"
           alt="MyBook"
         />
-        Идею подкинули подружки:
+        {t("story.Work.friend")}
       </p>
 
-      <p>"Хочется выкладывать свои книги электронно иcтакже бронировать!".</p>
-
+      <p>{t("story.Work.whantLib")}</p>
+      <p>{t("story.Work.app")}</p>
+      <p>{t("story.Work.deploy")}</p>
       <p>
-        Приложение позволяло зарегистрироваться, выложить собственную книгу в
-        общий доступ, найти и забронировать интересующую. К книге можно было
-        написать комментарий или же просто оставить оценку.
+        <b> {t("story.Work.offer")}</b>
       </p>
-
-      <p>
-        Самостоятельно разработала дизайн. Создала интерфейс без использования
-        UI библиотек. Подключила базу данных, выкатила проект на heroku и вуаля.
-      </p>
-
-      <p>
-        <b>Первый оффер в кармане!</b>
-      </p>
-
-      <p>
-        Не остановившись на достигнутом я продолжала изучать новые технологии и
-        создавать классные штуки.
-      </p>
-
-      <p>
-        Одним из интересных и важных для меня опытов стала работа в{" "}
-        <b>Федеральной грузовой компании</b>.
-      </p>
+      <p>{t("story.Work.dontStop")}</p>
+      <p dangerouslySetInnerHTML={{ __html: `${t("story.Work.fgk")}` }} />
 
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img
+          className={stls.storiesPhoto}
           style={{ width: "500px", padding: "22px" }}
           src="/FGK.jpeg"
           alt="FGK"
         />
       </div>
-
+      <p dangerouslySetInnerHTML={{ __html: `${t("story.Work.backend")}` }} />
+      <p>{t("story.Work.vue")}</p>
       <p>
-        В ФГК я разрабатывала кабинеты менеджеров и клиентов и мне
-        посчастливилось изучить PHP и Laravel и{" "}
-        <b>самостоятельно дорабатывать бэк</b>.
-      </p>
-
-      <p>
-        {" "}
-        Я открыла для себя Vue в коммерческой разработке, написала с помощью
-        него IDE.
-      </p>
-
-      <p>
-        Сейчас я вернулась к React и помимо основной работы продолжаю помогать
-        разрабатывать функционал приложения QWEP. В 2023 году мы переписывали
-        приложения с нуля и успешно выкатили{" "}
+      {t("story.Work.qwep")}
         <Link
           color="inherit"
           href="https://companies.rbc.ru/news/d4TZGjEd6T/kompaniya-qwep-predstavila-web-30/"
           underline="always"
         >
-          новую WEB-версию.
+          {t("story.Work.newWeb")}
         </Link>
       </p>
 

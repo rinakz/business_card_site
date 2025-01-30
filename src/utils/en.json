@@ -1,22 +1,101 @@
 {
-    "en": {
-      "translation": {
-        "main": {
-            "hello": "KATYA MARCHENKO", 
-            "katya": "Katya", 
-            "frontendDeveloper": "FRONTEND DEVELOPER"
-        },
-        "header": {
-            "aboutMe": "About me", 
-            "contacts": "Contacts",
-            "projects": "Projects"
-        },
-        "drawer": {
-          "myHome": "Room",
-          "settings": "Settings"
-      } 
+  "en": {
+    "translation": {
+      "main": {
+        "hello": "KATYA MARCHENKO",
+        "katya": "Katya",
+        "frontendDeveloper": "FRONTEND DEVELOPER",
+        "welcome": "Welcome to my business card website.",
+        "im": "I'm a front-end developer who loves to create something new and different.",
+        "more": "more details"
+      },
+      "header": {
+        "aboutMe": "About me",
+        "contacts": "Contacts",
+        "projects": "Projects"
+      },
+      "drawer": {
+        "myHome": "Room",
+        "settings": "Settings",
+        "changeTheme": "Select theme"
+      },
+      "aboutMe": {
+        "name": "Name: Ekaterina", 
+        "city": "City: Moscow",
+        "education": "Education: Higher",
+        "years": "Age: < 30", 
+        "capricorn": "Zodiac: Capricorn",
+        "spec": "Specialization: Programmer"
+    },
+    "story": {
+      "work": "«You know that you will be a mega senor»", 
+      "kanal": "In 2022, I launched the most unique IT channel «Что-то на джуновском» (“Something in Junior”)",
+      "shiba": "Ruler of the local digital lands and fox",
+      "croatia": "Main life goal is to move to Croatia",
+      "Work": {
+        "start": "I was born in Moscow on Friday the 13th and spent my entire childhood working with my brothers on computers. The eldest of us is a computer science teacher. At school I studied in the <b>physics and mathematics class</b>.",
+        "education": "I received my higher education at the Russian Cooperation University, defending my diploma with excellent marks.",
+        "js": "I also successfully completed training at a programming school, graduating with a diploma in <b>JavaScript developer</b>.",
+        "frontend": "Currently <b>I have been developing for about four years</b>. I am happy to take on additional projects and constantly develop myself.",
+        "lib": "My first personal project was an electronic library. While searching for a job, I needed to keep myself busy, so I started writing.",
+        "friend": "This idea was suggested by my friends:",
+        "whantLib": "«We want to post our books electronically and also book them!».",
+        "app": "The application allowed you to register, post your own book to the public, find and book the one you were interested in. You could write a comment on the book or simply leave a rating.",
+        "deploy": "I developed the design myself. Created an interface without using UI libraries. I connected the database, rolled out the project to Heroku and voila.",
+        "offer": "The first offer is in my pocket!",
+        "dontStop": "Not stopping there, I continued to study new technologies and create cool things.",
+        "fgk": "One of the interesting and important experiences for me was working at the <b>Federal Freight Company</b> (Main subsidiary of Russian Railways).",
+        "backend": "At the FFC I developed accounts for managers and clients and I was lucky enough to learn PHP and Laravel and <b>independently develop the back-end</b>.",
+        "vue": "I opened Vue in commercial development and wrote an IDE using it.",
+        "qwep": "Now I have returned to React and, in addition to my main job, I continue to help develop the functionality of the QWEP application. In 2023, we rewrote applications from scratch and successfully rolled out ",
+        "newWeb": "a new WEB version."
+      },
+      "Kanal": {
+        "kanal": "No matter how loud it may sound, the most important thing I have now is my channel. My brainchild!",
+        "save": "One day I came up with the idea of taking notes in a telegram. I created a channel for myself and saved useful IT links, articles, and interesting projects there. I made some footnotes for myself and wrote comments.",
+        "story": "I suddenly discovered that the channel was starting to gain subscribers and decided at that moment that in the process of gaining experience I would write down my stories, achievements and events from life at work there.",
+        "qweez": "By the <b>500 subscriber mark</b>, the channel’s audience became absolutely clear to me, and even a certain community had formed. We got local memes, we started holding quizzes on the channel, including from subscribers, we study different programming languages every day.",
+        "memes": "Every Wednesday we have <b>It's Wednesday, my dudes</b>, and on Friday <b>Friday day</b> is the day when subscribers send their memes in the comments. Yes, yes, only on Friday! Otherwise they will be arrested :)",
+        "qween": "Subscribers began to call me <b>the Queen of Dudes</b>, thank me endlessly and write letters of love for the fact that we have this amazing place.",
+        "people": "The channel united not only juniors, but also experienced programmers writing in a variety of languages. Among the subscribers there are students who are just studying. Also, despite the theme of the channel, there are people here from completely different areas who are simply interested in watching memes and communicating, and for some, my experience is <b>motivation for changes in life</b>.",
+        "stickers": "At the end of 2023, I created a sticker pack with my puppy. My Oski became the ambassador of the channel and everyone’s favorite, he literally began to have fans. And this became such a successful development that to date, <b>more than a thousand telegram users</b> have installed stickers, and have used them more than <b>27 thousand times</b> - and this in less than half a year!"
+      },
+      "Doggy": {
+        "dog": "«Sorry, why was I a groundhopper - because I didn’t have a dog!»",
+        "gh": "Let's start with what it is - <b>groundhopping</b> and what eat it with.",
+        "beer": "German readers of my site would now tell you: with beer and sausages!",
+        "stadiums": "Groundhopping is football travel without being tied to a specific club. When choosing a match, such travelers usually take into account how interesting the game will be: whether the teams will have fans to listen to their songs, whether the history of the club is fascinating, and of course the beauty of the stadium itself.",
+        "football": "Few people are interested in football itself in such a story, but I know groundhoppers who really watch the match from the first to the last minute and evaluate the game itself and worry :)",
+        "club": "This is logical, after all, we all gathered for one reason - football, so intuitively for one hour you begin to “sink” for the club that is more attractive to you.",
+        "groundhopper": "Where does the groundhopper come from?",
+        "tired": "As a rule, this is a football fan who, throughout his life, has traveled to many cities and countries for his club, and each trip has already become tiresome and uninteresting.",
+        "cities": "Nothing changes every year: St. Petersburg, Tula, Rostov, Samara, Kazan...",
+        "hobby": "I really like each of these cities, but I simply have nothing to see in them anymore. This is how you come up with a new activity related to your favorite hobby - <b>groundhopping</b>.",
+        "loko": "A couple of years ago I went to St. Petersburg for my Lokomotiv team, and returned to Loko’s game in Khimki without visiting Moscow (essentially a double).",
+        "matches": "During this trip I attended <b>10 football matches</b>in the Leningrad and Tver regions.",
+        "book": "My article about one of these matches was published in a book on groundhopping.",
+        "stat": "To date, I have visited <b>more than a hundred unique football stadiums</b> with matches there, and I am among the <b>top 100</b> groundhoppers in Russia. In 2021, I joined the Russian Groundhopper League.",
+        "buy": "But! As my former boss put it<b>«A woman bought a pig!»</b>",
+        "fox": "In August 2023, I became the happy owner of a small red fox. And this is where my travels sparkled with new colors.",
+        "meet": "In no time at all, I began introducing Oscar to football. I created an Oski account on the website graundhopper.ru and a new quest began.</b>",
+        "dogFriendly": "Now I need to rely not only on the above-mentioned factors when choosing a game, but also focus on <b>Dog Friendly</b> stadiums, and, unfortunately, there are practically no such ones :(",
+        "metallist": "The first match in Oscar's life was the game of Metalist from the city of Korolev. Despite signs posted throughout the stadium prohibiting dogs from attending games, Oski entered the territory freely and was able to watch the football.",
+        "belarus": "My hobby has become even more exciting. I have an ideal dog for traveling, and Oski has already traveled with me to the neighboring country - Belarus.",
+        "like": "The most amazing thing is that I see that my fox really likes it all.",
+        "more": "Will be more!"
+      },
+      "Croatia": {
+        "love": "The first time I came to Croatia was in 2016 and from that moment I fell in love with this country. I really like the climate of Croatia, the mentality of these people, their love for football. The country suits me very well.",
+        "zg80": "In 2020, I <b>translated from Croatian into Russian</b> the film ZG80, about the trip of Dinamo Zagreb fans to Serbia for a game with Red Star.",
+        "friends": "Over all these years I have made friends in Zagreb, Split, Osijek, Dubrovnik. <b>I learned the Croatian language</b>, I even studied with a tutor.",
+        "twitter": "On Twitter, I became friends with the Lokomotiva Zagreb football club, and the SMM manager from the club’s account liked my posts about Lokomotiva :)",
+        "dreams": "In 2023, I decided to actively move, but my plans were dashed by searching for a job in Croatia.",
+        "work": "In February 2024, I applied for a vacancy for a Frontend developer at an IT company from Zagreb. The required technology stack was ideal for mine. A couple of days later I received a non-disclosure agreement and an <b>invitation to an interview</b> in the mail.",
+        "happy": "I was incredibly happy and prepared literally days and nights. I was able to talk in Croatian about event-loop, about closures, about everything in the world.",
+        "interview": "It was a very interesting interview. We talked about my experience, about technology, there were psychological questions. The entire interview lasted 40 minutes and was in Croatian. At the end, HR praised me very much, but she was confused that I was in Russia, and that my move could take 4 months, according to her experience. I received a refusal.",
+        "sad": "I was very upset, but decided that I would continue to try. At the time of my job search, I had already found housing in Zagreb near the Lokomotiva stadium, but it turned out to be difficult to find work in Croatia."
       }
     }
+    }
+  }
 }
-
-

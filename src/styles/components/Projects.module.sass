@@ -1,0 +1,159 @@
+@use '../mixins' as m
+
+.projectsPageTitle
+    display: flex
+    font-size: 60px
+    align-items: end
+    justify-content: center
+    margin-bottom: 60px
+    font-family: Font-Over !important
+    @include m.media(phone)
+        font-size: 30px
+        align-items: center
+        margin-bottom: 0
+
+.projectCarousel
+    border-radius: 20px
+    padding: 5px
+    margin: 12px
+    @include m.media(phone)
+        width: 320px
+
+.projectCard
+    cursor: pointer
+    border-radius: 20px
+    padding: 12px
+    display: flex
+    flex-direction: column
+    gap: 30px
+    height: 550px
+    @include m.media(phone, tablet)
+        height: 650px
+        gap: 20px
+    .carouselTitle
+        display: flex
+        justify-content: space-between
+        span 
+            font-family: Font-Over !important
+    .title
+        border-radius: 20px
+        padding: 6px 8px 4px 8px
+        height: 40px
+        font-family: Font-Over !important
+    .info
+        display: flex
+        flex-direction: column
+        gap: 12px
+    .techContainer
+        display: flex
+        flex-wrap: wrap
+        gap: 8px
+        height: 88px
+
+.projectsTitle
+    display: flex
+    font-size: 60px
+    align-items: end
+    justify-content: center
+    margin-bottom: 60px
+    font-family: Font-Over !important
+    @include m.media(phone)
+        font-size: 50px
+        align-items: center
+        margin-bottom: 30px
+        margin-top: -120px
+
+.card
+    display: flex
+    margin-right: 80px
+    width: 50%
+    justify-content: space-between
+    font-family: Font-Over !important
+    font-size: 36px
+    @include m.media(phone)
+        width: 100%
+
+.projectTitle
+    width: 450px
+    font-size: 48px
+    font-family: Font-Over !important
+    @include m.media(phone, tablet, laptop)
+        width: max-content
+    @include m.media(phone)
+        font-size: 36px
+
+.projectInfo
+    display: flex
+    justify-content: space-between
+    cursor: pointer
+    padding-bottom: 40px
+    .data
+        border-radius: 20px
+        padding: 6px 8px 4px 8px
+        height: 40px
+        font-family: Font-Over !important
+    @include m.media(phone)
+        flex-direction: column
+    .cardInfo
+        width: 50%
+        display: flex
+        flex-direction: column
+        gap: 40px
+        @include m.media(phone)
+            width: 100%
+
+.projectContainer
+    display: flex
+    flex-direction: column
+    gap: 40px
+    @include m.media(phone)
+        margin-top: -120px
+    .header
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        row-gap: 20px
+    .techContainer
+        width: 50%
+        display: flex
+        flex-direction: column
+        gap: 40px
+        @include m.media(phone, tablet, laptop)
+            width: 100%
+            margin-top: 20px
+    .techChip
+        border-radius: 20px
+        padding: 6px 8px 4px 8px
+        height: 40px
+        font-family: Font-Over !important
+    .cardContainer
+        display: flex
+        flex-direction: column
+        gap: 12px
+    .iconContainer
+        display: flex
+        gap: 12px
+        align-items: center
+        font-family: Font-Over !important
+    .info
+        display: flex
+        justify-content: space-between
+        @include m.media(phone)
+            flex-direction: column
+            gap: 40px
+    .infoContainer
+        width: 50%
+        display: flex
+        flex-direction: column
+        gap: 12px
+        @include m.media(phone)
+            width: 100%
+    .imageMain
+        width: 800px
+        @include m.media(phone)
+            width: 300px
+    .imageSecond
+        @include m.media(phone)
+            width: 100%
+        @include m.media(laptop)
+            width: 350px

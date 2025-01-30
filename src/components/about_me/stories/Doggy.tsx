@@ -1,135 +1,132 @@
-import React from "react";
+import stls from "../../../styles/components/AboutMe.module.sass";
+import { ThemeContext } from "../../context/Theme_context";
+import { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  IconArrowBottom,
+  IconEmoji,
+  IconGhChat,
+  IconHeart,
+  IconHot,
+  IconPin,
+  IconUser,
+} from "../../icons";
+import { DoggyContent } from "./Stories.helpers";
+import useWindowSize from "../../hooks/useWindowSize";
 
 function Doggy() {
-  return (
-    <div
-      style={{
-        textAlign: "justify",
-        display: "flex",
-        flexDirection: "column",
-        gap: "25px",
-      }}
-    >
-      <p>
-        <b>
-          "Извините, я почему граундхоппером был — потому что у меня собаки не
-          было!"
-        </b>
-      </p>
-      <p>
-        Давайте начнем с того, что вообще это такое — <b>граундхоппинг</b> и с
-        чем его едят.
-      </p>
-      <p>
-        Немецкие читатели моего сайта сейчас бы вам сказали: с пивом и
-        колбасками!
-      </p>
-      <p>
-        Граундхоппинг — это футбольные путешествия без привязки к конкретному
-        клубу. В выборе матча такие путешественники как правило отталкиваются от
-        того, насколько интересная будет игра: будут ли у команд болельщики,
-        чтобы послушать их песни, увлекательна ли история клуба, ну и конечно
-        красота самого стадиона.
-      </p>
-      <p>
-        Сам футбол в такой истории мало кого интересует, но я знакома с
-        граундхопперами, которые действительно смотрят матч с первой до
-        последней минутки и оценивают саму игру и переживают :)
-      </p>
-      <p>
-        Это и логично, все-таки все мы собрались по одному поводу — футбол,
-        поэтому интуитивно на один часик начинаешь "притапливать" за более
-        симпотичный тебе клуб.
-      </p>
-      <b>Откуда берется граундхоппер? </b>
-      <p>
-        Как правило это футбльный болельщик, который на протяжении своей жизни
-        объездил за своим клубом множество городов и стран и каждый выезд уже
-        стал утомительным и неинтересным.
-      </p>
-      <div style={{ display: "flex", padding: "22px 0", gap: 22 }}>
-        <p
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            gap: "25px",
-          }}
-        >
-          Каждый год ничего не меняется: Питер, Тула, Ростов, Самара, Казань...
-          <p>
-            Мне очень нравится каждый из этих городов, но мне уже просто нечего
-            в них смотреть. Вот так и придумывается себе новое занятие связанное
-            с любимым увлечением — <b>граундхоппинг</b>.
-          </p>
-          <p>
-            Пару лет назад я поехала на выезд за свой Локомотив в
-            Санкт-Петербург, а вернулась на игру Локо в Химки без заезда в
-            Москву (по сути двойник).
-          </p>
-          <p>
-            За эту поездку я посетила <b>10 футбольных матчей </b>по
-            Ленинградской и Тверской областям.
-          </p>
-          <b>
-            Моя статья про один из этих матчей была напечатана в книге по
-            граундхоппингу.
-          </b>
-        </p>
-        <img style={{ width: "350px" }} src="/GhBook.jpeg" alt="Book" />
-      </div>
-      <p>
-        На сегодняшний день я посетила{" "}
-        <b>более ста уникальных футбольных стадионов</b> с матчами на них, и я
-        вхожу в <b>топ 100</b> граундхопперов России. В 2021 году я
-        присоединилась к Русской лиге граундхопперов.
-      </p>
-      <img
-        style={{ width: " -webkit-fill-available", padding: "22px 0" }}
-        src="/GH.png"
-        alt="Gh"
-      />
-      Но! Как выразился мой бывший руководитель <b>"Купила баба порося!"</b>
-      <p>
-        В августе 2023 я стала счастливой обладательницей маленькой рыжей
-        лисицы. И на этом мои путешествия заигали новыми красками.
-      </p>
-      <p>
-        В кратчайшие сроки я начала знакомить Оскара с футболом. Создала Оски
-        аккаунт на сайте graundhopper.ru и начался новый квест.
-      </p>
-      <p>
-        Теперь мне нужно отталкиваться не только от вышеупомянутых фактров при
-        выборе игры, а еще ориентироваться на <b>Dog Frendly</b> стадионы, а
-        таких, к сожалению, практически нет :(
-      </p>
-      <div style={{ display: "flex", padding: "22px 0", gap: 22 }}>
-        <img style={{ width: "350px" }} src="/Metallist.jpeg" alt="Metallist" />
+  const { colors } = useContext(ThemeContext);
+  const navigate = useNavigate();
 
-        <p
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            gap: "25px",
-          }}
-        >
-          <p>
-            Первым матчем в жизни Оскара стала игра Металлиста из города
-            Королев. Несмотря на развешанные по всему стадиону таблички о
-            запрете посещения игр собаками, Оски попал на территорию свободно и
-            смог посмотреть футбол.
-          </p>
-          <p>
-            Мое хобби стало еще увлекательнее. У меня идеальная для путешествий
-            собака, и Оски уже съездил со мной в соседнюю страну — Беларусь.
-          </p>
-          <p>
-            Самое потрясающее, что я вижу, что моей лисице это все очень
-            нравится.
-          </p>
-          <b>Дальше — больше!</b>
-        </p>
+  const { width } = useWindowSize();
+
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    setMobile(width < 600);
+  }, [width]);
+
+  return (
+    <div className={stls.storyPageContainer}>
+      <div
+        className={stls.storyTitle}
+        style={{
+          color: colors.zeta,
+        }}
+      >
+        Правительница здешних цифровых земель и лисица
+        <IconPin />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+          flexWrap: "wrap",
+          rowGap: "40px",
+        }}
+      >
+        <div className={stls.infoContainer}>
+          <img src="/Book.jpg" alt="book" style={{ maxHeight: "300px" }} />
+          <div
+            style={{ display: "flex", gap: "40px", flexDirection: "column" }}
+          >
+            <div style={{ display: "flex", gap: "24px" }}>
+              <div className={stls.cardInfo}>
+                <span className={stls.textContainer}>
+                  <IconHot />
+                  граундхоппер:
+                </span>
+                <span>@rinakz</span>
+              </div>
+              <div className={stls.cardInfo}>
+                <span className={stls.textContainer}>
+                  <IconEmoji /> {mobile ? "гх" : "граундхоппинг"}:
+                </span>
+                <span>футбольные путешествия</span>
+              </div>
+            </div>{" "}
+            <div style={{ display: "flex", gap: "24px" }}>
+              <div className={stls.cardInfo}>
+                <span className={stls.textContainer}>
+                  <IconUser />
+                  топ-100 россии:
+                </span>
+                <span>#70</span>
+              </div>
+              <div className={stls.cardInfo}>
+                <span className={stls.textContainer}>
+                  <IconGhChat /> слоган:
+                </span>
+                <span>Дальше - больше!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="/Gh.jpg"
+          alt="Gh"
+          style={{ maxWidth: mobile ? "300px" : "50%" }}
+        />
+      </div>
+
+      <DoggyContent />
+
+      <div className={stls.footerContainer}>
+        <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
+          <img src="/Stadium.jpg" alt="Stadium" style={{ height: "300px" }} />
+          <img src="/Metal.jpg" alt="Metal" style={{ height: "300px" }} />
+        </div>
+
+        <div className={stls.projectsContainer}>
+          <span
+            className={stls.projectsTitle}
+            style={{
+              color: colors.beta,
+            }}
+          >
+            Личные проекты
+            <IconHeart width={mobile ? "50" : undefined} />
+          </span>
+          <div>
+            <div
+              className={stls.projectLink}
+              onClick={() => navigate("/about_me/channel")}
+            >
+              С 2022 году запустила уникальний IT-канал «Что-то на джуновском»
+              <IconArrowBottom />
+            </div>
+            <hr />
+            <div
+              className={stls.projectLink}
+              onClick={() => navigate("/about_me/croatia")}
+            >
+              Основная жизненная цель — переезд в Хорватию
+              <IconArrowBottom />
+            </div>
+            <hr />
+          </div>
+        </div>
       </div>
     </div>
   );

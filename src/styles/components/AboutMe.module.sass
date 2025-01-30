@@ -1,6 +1,29 @@
 @use '../mixins' as m
 @use '../config/Colors.module.sass' as c
 
+.storiesOnMainPage
+    display: flex
+    gap: 100px
+    @include m.media(phone, tablet, laptop)
+        flex-direction: column
+
+.aboutMe
+    display: flex
+    flex-direction: column
+    gap: 100px
+    cursor: pointer
+    justify-content: space-between
+    @include m.media(phone)
+        gap: 40px
+
+.storiesOnMain
+    min-width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: end
+    img
+    @include m.media(phone)
+        width: 300px
 
 .photoMarchenko
     width: 100%
@@ -10,93 +33,170 @@
     @include m.media(phone)
         width: 100%
 
-
-
-.listItemStory
-    height: 135px
-    width: 100%
-    cursor: pointer
-    width: 100%
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
-    padding: 0 !important
-    &:hover
-        .listSlide
-            -webkit-transform: translateX(-130px)
-            font-weight: bold
-    img
-        min-width: 190px
-        height: 135px
-
-    .listSlide
-        height: 100%
-        display: flex
-        flex-direction: column
-        align-items: center
-        padding: 30px
-        cursor: pointer
-        justify-content: center
-        text-transform: uppercase
-        left: 100%
-        position: absolute
-        top: 0
-        max-width: 130px
-        -webkit-transform: translateX(-10px)
-    .cardDetailsText
-        height: 100%
-        white-space: pre-wrap
-        @include m.media(phone)
-            flex-direction: column
-            font-size: 12px
-
-
-
-.contentAboutMe
-    width: 100%
-    display: flex
+.aboutMeTitle
+    font-size: 60px
+    font-family: Font-Over !important
     @include m.media(phone)
-        flex-direction: column
-.historyAboutMe
-    width: 50%
+        font-size: 30px
+        display: flex
+        align-items: center
+
+.aboutMeContainer
     display: flex
     flex-direction: column
-    max-height: 87vh
-    overflow: scroll 
-    margin-left: 30px
-    overflow-x: hidden
-    gap: 20px
-    p
-    @include m.media(tablet, phone)
-        font-size: 14px
-        margin: 0 10px
-        width: 100%
-
-        
-
-.cardAboutMe
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
-    display: flex
-    padding: 21px
-    margin: 40px 0
-    max-width: 700px
-    // justify-content: space-between
-    .cardContent
+    align-items: center
+    gap: 100px
+    @include m.media(phone)
+        gap: 40px
+    .content
         display: flex
         flex-direction: column
+        gap: 80px
+        width: 100%
+    .cardsContainer
+        width: 250px
+        display: flex
+        flex-direction: column
+        gap: 40px
+        @include m.media(phone)
+            width: 150px
+            margin-bottom: 40px
+        @include m.media(laptop, tablet)
+            width: 190px
+            margin-bottom: 40px
+    .cardInfo
+        display: flex
+        flex-direction: column
+        gap: 8px
+    .card
+        display: flex
+        gap: 12px
+        align-items: center
+        font-family: Font-Over !important
+        font-size: 14px
+        @include m.media(phone)
+            font-size: 12px
+    .textContainer
+        display: flex
+        gap: 30px
         justify-content: space-between
-        margin: 0 30px
-        gap: 20px
-        @include m.media(tablet, phone)
-            margin: 0 10px
-    .info
+        @include m.media(phone)
+            flex-wrap: wrap
+
+.titleContainer
+    font-size: 60px
+    display: flex
+    gap: 16px
+    align-items: end
+    font-family: Font-Over !important
+    @include m.media(phone)
+        font-size: 40px
+        align-items: center
+        margin-top: -120px
+
+.storyPageContainer
+    display: flex
+    flex-direction: column
+    gap: 100px
+    align-items: center
+    @include m.media(phone)
+        gap: 40px
+
+.storyTitle
+    display: flex
+    gap: 16px
+    width: 50%
+    font-size: 36px
+    align-items: end
+    font-family: Font-Over !important
+    @include m.media(phone, tablet)
+        width: 100%
+        margin-top: -120px
+        font-size: 20px
+    @include m.media(laptop)
+        width: 100%
+        padding: 0 30px
+
+.infoContainer
+    min-width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: start
+    row-gap: 40px
+    @include m.media(phone, tablet)
+        gap: 40px
+    @include m.media(laptop)
+        flex-direction: row
+        gap: 40px
+
+.cardInfo
+    width: 272px
+    display: flex
+    flex-direction: column
+    gap: 8px
+    @include m.media(phone)
+        width: 160px
+        font-size: 13px
+    @include m.media(tablet)
+        width: 280px
+    .textContainer
         display: flex
         align-items: center
-    p
-        font-size: 14px
-        margin-left: 10px
-        @include m.media(tablet, phone)
-            font-size: 11px
+        gap: 12px
+        font-family: Font-Over !important
 
-    @include m.media(tablet)
-        margin: 20px 20px 20px 0
-        width: 200px
+.buttonChannel
+    border-radius: 40px
+    padding: 12px 20px
+    border: none
+    cursor: pointer
+    font-size: 20px
+
+.projectLink
+    margin: 10px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    cursor: pointer
+
+.projectsContainer
+    display: flex
+    flex-direction: column
+    min-width: 50%
+    width: 50%
+    justify-content: space-between
+    @include m.media(laptop)
+        width: 100%
+
+.projectsTitle
+    font-size: 56px
+    display: flex
+    gap: 16px
+    align-items: end
+    font-family: Font-Over !important
+    @include m.media(phone)
+        font-size: 30px
+        align-items: center
+
+.footerContainer
+    display: flex
+    justify-content: space-between
+    width: 100%
+    @include m.media(phone, tablet, laptop)
         flex-wrap: wrap
+        row-gap: 40px
+
+.storyTextContainer
+    display: flex
+    gap: 16px
+    @include m.media(phone)
+        flex-direction: column
+    .story
+        max-width: 50%
+        @include m.media(phone)
+            width: 100%
+            max-width: 100%
+
+.mother
+    font-family: Font-Over !important

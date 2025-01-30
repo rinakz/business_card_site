@@ -1,0 +1,40 @@
+import cn from "classnames";
+import { useContext } from "react";
+import { ThemeContext } from "../context/Theme_context";
+
+type TypeIconKanalProps = any;
+
+export const IconKanal = ({ classNames }: TypeIconKanalProps) => {
+  const { colors } = useContext(ThemeContext);
+
+  return (
+    <div className={cn(classNames)}>
+      <svg
+        width="100"
+        height="100"
+        viewBox="0 0 100 100"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M97.625 7.125H92.8438V78.5625H97.625V7.125Z" fill={colors.zeta} />
+        <path
+          d="M78.5625 97.625V92.8437H83.3125V83.3125H92.8437V78.5625H21.4062V83.3125H26.1875V88.0938H30.9375V83.3125H40.4688V88.0938H45.2188V83.3125H54.75V88.0938H59.5V83.3125H69.0312V88.0938H73.8125V83.3125H78.5625V88.0938H73.8125V92.8437H64.2812V88.0938H59.5V92.8437H50V88.0938H45.2188V92.8437H35.7188V88.0938H30.9375V92.8437H21.4062V88.0938H16.6562V92.8437H7.125V97.625H78.5625Z"
+          fill={colors.zeta}
+        />
+        <path
+          d="M40.4687 50H45.2188V54.75H50V59.5312H54.75V64.2812H59.5V59.5312H64.2812V54.75H69.0312V50H73.8125V45.2188H78.5625V30.9375H73.8125V26.1875H59.5V30.9375H54.75V26.1875H40.4687V30.9375H35.7188V45.2188H40.4687V50Z"
+          fill={colors.zeta}
+        />
+        <path d="M92.8437 2.375H21.4062V7.125H92.8437V2.375Z" fill={colors.zeta} />
+        <path
+          d="M16.6562 83.3125H11.9062V88.0938H16.6562V83.3125Z"
+          fill={colors.zeta}
+        />
+        <path
+          d="M11.9062 83.3125V78.5625H7.125V69.0312H11.9062V64.2812H7.125V54.75H11.9062V50H7.125V40.4688H11.9062V35.7188H7.125V26.1875H11.9062V21.4062H16.6562V26.1875H11.9062V30.9375H16.6562V40.4688H11.9062V45.2188H16.6562V54.75H11.9062V59.5312H16.6562V69.0312H11.9062V73.8125H16.6562V78.5625H21.4062V7.125H16.6562V16.6562H7.125V21.4062H2.375V92.8437H7.125V83.3125H11.9062Z"
+          fill={colors.zeta}
+        />
+      </svg>
+    </div>
+  );
+};

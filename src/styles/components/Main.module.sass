@@ -1,79 +1,48 @@
 @use '../mixins' as m
 @use '../config/Colors.module.sass' as c
 
-
 .bgMain
-    background-image: url('../../../public/google.jpeg')
-    position: relative
-    height: 100vh
-    background-size: cover
-    display: flex
-    align-items: center
-    overflow: hidden
-    @include m.media(phone)
-        background-image: url('../../../public/googlemobile.jpeg')
-    @include m.media(laptop,tablet)
-        background-image: url('../../../public/googlelaptop.jpeg')
-    @include m.media(tablet)
-        flex-direction: column
-    h1
-        color: #fff8f2
-        font-size: 36px
-        margin: 0 13px
-        @include m.media(tablet)
-            font-size: 30px
+    .mainContainer
+        display: flex
+        justify-content: space-between
+        padding: 24px
         @include m.media(phone)
-            font-size: 23px
+            flex-direction: column
+            gap: 40px
 
-
-.bgMain::before 
-  content: "" 
-  position: absolute 
-  top: 0
-  left: 0
-  width: 100% 
-  height: 100%
-  background-color: rgba(0, 0, 0, 0.8) 
-  z-index: 1 
-
-.bgMain > *
-    position: relative 
-    z-index: 2
-
-.welcome
-    width: 60%
+.contactContainer
     display: flex
     flex-direction: column
-    margin-left: 60px
-    @include m.media(laptop)
-        width: 60%
-    @include m.media(phone, tablet)
-        width: 100%
-    @include m.media(tablet)
-        margin-top: 10%
+.contact
+    display: inline-flex
+    gap: 12px
 
+.welcome
+    width: 300px
 
+.techContainer
+    display: flex
 
-.message
-    margin-top: 200px
-    margin-left: 0
-    animation: h 55s linear infinite, j 5s ease-in-out infinite alternate
+.tech
+    padding: 12px 24px 8px 24px
+    border-radius: 40px
+    height: 91px
+    font-size: 36px
+    font-weight: bold
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 330px
+    span
+        font-family: Font-Over !important
     @include m.media(phone)
-        display: none
-    @include m.media(tablet)
-        margin-top: 10%
-        display: flex
-        animation: i 10s ease-in-out infinite alternate, k 34s linear infinite
-    svg
-        width: 150px
-        height: 150px
-    a
-        text-decoration: none
-        color: inherit
+        font-size: 36px
+        padding: 8px 12px
+        width: 240px
+        height: auto
 
-
-@keyframes h 
-    0% 
+@keyframes h
+    0%
         top: 0
         opacity: 0
         transform: scale(0)
@@ -81,20 +50,19 @@
         top: 0
         opacity: 1
         transform: scale(1)
-    100% 
-        top:-80vh
+    100%
+        top: -80vh
 
-@keyframes j 
-    0% 
+@keyframes j
+    0%
         margin-left: 0
-    100% 
-        top:-100px
-
+    100%
+        top: -100px
 
 @keyframes i
-    0% 
+    0%
         top: 80px
-    100% 
+    100%
         top: 0
 
 @keyframes k
@@ -106,24 +74,10 @@
         top: 0
         opacity: 1
         transform: scale(1)
-    100% 
-        left:-100vh
-
-
+    100%
+        left: -100vh
 
 .elemMess
-    position: relative
-    text-align: center
-    &:hover
-        transform: scale(1.2)
-        transition: transform 0.2s ease-in-out
-
-    span
-        position: absolute
-        top: 45%
-        left: 50%
-        transform: translate(-50%, -50%)
-
 
 .themeCard
     width: 200px
@@ -131,15 +85,15 @@
     transition: transform 0.3s ease
     margin: 10px 30px
     @include m.media(phone)
-        width: 70% 
+        width: 70%
         margin: 20px
     &:hover
         transform: scale(1.1)
     h6
         margin: 5px 0
         font-size: 12px
-    p 
-      font-size: 5px
+    p
+        font-size: 5px
 
     .photo
         display: inline-block
@@ -147,16 +101,12 @@
         height: 60px
         margin: 15px
 
-
-
 .light
-    background: #fff9f2
     .header
-        background: #ffe7d5
         color: #413849
     h6
         color: #ffad6e
-    p 
+    p
         color: #282828
     .photo
         border-bottom: 2px solid #ffad6e
@@ -169,52 +119,50 @@
         color: #413849
     h6
         color: #C16EFF
-    p 
+    p
         color: #282828
     .photo
         border-bottom: 2px solid #C16EFF
         border-right: 2px solid #C16EFF
 
-
-.dark 
-    background: #0C0032 
-    .header 
+.dark
+    background: #0C0032
+    .header
         background: #190061
         color: #f0eef2
     h6
         color: #C16EFF
-    p 
+    p
         color: #cbc2d1
     .photo
         border-bottom: 2px solid #C16EFF
         border-right: 2px solid #C16EFF
 
-.Kaspersky
+.green
     background: white
     .header
-        background: #00a88e
+        background: #02E702
         color: white
-    h6 
+    h6
         color: #1d1d1b
-    p 
+    p
         color: #444
     .photo
         box-shadow: 0 8px 24px rgba(29,29,27,.08)
 
 .Yandex
     background: white
-    .header 
+    .header
         border: 1px solid #fc0
         border-radius: 10px
         margin: 2px
-    h6 
+    h6
         color: #1a1a1a
-    p 
+    p
         color: #1a1a1a
-    .photo 
-       box-shadow: 0 20px 50px rgba(195,184,173,.3)
-       border-radius: 10px
-
+    .photo
+        box-shadow: 0 20px 50px rgba(195,184,173,.3)
+        border-radius: 10px
 
 .Sber
     background: white
@@ -222,14 +170,13 @@
         border-top: 3px solid
         border-image: linear-gradient(to right, #00D900, #FFFF00) 1
         color: #08a652
-        border-bottom: 1px solid #f0f3f6 
-    h6 
+        border-bottom: 1px solid #f0f3f6
+    h6
         color: #2c3136
-    p 
+    p
         color: rgba(38,38,38,.7)
-    .photo 
+    .photo
         border: 1px solid rgba(38,38,38,.08)
-
 
 .Orthodox
     background: white
@@ -238,13 +185,9 @@
         color: #8b0000
     h6
         color: #6b4f38
-    p 
+    p
         color: #222
     .photo
         border: 2px solid #FBF5EA
         border-radius: 6px
         background: #FBF5EA
-  
-
-
-
