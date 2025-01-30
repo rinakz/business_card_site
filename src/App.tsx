@@ -5,7 +5,7 @@ import { ThemeContext } from "./components/context/Theme_context";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import { Main } from "./components/main";
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { MobileFooter } from "./components/footer";
 import { HeaderProvider } from "./components/context/Header_context";
 import useWindowSize from "./components/hooks/useWindowSize";

@@ -61,7 +61,9 @@ function Channel() {
                   <IconHot />
                   название:
                 </span>
-                <span>@lonely_junior</span>
+                <a style={{ color: "inherit" }} href="https://t.me/reenakz">
+                  <span>@lonely_junior</span>
+                </a>
               </div>
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>

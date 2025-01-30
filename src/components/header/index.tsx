@@ -135,7 +135,6 @@ export function Header() {
 
           <div ref={anchorRef}>
             <button
-              disabled
               className={stls.navigationButton}
               onClick={handleToggle}
               style={{
