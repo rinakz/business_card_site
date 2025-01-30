@@ -4,10 +4,12 @@ import { HeaderContext } from "../context/Header_context";
 import { ThemeContext } from "../context/Theme_context";
 import { HeaderType } from "../../types/Header";
 import stls from "../../styles/components/Footer.module.sass";
+import { useNavigate } from "react-router-dom";
 
 export function MobileFooter() {
   const { navItemsLeftPage } = useContext(HeaderContext);
   const { colors } = useContext(ThemeContext);
+  const navigate = useNavigate();
 
   const [showCard, setShowCard] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -50,18 +52,18 @@ export function MobileFooter() {
       <Box sx={{ display: "flex", justifyContent: "space-around" }}>
         <div className={stls.buttonHome}>
           {navItemsLeftPage.map((item: HeaderType) => (
-            <a key={item.id} href={item.link ? `../${item.link}` : ""}>
-              <button
-                className={stls.navigationButton}
-                id={`header_pages${item.id}`}
-                style={{
-                  border: `4px solid ${colors.beta}`,
-                  color: colors.beta,
-                }}
-              >
-                {item.name}
-              </button>
-            </a>
+            <button
+              key={item.id}
+              onClick={() => navigate(item.link)}
+              className={stls.navigationButton}
+              id={`header_pages${item.id}`}
+              style={{
+                border: `4px solid ${colors.beta}`,
+                color: colors.beta,
+              }}
+            >
+              {item.name}
+            </button>
           ))}
         </div>
       </Box>

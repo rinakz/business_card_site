@@ -5,7 +5,7 @@ import { ThemeContext } from "./components/context/Theme_context";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import { Main } from "./components/main";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter, useLocation } from "react-router-dom";
 import { MobileFooter } from "./components/footer";
 import { HeaderProvider } from "./components/context/Header_context";
 import useWindowSize from "./components/hooks/useWindowSize";
@@ -18,6 +18,7 @@ import { ProjectPage } from "./components/projects/ProjectPage";
 
 export function MainRouter() {
   const { theme, themeMui } = useContext(ThemeContext);
+  const location = useLocation();
 
   const { width } = useWindowSize();
 
@@ -26,6 +27,10 @@ export function MainRouter() {
   useEffect(() => {
     setMobile(width < 600);
   }, [width]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <ThemeProviderMui theme={themeMui}>

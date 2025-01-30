@@ -64,18 +64,18 @@ export function Header() {
       <Toolbar sx={{ position: "absolute", width: "100%", flexWrap: "wrap" }}>
         <div className={stls.buttonHome}>
           {navItemsLeftPage.map((item: HeaderType) => (
-            <a key={item.id} href={item.link ? `../${item.link}` : ""}>
-              <button
-                className={stls.navigationButton}
-                id={`header_pages${item.id}`}
-                style={{
-                  border: `4px solid ${colors.beta}`,
-                  color: colors.beta,
-                }}
-              >
-                {item.name}
-              </button>
-            </a>
+            <button
+              key={item.id}
+              onClick={() => navigate(item.link)}
+              className={stls.navigationButton}
+              id={`header_pages${item.id}`}
+              style={{
+                border: `4px solid ${colors.beta}`,
+                color: colors.beta,
+              }}
+            >
+              {item.name}
+            </button>
           ))}
         </div>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
