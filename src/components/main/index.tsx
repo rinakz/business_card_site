@@ -18,14 +18,21 @@ export function Main() {
             <span>{t("main.im")}</span>
           </div>
           <div className={stls.contactContainer}>
-            <span className={stls.contact}>
-              <IconTg />
-              @reenakz
-            </span>
-            <span className={stls.contact}>
-              <IconMail />
-              katt-marchenko@yandex.com
-            </span>
+            <a style={{ color: "inherit" }} href="https://t.me/reenakz">
+              <span className={stls.contact}>
+                <IconTg />
+                @reenakz
+              </span>
+            </a>
+            <a
+              style={{ color: "inherit" }}
+              href="mailto:katt-marchenko@yandex.com"
+            >
+              <span className={stls.contact}>
+                <IconMail />
+                katt-marchenko@yandex.com
+              </span>
+            </a>
           </div>
         </div>
         <Slider />

@@ -56,7 +56,7 @@ function FooterContacts() {
             </a>
             <a
               style={{ color: "inherit" }}
-              href="https://www.github.com/in/rinakz"
+              href="https://www.github.com/rinakz"
             >
               <button
                 className={stls.button}
@@ -90,14 +90,21 @@ function FooterContacts() {
               minWidth: "300px",
             }}
           >
-            <span className={stls.contacts}>
-              <IconTg />
-              @reenakz
-            </span>
-            <span className={stls.contacts}>
-              <IconMail />
-              katt-marchenko@yandex.com
-            </span>
+            <a style={{ color: "inherit" }} href="https://t.me/reenakz">
+              <span className={stls.contacts}>
+                <IconTg />
+                @reenakz
+              </span>
+            </a>
+            <a
+              style={{ color: "inherit" }}
+              href="mailto:katt-marchenko@yandex.com"
+            >
+              <span className={stls.contacts}>
+                <IconMail />
+                katt-marchenko@yandex.com
+              </span>
+            </a>
           </div>
         </div>
       </div>
