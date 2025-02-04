@@ -20,13 +20,16 @@ export function Projects() {
   return (
     <div id="projects">
       <LayoutPage>
-        <div
-          className={stls.projectsPageTitle}
-          style={{
-            color: colors.beta,
-          }}
-        >
-          Проекты <IconProject width={mobile ? "50" : undefined} />
+        <div className={stls.projectsPageTitleContainer}>
+          <div style={{ minWidth: "50%" }} />
+          <div
+            className={stls.projectsPageTitle}
+            style={{
+              color: colors.beta,
+            }}
+          >
+            Проекты <IconProject width={mobile ? "50" : undefined} />
+          </div>
         </div>
         <ProjectSlider />
       </LayoutPage>

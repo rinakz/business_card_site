@@ -5,13 +5,30 @@ import Slider from "./carousel";
 import { Projects } from "../projects";
 import { IconMail } from "../icons/IconMail";
 import { IconTg } from "../icons/IconTg";
+import { Header } from "../header";
 
 export function Main() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className={stls.appContainer}>
       <div className={stls.bgMain}>
+        <div>
+          <Header />
+
+          <div
+            style={{ width: "100%", display: "flex", justifyContent: "center" }}
+          >
+            <img
+              style={{ marginTop: "-70px" }}
+              width="145px"
+              height="180px"
+              src="/photo.jpg"
+              alt="Marchenko"
+            />
+          </div>
+        </div>
+
         <div className={stls.mainContainer}>
           <div className={stls.welcome}>
             <span>{t("main.welcome")} </span>

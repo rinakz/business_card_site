@@ -29,7 +29,10 @@ export const IconSchool = ({ classNames }: TypeIconSchoolProps) => {
             d="M25.8999 22.8501H24.3799V24.3801H25.8999V22.8501Z"
             fill={colors.beta}
           />
-          <path d="M25.9 9.14014H19.8V10.6601H25.9V9.14014Z" fill={colors.beta} />
+          <path
+            d="M25.9 9.14014H19.8V10.6601H25.9V9.14014Z"
+            fill={colors.beta}
+          />
           <path
             d="M25.9001 4.56982H22.8501V6.08982H25.9001V4.56982Z"
             fill={colors.beta}
@@ -43,7 +46,10 @@ export const IconSchool = ({ classNames }: TypeIconSchoolProps) => {
             fill={colors.beta}
           />
           <path d="M22.85 13.71H19.8V15.23H22.85V13.71Z" fill={colors.beta} />
-          <path d="M22.85 3.04004H19.8V4.57004H22.85V3.04004Z" fill={colors.beta} />
+          <path
+            d="M22.85 3.04004H19.8V4.57004H22.85V3.04004Z"
+            fill={colors.beta}
+          />
           <path
             d="M21.3299 25.8999H9.13989V27.4199H21.3299V25.8999Z"
             fill={colors.beta}
@@ -53,8 +59,14 @@ export const IconSchool = ({ classNames }: TypeIconSchoolProps) => {
             fill={colors.beta}
           />
           <path d="M19.8 15.23H16.76V16.76H19.8V15.23Z" fill={colors.beta} />
-          <path d="M19.8 7.60986H13.71V9.13986H19.8V7.60986Z" fill={colors.beta} />
-          <path d="M19.8 1.52002H16.76V3.04002H19.8V1.52002Z" fill={colors.beta} />
+          <path
+            d="M19.8 7.60986H13.71V9.13986H19.8V7.60986Z"
+            fill={colors.beta}
+          />
+          <path
+            d="M19.8 1.52002H16.76V3.04002H19.8V1.52002Z"
+            fill={colors.beta}
+          />
           <path d="M16.76 0H13.71V1.52H16.76V0Z" fill={colors.beta} />
           <path
             d="M16.76 16.7598H13.71V18.2798H16.76V16.7598Z"

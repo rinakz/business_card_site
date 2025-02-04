@@ -11,7 +11,7 @@ export const Logo = ({ classNames }: TypeLogoProps) => {
     <div className={cn(classNames)}>
       <svg
         width="60vw"
-        height="300"
+        height="280"
         viewBox="0 0 1137 394"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

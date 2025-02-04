@@ -1,5 +1,12 @@
 @use '../mixins' as m
 
+.projectsPageTitleContainer
+    display: flex
+    gap: 100px
+    @include m.media(phone, tablet, laptop)
+        flex-direction: column
+        gap: 0
+
 .projectsPageTitle
     display: flex
     font-size: 60px

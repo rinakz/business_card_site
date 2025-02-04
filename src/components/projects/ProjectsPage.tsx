@@ -9,6 +9,7 @@ import { ProjectType } from "../../types/Projects";
 import { Outlet, useMatch, useNavigate } from "react-router-dom";
 import { PATH } from "../../constants/common";
 import useWindowSize from "../hooks/useWindowSize";
+import { Header } from "../header";
 
 export function ProjectsPage() {
   const { projects } = useContext(AppContext);
@@ -28,6 +29,7 @@ export function ProjectsPage() {
 
   return (
     <div id="projects">
+      <Header />
       <LayoutPage>
         {isProjectMatch ? (
           <Outlet />

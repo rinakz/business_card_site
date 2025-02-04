@@ -1,14 +1,27 @@
 @use '../mixins' as m
 @use '../config/Colors.module.sass' as c
 
+.appContainer
+    display: flex
+    flex-direction: column
+    gap: 120px
+    @include m.media(phone)
+        gap: 40px
+
 .bgMain
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     .mainContainer
         display: flex
         justify-content: space-between
         padding: 24px
+        align-items: flex-end
         @include m.media(phone)
             flex-direction: column
             gap: 40px
+            align-items: center
 
 .contactContainer
     display: flex
@@ -27,7 +40,7 @@
     padding: 12px 24px 8px 24px
     border-radius: 40px
     height: 91px
-    font-size: 36px
+    font-size: 60px
     font-weight: bold
     display: flex
     justify-content: center
@@ -35,8 +48,8 @@
     min-width: fit-content
     span
         font-family: Font-Over !important
-    @include m.media(phone)
-        font-size: 36px
+    @include m.media(phone, tablet, laptop)
+        font-size: 28px
         padding: 8px 12px
         width: 240px
         height: auto

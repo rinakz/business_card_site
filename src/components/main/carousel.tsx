@@ -7,8 +7,14 @@ import Autoplay from "embla-carousel-autoplay";
 const technology = [
   { name: "Typescript", link: "https://www.typescriptlang.org/" },
   { name: "React", link: "https://react.dev/" },
-  { name: "MUI", link: "https://mui.com/" },
+  { name: "Vue" },
+  { name: "RTK" },
+  { name: "Zustand" },
+  { name: "TanStack Query" },
   { name: "i18next", link: "https://react.i18next.com/" },
+  { name: "PHP" },
+  { name: "Laravel" },
+
 ];
 
 const Slider = () => {

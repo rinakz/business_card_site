@@ -7,6 +7,14 @@
     @include m.media(phone)
         gap: 40px
 
+.footerTitleContainer
+    width: 100%
+    display: flex
+    gap: 100px
+    @include m.media(phone, tablet, laptop)
+        gap: 0
+        flex-direction: column
+
 .footerTitle
     width: 50%
     float: right
@@ -15,14 +23,16 @@
     align-items: end
     gap: 16px
     font-family: Font-Over !important
+    overflow: hidden
     @include m.media(phone, tablet, laptop)
         float: left
+    @include m.media(phone)
         font-size: 32px
 
 .footerInfo
     display: flex
     justify-content: space-between
-    gap: 80px
+    gap: 100px
     p
         width: 50%
         max-width: 600px

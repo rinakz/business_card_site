@@ -1,4 +1,3 @@
-import { Header } from "./components/header";
 import { ThemeProvider as ThemeProviderMui } from "@mui/material/styles";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./components/context/Theme_context";
@@ -38,8 +37,6 @@ export function MainRouter() {
         <HeaderProvider>
           <CssBaseline />
           <main>
-            <Header />
-
             <Routes>
               <Route path={PATH.main} element={<Main />} />
               {/* <Route path="/settings" element={<ThemePage />} /> */}

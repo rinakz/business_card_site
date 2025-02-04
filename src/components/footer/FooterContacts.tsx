@@ -21,7 +21,8 @@ function FooterContacts() {
   return (
     <LayoutPage>
       <div id="contacts" className={stls.footerContainer}>
-        <div style={{ width: "100%" }}>
+        <div className={stls.footerTitleContainer}>
+          <div style={{ minWidth: "50%" }} />
           <div
             className={stls.footerTitle}
             style={{
@@ -33,78 +34,90 @@ function FooterContacts() {
           </div>
         </div>
         <div className={stls.footerInfo}>
-          <p>
-            Я работаю в сфере разработки уже более четырех лет и с каждым
-            проектом я стараюсь внедрять новые технологии и следить
-            за актуальными трендами в индустрии, что помогает мне оставаться
-            на передовой инновационных решений.
-          </p>
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-            <a
-              style={{ color: "inherit" }}
-              href="https://www.linkedin.com/in/rinakz"
-            >
-              <button
-                className={stls.button}
-                style={{
-                  background: colors.beta,
-                  color: colors.alpha,
-                }}
-              >
-                linkedin
-              </button>
-            </a>
-            <a
-              style={{ color: "inherit" }}
-              href="https://www.github.com/rinakz"
-            >
-              <button
-                className={stls.button}
-                style={{
-                  background: colors.beta,
-                  color: colors.alpha,
-                }}
-              >
-                github
-              </button>
-            </a>
-            <a
-              style={{ color: "inherit" }}
-              href="https://www.gitlab.com/in/rinakz"
-            >
-              <button
-                className={stls.button}
-                style={{
-                  background: colors.beta,
-                  color: colors.alpha,
-                }}
-              >
-                gitlab
-              </button>
-            </a>
+          <div style={{ minWidth: "50%" }}>
+            <p>
+              Я работаю в сфере разработки уже более четырех лет и с каждым
+              проектом я стараюсь внедрять новые технологии и следить
+              за актуальными трендами в индустрии, что помогает мне оставаться
+              на передовой инновационных решений.
+            </p>
           </div>
           <div
             style={{
               display: "flex",
-              flexDirection: "column",
-              minWidth: "300px",
+              width: "100%",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              rowGap: "40px",
             }}
           >
-            <a style={{ color: "inherit" }} href="https://t.me/reenakz">
-              <span className={stls.contacts}>
-                <IconTg />
-                @reenakz
-              </span>
-            </a>
-            <a
-              style={{ color: "inherit" }}
-              href="mailto:katt-marchenko@yandex.com"
+            <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+              <a
+                style={{ color: "inherit" }}
+                href="https://www.linkedin.com/in/rinakz"
+              >
+                <button
+                  className={stls.button}
+                  style={{
+                    background: colors.beta,
+                    color: colors.alpha,
+                  }}
+                >
+                  linkedin
+                </button>
+              </a>
+              <a
+                style={{ color: "inherit" }}
+                href="https://www.github.com/rinakz"
+              >
+                <button
+                  className={stls.button}
+                  style={{
+                    background: colors.beta,
+                    color: colors.alpha,
+                  }}
+                >
+                  github
+                </button>
+              </a>
+              <a
+                style={{ color: "inherit" }}
+                href="https://www.gitlab.com/in/rinakz"
+              >
+                <button
+                  className={stls.button}
+                  style={{
+                    background: colors.beta,
+                    color: colors.alpha,
+                  }}
+                >
+                  gitlab
+                </button>
+              </a>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                minWidth: "300px",
+              }}
             >
-              <span className={stls.contacts}>
-                <IconMail />
-                katt-marchenko@yandex.com
-              </span>
-            </a>
+              <a style={{ color: "inherit" }} href="https://t.me/reenakz">
+                <span className={stls.contacts}>
+                  <IconTg />
+                  @reenakz
+                </span>
+              </a>
+              <a
+                style={{ color: "inherit" }}
+                href="mailto:katt-marchenko@yandex.com"
+              >
+                <span className={stls.contacts}>
+                  <IconMail />
+                  katt-marchenko@yandex.com
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

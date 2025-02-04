@@ -26,7 +26,7 @@ function ThemeProvider(props: any) {
 
   const [language, setLanguage] = useLocalStorage("language", "");
 
-  const [currentTheme, setCurrentTheme] = React.useState("light");
+  const [currentTheme, setCurrentTheme] = React.useState("dark");
   const [colors, setColors] = React.useState(colorsLight);
   const themeMui = currentTheme === "dark" ? themeDarkMui : themeLightMui;
   const toggleTheme = (theme: string) => {
@@ -54,8 +54,8 @@ function ThemeProvider(props: any) {
     if (userTheme) {
       setCurrentTheme(userTheme);
     } else {
-      setCurrentTheme("light");
-      localStorage.setItem("theme", "light");
+      setCurrentTheme("dark");
+      localStorage.setItem("theme", "dark");
     }
   }, []);
 

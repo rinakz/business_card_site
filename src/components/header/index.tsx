@@ -19,10 +19,13 @@ import { IconGhost } from "../icons/IconGhost";
 import { IconLightDots } from "../icons/IconLightDots";
 import { Logo } from "../icons/Logo";
 import { HeaderType } from "../../types/Header";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { PATH } from "../../constants/common";
+import { IconRinakzSmall } from "../icons/IconRinakzSmall";
 
 export function Header() {
   const anchorRef = React.useRef<HTMLDivElement>(null);
+  const { pathname } = useLocation();
 
   const { colors, toggleLanguage, currentTheme, toggleTheme, language } =
     useContext(ThemeContext);
@@ -44,6 +47,8 @@ export function Header() {
   );
   const [open, setOpen] = React.useState(false);
 
+  const isMainPage = pathname === PATH.main;
+
   React.useEffect(() => {
     if (language) {
       setLang(langs.filter((el) => el.sysname === language)[0]);
@@ -59,7 +64,11 @@ export function Header() {
 
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
     >
       <Toolbar sx={{ position: "absolute", width: "100%", flexWrap: "wrap" }}>
         <div className={stls.buttonHome}>
@@ -194,7 +203,7 @@ export function Header() {
         </Box>
       </Toolbar>
       <div style={{ cursor: "pointer" }} onClick={() => navigate("/")}>
-        <Logo />
+        {isMainPage ? <Logo /> : <IconRinakzSmall />}
       </div>
     </div>
   );
