@@ -17,11 +17,35 @@
   cursor: pointer
   font-family: Font-Over !important
 
-.navigationIcon 
-    border-radius: 20px
-    padding: 12px 20px
-    height: 40px
+.navigationIcon
+  border-radius: 20px
+  padding: 12px 20px
+  height: 40px
+  display: flex
+  align-items: center
+  background: transparent
+  cursor: pointer
+
+.langList
+  display: flex
+  flex-direction: column
+  gap: 16px
+  padding: 20px
+  width: 107px
+  border-radius: 20px
+  align-items: center
+  span
+    font-family: Font-Over !important
+  .listItem
+    transition: transform 0.3s ease
+    width: 100%
     display: flex
     align-items: center
-    background: transparent
-    cursor: pointer
+    justify-content: center
+    border-radius: 16px
+    :hover
+      background: #879EB8
+      width: 100%
+      justify-content: center
+      display: flex
+      border-radius: 16px

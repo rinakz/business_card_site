@@ -4,14 +4,7 @@ import Toolbar from "@mui/material/Toolbar";
 import { useContext } from "react";
 import { ThemeContext } from "../context/Theme_context";
 import stls from "../../styles/components/Headers.module.sass";
-import {
-  ClickAwayListener,
-  Grow,
-  List,
-  ListItem,
-  ListItemButton,
-  Popper,
-} from "@mui/material";
+import { ClickAwayListener, Grow, Popper } from "@mui/material";
 import { HeaderContext } from "../context/Header_context";
 import { IconPackman } from "../icons/IconPackman";
 import { IconDarkDots } from "../icons/IconDarkDots";
@@ -46,6 +39,7 @@ export function Header() {
     }
   );
   const [open, setOpen] = React.useState(false);
+  const [hover, setHover] = React.useState(false);
 
   const isMainPage = pathname === PATH.main;
 
@@ -122,6 +116,7 @@ export function Header() {
                 style={{
                   display: "flex",
                   alignItems: "center",
+                  gap: "10px",
                 }}
                 onClick={() => toggleTheme("light")}
               >
@@ -133,6 +128,7 @@ export function Header() {
                 style={{
                   display: "flex",
                   alignItems: "center",
+                  gap: "10px",
                 }}
                 onClick={() => toggleTheme("dark")}
               >
@@ -170,33 +166,39 @@ export function Header() {
                     placement === "bottom" ? "center top" : "center bottom",
                 }}
               >
-                <List component="nav">
-                  <div>
-                    <ClickAwayListener onClickAway={handleClose}>
-                      <div
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          gap: "12px",
-                          padding: "12px",
-                        }}
-                      >
-                        {langs.map((el) => (
-                          <ListItem key={el.sysname} disablePadding>
-                            <ListItemButton
-                              onClick={() => {
-                                setLang(el);
-                                toggleLanguage(el.sysname);
-                              }}
-                            >
-                              {el.name}
-                            </ListItemButton>
-                          </ListItem>
-                        ))}
-                      </div>
-                    </ClickAwayListener>
-                  </div>
-                </List>
+                <div>
+                  <ClickAwayListener onClickAway={handleClose}>
+                    <div
+                      className={stls.langList}
+                      style={{
+                        background: colors.beta,
+                      }}
+                    >
+                      {langs.map((el) => (
+                        <div
+                          onMouseEnter={() => setHover(true)}
+                          onMouseLeave={() => setHover(false)}
+                          className={stls.listItem}
+                          style={{
+                            color: colors.alpha,
+                            cursor: "pointer",
+                            background: colors.beta,
+                          }}
+                          key={el.sysname}
+                        >
+                          <span
+                            onClick={() => {
+                              setLang(el);
+                              toggleLanguage(el.sysname);
+                            }}
+                          >
+                            {el.name}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </ClickAwayListener>
+                </div>
               </Grow>
             )}
           </Popper>
