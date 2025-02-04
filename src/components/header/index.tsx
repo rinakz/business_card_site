@@ -14,7 +14,6 @@ import { Logo } from "../icons/Logo";
 import { HeaderType } from "../../types/Header";
 import { useLocation, useNavigate } from "react-router-dom";
 import { PATH } from "../../constants/common";
-import { IconRinakzSmall } from "../icons/IconRinakzSmall";
 
 export function Header() {
   const anchorRef = React.useRef<HTMLDivElement>(null);
@@ -205,7 +204,7 @@ export function Header() {
         </Box>
       </Toolbar>
       <div style={{ cursor: "pointer" }} onClick={() => navigate("/")}>
-        {isMainPage ? <Logo /> : <IconRinakzSmall />}
+        <Logo width={isMainPage ? "undefined" : "40vh"} />
       </div>
     </div>
   );

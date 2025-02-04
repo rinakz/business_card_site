@@ -1,16 +1,17 @@
-import cn from "classnames";
 import { useContext } from "react";
 import { ThemeContext } from "../context/Theme_context";
 
-type TypeLogoProps = any;
+type TypeLogoProps = {
+  width?: string;
+};
 
-export const Logo = ({ classNames }: TypeLogoProps) => {
+export const Logo = ({ width }: TypeLogoProps) => {
   const { colors } = useContext(ThemeContext);
 
   return (
-    <div className={cn(classNames)}>
+    <div>
       <svg
-        width="60vw"
+        width={width ? width : "60vh"}
         height="280"
         viewBox="0 0 1137 394"
         fill="none"
