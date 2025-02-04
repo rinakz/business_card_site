@@ -11,7 +11,7 @@ export const Logo = ({ width }: TypeLogoProps) => {
   return (
     <div>
       <svg
-        width={width ? width : "60vh"}
+        width={width? width : "60vw"}
         height="280"
         viewBox="0 0 1137 394"
         fill="none"

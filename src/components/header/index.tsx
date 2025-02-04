@@ -204,7 +204,7 @@ export function Header() {
         </Box>
       </Toolbar>
       <div style={{ cursor: "pointer" }} onClick={() => navigate("/")}>
-        <Logo width={isMainPage ? "60vh" : "40vh"} />
+        <Logo width={isMainPage ? "60vw" : "40vw"} />
       </div>
     </div>
   );
