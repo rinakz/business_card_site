@@ -42,14 +42,7 @@ const ProjectSlider = () => {
                   border: `5px solid ${colors.alpha}`,
                 }}
               >
-                <div
-                  style={{
-                    gap: "40px",
-                    display: "flex",
-                    flexDirection: "column",
-                    height: "100%",
-                  }}
-                >
+                <div className={stls.carouselHeader}>
                   <div className={stls.carouselTitle}>
                     <span>{el.name}</span>
                     {el.icon}
