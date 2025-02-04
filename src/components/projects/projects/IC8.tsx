@@ -1,13 +1,21 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import stls from "../../../styles/components/Projects.module.sass";
 import { ThemeContext } from "../../context/Theme_context";
 import { IconPeriod } from "../../icons/IconPeriod";
 import { IconSphere } from "../../icons/IconSphere";
 import { IconPosition } from "../../icons/IconPosition";
 import { IconMountain } from "../../icons/IconMountain";
+import useWindowSize from "../../hooks/useWindowSize";
 
 export default function IC8() {
-  const { colors } = useContext(ThemeContext);
+  const { colors, currentTheme } = useContext(ThemeContext);
+  const { width } = useWindowSize();
+
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    setMobile(width < 600);
+  }, [width]);
 
   return (
     <div className={stls.projectContainer}>
@@ -75,6 +83,51 @@ export default function IC8() {
           </div>
         </div>
       </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <img
+          className={stls.imageMain}
+          src={currentTheme === "dark" ? "/Ic8Dark.png" : "/Ic8Light.png"}
+          alt="Ic8"
+        />{" "}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          gap: "80px",
+          flexWrap: "wrap",
+        }}
+      >
+        <div>
+          <img
+            className={stls.imageSecond}
+            src={currentTheme === "dark" ? "/Ic82Dark.png" : "/Ic82Light.png"}
+            alt="Ic8"
+            style={{ maxWidth: mobile ? "100%" : "500px" }}
+          />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            maxWidth: mobile ? "100%" : "50%",
+          }}
+        >
+          <img
+            className={stls.imageSecond}
+            src={currentTheme === "dark" ? "/Ic83Dark.png" : "/Ic83Light.png"}
+            alt="Ic8"
+            style={{ width: "100%" }}
+          />
+        </div>
+      </div>
+      <img
+      className={stls.banner}
+        src={
+          currentTheme === "dark" ? "/Ic8BannerDark.png" : "/Ic8BannerLight.png"
+        }
+        alt="Ic8Banner"
+      />
     </div>
   );
 }

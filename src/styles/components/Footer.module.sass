@@ -11,6 +11,7 @@
     width: 100%
     display: flex
     gap: 100px
+    overflow: hidden
     @include m.media(phone, tablet, laptop)
         gap: 0
         flex-direction: column
@@ -30,6 +31,9 @@
     @include m.media(phone)
         font-size: 32px
         width: 100%
+    @include m.media(tablet)
+        svg
+            display: none
 
 .footerInfo
     display: flex

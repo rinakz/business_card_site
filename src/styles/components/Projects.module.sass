@@ -25,7 +25,8 @@
     margin: 12px
     min-width: 405px
     @include m.media(phone)
-        min-width: 320px
+        min-width: 330px
+        margin: 4px
 
 .projectCard
     cursor: pointer
@@ -36,7 +37,6 @@
     gap: 30px
     height: 550px
     @include m.media(phone, tablet)
-        height: 650px
         gap: 20px
     .carouselTitle
         display: flex
@@ -48,6 +48,10 @@
         padding: 6px 8px 4px 8px
         height: 40px
         font-family: Font-Over !important
+        @include m.media(phone)
+            font-size: 12px
+            height: 32px
+
     .info
         display: flex
         flex-direction: column
@@ -57,6 +61,8 @@
         flex-wrap: wrap
         gap: 8px
         height: 88px
+        @include m.media(phone)
+            height: auto
 
 .projectsTitle
     display: flex
@@ -65,7 +71,7 @@
     justify-content: center
     margin-bottom: 60px
     font-family: Font-Over !important
-    margin-top: -120px
+    margin-top: -100px
 
     @include m.media(phone)
         font-size: 50px
@@ -114,9 +120,10 @@
 .projectContainer
     display: flex
     flex-direction: column
-    gap: 40px
-    margin-top: -120px
+    gap: 100px
+    margin-top: -50px
     @include m.media(phone)
+        margin-top: -120px
     .header
         display: flex
         justify-content: space-between
@@ -159,10 +166,17 @@
             width: 100%
     .imageMain
         width: 800px
+        @include m.media(tablet, laptop)
+            width: 100%
         @include m.media(phone)
             width: 300px
     .imageSecond
-        @include m.media(phone)
+        @include m.media(phone, tablet, laptop)
             width: 100%
         @include m.media(laptop)
             width: 350px
+
+.banner
+    margin: 0 -20px
+    @include m.media(laptop)
+        margin: 0 -24px

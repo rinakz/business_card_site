@@ -6,9 +6,12 @@ import { Projects } from "../projects";
 import { IconMail } from "../icons/IconMail";
 import { IconTg } from "../icons/IconTg";
 import { Header } from "../header";
+import { ThemeContext } from "../context/Theme_context";
+import { useContext } from "react";
 
 export function Main() {
   const { t } = useTranslation();
+  const { currentTheme } = useContext(ThemeContext);
 
   return (
     <div className={stls.appContainer}>
@@ -57,6 +60,10 @@ export function Main() {
 
       <Projects />
       <AboutMe />
+      <img
+        src={currentTheme === "dark" ? "/DarkBanner.png" : "/LightBanner.png"}
+        alt="banner"
+      />
     </div>
   );
 }
