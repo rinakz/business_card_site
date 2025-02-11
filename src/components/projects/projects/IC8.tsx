@@ -6,10 +6,12 @@ import { IconSphere } from "../../icons/IconSphere";
 import { IconPosition } from "../../icons/IconPosition";
 import { IconMountain } from "../../icons/IconMountain";
 import useWindowSize from "../../hooks/useWindowSize";
+import { useTranslation } from "react-i18next";
 
 export default function IC8() {
   const { colors, currentTheme } = useContext(ThemeContext);
   const { width } = useWindowSize();
+  const { t } = useTranslation();
 
   const [mobile, setMobile] = useState(false);
 
@@ -50,37 +52,30 @@ export default function IC8() {
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
               <IconSphere />
-              Сфера
+              {t("work.sphere")}
             </div>
             <span>IT</span>
           </div>
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
-              <IconPosition /> Позиция
+              <IconPosition /> {t("work.position")}
             </div>
-            <span>Старший программист</span>
+            <span>{t("work.ic8.position")}</span>
           </div>
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
-              <IconPeriod /> Период
+              <IconPeriod /> {t("work.period")}
             </div>
             <span>02/2024 — 02/2025</span>
           </div>
         </div>
         <div className={stls.infoContainer}>
           <div style={{ display: "flex", gap: "12px", marginBottom: "20px" }}>
-            <IconMountain /> Основные достижения и обязанности:
+            <IconMountain /> {t("work.title")}
           </div>
-          <div>
-            Разработан новый продукт "Админка" по управлению тарифами и
-            online-тарификации
-          </div>
-          <div>Доработан продукт сервисных заявок и управления бригадами</div>
-          <div>
-            Разработана новая web-версия продукта по использованию тарифных
-            планов широкополосного интернета с внедрением технологии Tanstack
-            Query
-          </div>
+          <div>{t("work.ic8.first")}</div>
+          <div>{t("work.ic8.second")}</div>
+          <div>{t("work.ic8.third")}</div>
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
@@ -122,7 +117,7 @@ export default function IC8() {
         </div>
       </div>
       <img
-      className={stls.banner}
+        className={stls.banner}
         src={
           currentTheme === "dark" ? "/Ic8BannerDark.png" : "/Ic8BannerLight.png"
         }

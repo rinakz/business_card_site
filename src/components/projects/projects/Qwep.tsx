@@ -5,9 +5,11 @@ import { IconPeriod } from "../../icons/IconPeriod";
 import { IconSphere } from "../../icons/IconSphere";
 import { IconPosition } from "../../icons/IconPosition";
 import { IconMountain } from "../../icons/IconMountain";
+import { useTranslation } from "react-i18next";
 
 export default function Qwep() {
   const { colors } = useContext(ThemeContext);
+  const { t } = useTranslation();
 
   return (
     <div className={stls.projectContainer}>
@@ -37,38 +39,29 @@ export default function Qwep() {
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
               <IconSphere />
-              Сфера
+              {t("work.sphere")}
             </div>
             <span>IT, b2b</span>
           </div>
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
-              <IconPosition /> Позиция
+              <IconPosition /> {t("work.position")}
             </div>
-            <span>Frontend-разработчик</span>
+            <span> {t("work.qwep.position")}</span>
           </div>
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
-              <IconPeriod /> Период
+              <IconPeriod /> {t("work.period")}
             </div>
             <span>09/2022 — 06/2024</span>
           </div>
         </div>
         <div className={stls.infoContainer}>
           <div style={{ display: "flex", gap: "12px", marginBottom: "20px" }}>
-            <IconMountain /> Основные достижения и обязанности:
+            <IconMountain /> {t("work.title")}
           </div>
-          <div>
-            Полная переработка и запуск новой веб-версии платформенных
-            приложений, выполненная в команде с коллегой-разработчиком. Проект
-            включал переписывание приложений с нуля, что обеспечило улучшенную
-            производительность, современный пользовательский интерфейс и более
-            высокую масштабируемость системы.
-          </div>
-          <div>
-            Разработка дополнительного функционала для приложений в качестве
-            продолжающейся.
-          </div>
+          <div>{t("work.qwep.first")}</div>
+          <div>{t("work.qwep.second")}</div>
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>

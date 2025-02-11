@@ -5,14 +5,16 @@ import { IconPeriod } from "../../icons/IconPeriod";
 import { IconSphere } from "../../icons/IconSphere";
 import { IconPosition } from "../../icons/IconPosition";
 import { IconMountain } from "../../icons/IconMountain";
+import { useTranslation } from "react-i18next";
 
 export default function FGK() {
   const { colors } = useContext(ThemeContext);
+  const { t } = useTranslation();
 
   return (
     <div className={stls.projectContainer}>
       <div className={stls.header}>
-        <div className={stls.projectTitle}>Федеральная грузовая компания</div>
+        <div className={stls.projectTitle}> {t("card.fgk")}</div>
         <div className={stls.techContainer}>
           <div style={{ display: "flex", flexWrap: "wrap", rowGap: "10px" }}>
             {["Php", "Laravel", "Vue", "Ant-design", "Backend", "Frontend"].map(
@@ -37,46 +39,31 @@ export default function FGK() {
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
               <IconSphere />
-              Сфера
+              {t("work.sphere")}
             </div>
             <span>Logistics</span>
           </div>
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
-              <IconPosition /> Позиция
+              <IconPosition /> {t("work.position")}
             </div>
-            <span>Программист</span>
+            <span>{t("work.fgk.position")}</span>
           </div>
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
-              <IconPeriod /> Период
+              <IconPeriod /> {t("work.period")}
             </div>
             <span>06/2023 — 02/2024</span>
           </div>
         </div>
         <div className={stls.infoContainer}>
-          <div style={{ display: "flex", gap: "12px", marginBottom: '20px' }}>
-            <IconMountain /> Основные достижения и обязанности:
+          <div style={{ display: "flex", gap: "12px", marginBottom: "20px" }}>
+            <IconMountain /> {t("work.title")}
           </div>
-          <div>
-            Разработка и дизайн пользовательских интерфейсов для кабинетов
-            менеджеров и клиентов, с использованием Vue.js.
-          </div>
-          <div>
-            Реализовала адаптивный, интуитивно понятный дизайн, улучшающий
-            пользовательский опыт и повышающий производительность работы
-            менеджеров.
-          </div>
-          <div>
-            Самостоятельная разработка и оптимизация бэкенда. Улучшила
-            архитектуру серверной части, оптимизировала запросы к базе данных
-            и API, обеспечив высокую производительность и надёжность системы.
-          </div>
-          <div>
-            Создание интегрированной разработческой среды (IDE) с помощью
-            Vue.js для внутреннего использования командой менеджеров. Эта
-            платформа позволила ускорить процесс расчетов.
-          </div>
+          <div>{t("work.fgk.first")}</div>
+          <div>{t("work.fgk.second")}</div>
+          <div>{t("work.fgk.third")}</div>
+          <div>{t("work.fgk.fourth")}</div>
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>

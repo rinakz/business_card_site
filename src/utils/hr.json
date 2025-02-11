@@ -16,6 +16,30 @@
         "projects": "Projekti",
         "pet": "Osobni projekti"
       },
+      "work": {
+        "position": "Pozicija",
+        "period": "Razdoblje",
+        "sphere": "Podrucje",
+        "title": "Ključna postignuća i odgovornosti:",
+        "ic8": {
+          "position": "Viši programer",
+          "first": "Razvijen novi proizvod \"Administracijska ploča\" za upravljanje tarifama i online tarifiranje",
+          "second": "Unaprijeđen proizvod za servisne zahtjeve i upravljanje timovima",
+          "third": "Razvijena nova web verzija proizvoda za korištenje tarifnih planova širokopojasnog interneta s implementacijom tehnologije Tanstack Query"
+        },
+        "fgk": {
+          "position": "Programer",
+          "first": "Razvoj i dizajn korisničkih sučelja za nadzorne ploče menadžera i klijenata, korištenjem Vue.js.",
+          "second": "Implementiran responzivan, intuitivan dizajn koji poboljšava korisničko iskustvo i povećava produktivnost menadžera.",
+          "third": "Samostalan razvoj i optimizacija backenda. Poboljšana arhitektura poslužiteljske strane, optimizirani upiti za bazu podataka i API, osiguravajući visoke performanse i pouzdanost sustava.",
+          "fourth": "Izrada integriranog razvojnog okruženja (IDE) pomoću Vue.js za internu upotrebu od strane tima menadžera. Ova platforma ubrzala je proces izračuna."
+        },
+        "qwep": {
+          "position": "Frontend programer",
+          "first": "Potpuna prerada i pokretanje nove web verzije platformnih aplikacija, dovršeno u timu s kolegom programerom. Projekt je uključivao prepisivanje aplikacija od nule, što je rezultiralo poboljšanim performansama, modernim korisničkim sučeljem i većom skalabilnošću sustava.",
+          "second": "Razvoj dodatnih funkcionalnosti za aplikacije kao kontinuirani zadatak."
+        }
+      },
       "footer": {
         "info": "Radim u području razvoja softvera već pet godina i sa svakim projektom nastojim implementirati nove tehnologije i pratiti aktualne trendove u industriji. To mi pomaže da ostanem u vrhu inovativnih rješenja."
       },

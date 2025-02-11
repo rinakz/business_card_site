@@ -23,6 +23,30 @@
       "footer": {
         "info": "I've been working in software development for five years, and with each project, I strive to implement new technologies and stay updated on industry trends. This helps me remain at the forefront of innovative solutions."
       },
+      "work": {
+        "position": "Position",
+        "period": "Period",
+        "sphere": "Sphere",
+        "title": "Key Achievements and Responsibilities:",
+        "IC8": {
+          "position": "Senior Programmer",
+          "first": "Developed a new product \"Admin Panel\" for managing tariffs and online tariff's settings",
+          "second": "Improved the product for service requests and team management",
+          "third": "Developed a new web version of the broadband internet tariff plan product, implementing Tanstack Query technology"
+        },
+        "fgk": {
+          "position": "Programmer",
+          "first": "Development and design of user interfaces for manager and client dashboards using Vue.js.",
+          "second": "Implemented a responsive, intuitive design that improves user experience and increases manager productivity.",
+          "third": "Independent development and optimization of the backend. Improved server-side architecture, optimized database queries and API, ensuring high performance and system reliability.",
+          "fourth": "Creation of an integrated development environment (IDE) using Vue.js for internal use by the management team. This platform accelerated the calculation process."
+        },
+        "qwep": {
+          "position": "Frontend Developer",
+          "first": "Complete redesign and launch of a new web version of platform applications, completed in a team with a fellow developer. The project involved rewriting the applications from scratch, resulting in improved performance, a modern user interface, and greater system scalability.",
+          "second": "Development of additional functionality for applications as an ongoing task."
+        }
+      },
       "aboutMe": {
         "name": "Name:",
         "Ekaterina": "Ekaterina",
