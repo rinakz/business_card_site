@@ -46,30 +46,30 @@ function AppProvider(props: any) {
 
   const projects: ProjectType[] = [
     {
-      name: "Айси Эйт",
+      name: t("card.ic8"),
       link: "IC8",
       color: colors.beta,
       technologies: ["React", "Typescript", "Frontend"],
       sphere: "IT",
-      task: "в 2024 году разрабатывала приложение для технических специалистов по упавлению бригадами, запустили новую web-версию продукта по использованию широкополосного интернета",
+      task: t("card.ic8Do"),
       icon: <IconPhone />,
     },
     {
-      name: "Федеральная грузовая компания",
+      name: t("card.fgk"),
       link: "railfgk",
       color: colors.delta,
       technologies: ["Php", "Laravel", "Vue", "Backend", "Frontend"],
       sphere: "Logistic",
-      task: "разрабатывала кабинеты менеджеров и клиентов, самостоятельно дорабатывала бэк. Я открыла для себя Vue в коммерческой разработке, написала с помощью него IDE.",
+      task: t("card.fgkDo"),
       icon: <IconComputer />,
     },
     {
-      name: "КВЭП",
+      name: t("card.qwep"),
       link: "qwep",
       color: colors.gamma,
       technologies: ["React", "Typescript", "SQL", "Frontend"],
       sphere: "IT, b2b",
-      task: "в 2023 году мы переписали приложения платформы с нуля и успешно запустили новую web-версию. продолжаю разрабатывать функционал приложений QWEP в дополнение к основной работе.",
+      task: t("card.qwepDo"),
       icon: <IconComp />,
     },
     // {

@@ -1,103 +1,121 @@
 {
-    "hr": {
-      "translation": {
-        "main": {
-            "hello": "KATJA MARČENKO", 
-            "katya": "Katja", 
-            "frontendDeveloper": "FRONTEND DEVELOPER",
-            "welcome": "Dobrodošli na web stranicu moje posjetnice.",
-            "im": "Ja sam front-end programer koji voli stvarati nešto novo i drugačije.",
-            "more": "više detalja"
-        },
-        "header": {
-            "aboutMe": "O meni", 
-            "contacts": "Kontakti",
-            "projects": "Projekti"
-        },
-        "drawer": {
-          "myHome": "Soba",
-          "settings": "Postavke",
-          "changeTheme": "Odaberite temu"
+  "hr": {
+    "translation": {
+      "main": {
+        "hello": "KATJA MARČENKO",
+        "katya": "Katja",
+        "frontendDeveloper": "FRONTEND DEVELOPER",
+        "welcome": "Dobrodošli na web stranicu moje posjetnice.",
+        "im": "Ja sam front-end programer koji voli stvarati nešto novo i drugačije.",
+        "more": "više detalja",
+        "talk": "Pricamo?"
+      },
+      "header": {
+        "aboutMe": "O meni",
+        "contacts": "Kontakti",
+        "projects": "Projekti",
+        "pet": "Osobni projekti"
+      },
+      "footer": {
+        "info": "Radim u području razvoja softvera već pet godina i sa svakim projektom nastojim implementirati nove tehnologije i pratiti aktualne trendove u industriji. To mi pomaže da ostanem u vrhu inovativnih rješenja."
+      },
+      "drawer": {
+        "myHome": "Soba",
+        "settings": "Postavke",
+        "changeTheme": "Odaberite temu"
       },
       "aboutMe": {
-        "name": "Ime: Ekaterina", 
-        "city": "Grad: Moskva",
-        "education": "Obrazovanje: Više",
-        "years": "Dob: < 30", 
-        "capricorn": "Zodijački znak: Jarac",
-        "spec": "Specijalizacija: Programer"
-    },
+        "name": "Ime:",
+        "Ekaterina": "Ekaterina",
+        "city": "Grad:",
+        "Moscow": "Moskva",
+        "education": "Obrazovanje:",
+        "higher": "Više",
+        "years": "Dob:",
+        "zodiac": "Zodijački znak:",
+        "capricorn": "Jarac",
+        "spec": "Specijalizacija:",
+        "programer": "Programer"
+      },
+      "card": {
+        "ic8": "IC8",
+        "sphere": "Područje:",
+        "whatDoing": "Što sam radila:",
+        "ic8Do": "U 2024. godini razvijala sam aplikaciju za tehničke stručnjake za upravljanje timovima i pokrenuli smo novu web verziju proizvoda za korištenje širokopojasnog interneta.",
+        "fgk": "Federal Freight Company",
+        "fgkDo": "Razvijala sam nadzorne ploče za menadžere i klijente, samostalno sam dorađivala backend. Otkrila sam Vue u komercijalnom razvoju i napisala IDE koristeći ga.",
+        "qwep": "qwep",
+        "qwepDo": "U 2023. godini prepisali smo aplikacije platforme od nule i uspješno pokrenuli novu web verziju. Nastavljam razvijati funkcionalnost aplikacija QWEP uz glavni posao."
+      },
       "story": {
-        "work": "«Znaš da ćeš biti mega senjorka»", 
+        "work": "«Znaš da ćeš biti mega senjorka»",
         "kanal": "2022. pokrenula je najunikatniji IT kanal «Что-то на джуновском» (“Something in Junior”)",
         "shiba": "Vladar lokalnih digitalnih zemalja i lisica",
         "croatia": "Glavni životni cilj je preseliti se u Hrvatsku",
         "Work": {
-            "start": "Uranjajući u podrijetlo, vrijedi napomenuti da sam rođena u Moskvi na petak 13. i da sam se tijekom djetinjstva petljala s računalima sa svojom braćom. Najstariji od nas je profesor informatike. U školi sam učila u razredu <b>fizike i matematike</b>.",
-            "education": "Visoko obrazovanje stekla je na Ruskom sveučilištu za kooperaciju, obranivši diplomu s odličnim ocjenama.",
-            "js": "Uspješno je završila i školu programiranja te stekla diplomu <b>JavaScript developera</b>.",
-            "frontend": "Trenutno se razvijam <b>oko pet godina</b>. Rado preuzimam dodatne projekte i stalno se razvijam.",
-            "lib": "Moj prvi osobni projekt bila je elektronička knjižnica. Dok sam tražila posao, morala sam se zauzeti pa sam počela pisati.",
-            "friend": "Ovu ideju predložili su moji prijatelji:",
-            "whantLib": "«Želimo svoje knjige objavljivati elektronički, a također i rezervirati!».",
-            "app": "Aplikacija vam je omogućila da se registrirate, objavite vlastitu knjigu, pronađete i rezervirate onu koja vas zanima. Možete napisati komentar na knjigu ili jednostavno ostaviti ocjenu.",
-            "deploy": "Dizajn je samostalno razvila. Stvoreno sučelje bez korištenja UI biblioteka. Povezala sam bazu podataka, izbacila projekt na Heroku i voila.",
-            "offer": "Prva ponuda je u mom džepu!",
-            "dontStop": "Ne zaustavljajući se na tome, nastavila sam proučavati nove tehnologije i stvarati cool stvari.",
-            "fgk": "Jedno od zanimljivih i važnih iskustava za mene bio je rad u <b>Federal Freight Company</b> (Glavna podružnica Russian Railways).",
-            "backend": "U FFC sam razvijala accounte za menadžere i klijente i imala sam sreću naučiti PHP i Laravel te <b>samostalno razvijati back-end</b>.",
-            "vue": "Otkrila sam Vue u komercijalnom razvoju i napisala IDE pomoću njega.",
-            "qwep": "Sada sam se vratila u React i, uz svoj glavni posao, nastavljam pomagati u razvoju funkcionalnosti QWEP aplikacije. Godine 2023. ponovno smo napisali aplikacije od nule i uspješno pokrenuli ",
-            "newWeb": "novu WEB verziju."
-          },
-          "Kanal": {
-            "kanal": "Koliko god to glasno zvučalo, najvažnija stvar koju sada imam je moj kanal. Moja zamisao!",
-            "save": "Jednog dana došala sam na ideju da vodim bilješke u telegramu. Napravila sam kanal za sebe i tamo spremila korisne IT poveznice, članke i zanimljive projekte. Napravila sam neke bilješke za sebe i napisala komentare.",
-            "story": "Odjednom sam otkrila da kanal počinje dobivati pretplatnike i u tom trenutku odlučila da ću u procesu stjecanja iskustva tamo zapisivati svoje priče, postignuća i događaje iz života na poslu.",
-            "qweez": "Do oznake od <b>500 pretplatnika</b>, publika kanala postala je potpuno jasna, čak se formirala i određena zajednica. Dobili smo lokalne memeove, počeli smo održavati kvizove na kanalu, uključujući i od pretplatnika, svaki dan proučavamo različite programske jezike.",
-            "memes": "Svake srijede imamo <b>it’s Wednesday, my dudes</b>, au petak <b>Friday day</b> je dan kada pretplatnici šalju svoje memeove u komentarima. Da, da, samo u petak! Inače će biti uhićeni :)",
-            "qween": "Pretplatnici su me počeli zvati <b>Queen of Dudes</b>, beskrajno mi zahvaljivati i pisati pisma ljubavi zbog činjenice da imamo ovo nevjerojatno mjesto.",
-            "people": "Kanal je ujedinio ne samo juniors, već i iskusne programere koji pišu na raznim jezicima. Među pretplatnicima ima studenata koji tek studiraju. Također, unatoč temi kanala, ovdje ima ljudi iz potpuno različitih područja koje jednostavno zanima gledanje memeova i komunikacija, a nekima je moje iskustvo <b>motivacija za promjene u životu</b>.",
-            "stickers": "Krajem 2023. napravila sam paket naljepnica sa svojim psićem. Moj Oski je postao ambasador kanala i svačiji miljenik, bukvalno je počeo da ima fanove. I to je postao tako uspješan razvoj da je do danas <b>više od tisuću korisnika telegrama</b> instaliralo naljepnice i upotrijebilo ih više od <b>27 tisuća puta</b> - i to u manje od pola godine!"
-          },
-          "Doggy": {
-            "dog": "«Oprostite, zašto sam bio groundhopper - jer nisam imao psa!»",
-            "gh": "Počnimo s onim što je to - <b>groundhopping</b> i s čime to jedu.",
-            "beer": "Njemački čitatelji moje stranice sada bi vam rekli: s pivom i kobasicama!",
-            "stadiums": "Groundhopping je nogometno putovanje bez vezanja uz određeni klub. Prilikom odabira utakmice takvi putnici obično vode računa o tome koliko će utakmica biti zanimljiva: hoće li momčadi imati navijače koji pjevaju pjesme, hoće li povijest kluba biti fascinantna i naravno ljepota samog stadiona.",
-            "football": "Malo koga zanima sam nogomet u takvoj priči, ali su mi poznati groundhopperi koji stvarno gledaju utakmicu od prve do zadnje minute i ocjenjuju samu igru ​​i brinu se :)",
-            "club": "To je i logično, uostalom, svi smo se okupili iz jednog razloga - nogometa, pa intuitivno na sat vremena počneš brinuti koji ti je klub privlačniji.",
-            "groundhopper": "Odakle dolazi groundhopper",
-            "tired": "U pravilu je riječ o nogometnom navijaču koji je tijekom svog života proputovao mnoge gradove i zemlje za svoj klub, a svako putovanje već je postalo zamorno i nezanimljivo.",
-            "cities": "Ništa se ne mijenja svake godine: Sankt Peterburg, Tula, Rostov, Samara, Kazan...",
-            "hobby": "Svaki od ovih gradova mi se jako sviđa, ali jednostavno u njima više nemam što vidjeti. Ovako dolazite do nove aktivnosti vezane uz vaš omiljeni hobi - <b>groundhopping</b>.",
-            "loko": "Prije nekoliko godina otišala sam u Sankt Petersburg za svoj Lokomotiv, a vratila sam se Lokovoj igri u Khimkiju bez gostovanja u Moskvi (u biti dvostruki).",
-            "matches": "Tijekom ovog putovanja prisustvovala sam <b>10 nogometnih utakmica</b>u Lenjingradskoj i Tverskoj oblasti.",
-            "book": "Moj članak o jednoj od tih utakmica objavljen je u knjizi o groundhoppingu.",
-            "stat": "Do danas sam posjetila <b>više od stotinu jedinstvenih nogometnih stadiona</b> s tamošnjim utakmicama i među <b>100 najboljih</b> grondhopperi u Rusiji. 2021. sam se pridružila Ruskoj Groundhopper ligi.",
-            "buy": "Ali! Kao što je moj bivši šef rekao <b>«Žena je kupila svinju!»</b>",
-            "fox": "U kolovozu 2023. postala sam sretna vlasnica male crvene lisice. I tu su moja putovanja zaiskrila novim bojama.",
-            "meet": "Ubrzo sam počela uvoditi Oscara u nogomet. Napravila sam Oski račun na web stranici groundhopper.ru i započela je nova potraga.",
-            "dogFriendly": "Sada se moram osloniti ne samo na gore navedene čimbenike pri odabiru igre, već se trebam fokusirati i na <b>Dog Friendly</b> stadione, a takvih, nažalost, praktički nema :(",
-            "metallist": "Prva utakmica u Oscarovom životu bila je igra Metalista iz grada Korolev. Unatoč znakovima postavljenim po cijelom stadionu koji zabranjuju psima dolazak na utakmice, Oski je slobodno ušao na teritorij i mogao gledati nogomet.",
-            "belarus": "Moj je hobi postao još uzbudljiviji. Imam idealnog psa za putovanja, a Oski je već putovao sa mnom u susjednu državu - Bjelorusiju.",
-            "like": "Najnevjerojatnije je što vidim da se mojoj lisici sve to jako sviđa.",
-            "more": "Dalje više!"
+          "start": "Istražujući svoje korijene, vrijedno je spomenuti da sam rođena u Moskvi, na petak trinaesti, i da sam se tijekom djetinjstva bavila računalima zajedno sa svojom braćom. Moj najstariji brat je profesor informatike. Drugi je inženjer sigurnosti.",
+          "education": "U školi sam pohađala razred s naglaskom na <b>fiziku i matematiku</b>. Visokoškolsko obrazovanje stekla sam na Ruskom sveučilištu za kooperaciju, gdje sam diplomirala s odličnim uspjehom.",
+          "js": "Također sam uspješno završila školu programiranja i stekla diplomu <b>JavaScript programera</b>.",
+          "frontend": "Već oko <b>pet godina</b> se aktivno razvijam u struci. Volim preuzimati dodatne projekte i kontinuirano se usavršavam.",
+          "lib": "Moj prvi osobni projekt bila je elektronička knjižnica. trebalo mi je nešto čime bih se mogla zaposliti, pa sam počela pisati.",
+          "friend": "Ovu ideju predložili su moji prijatelji:",
+          "whantLib": "«Želimo svoje knjige objavljivati online i rezervirati ih!».",
+          "app": "Aplikacija omogućava registraciju, objavljivanje vlastitih knjiga, te pronalazak i rezervaciju knjiga koje vas zanimaju. Možete ostaviti komentar na knjigu ili jednostavno dati ocjenu.",
+          "deploy": "Dizajn sam razvila samostalno, bez korištenja biblioteka za korisničko sučelje. Povezala sam bazu podataka, projekt lansirala na Heroku i “voila”",
+          "offer": "Prva ponuda već je u mom džepu!",
+          "dontStop": "Nisam se zaustavila na tome, nastavila sam učiti nove tehnologije i stvarati zanimljive stvari.",
+          "fgk": "Jedno od značajnih iskustava za mene bilo je raditi u <b>Federal Freight Company</b> (Glavna podružnica Ruskog željezničkog prometa).",
+          "backend": "U FFC-u sam razvijala račune za menadžere i klijente, imala priliku učiti PHP i Laravel te <b>samostalno raditi na back-endu</b>.",
+          "vue": "Otkrila sam Vue u komercijalnom razvoju i napisala IDE koristeći ga.",
+          "qwep": "Sada sam se vratila na React, pored glavnog posla, te nastavljam pridonositi razvoju funkcionalnosti aplikacije QWEP. U 2023. godini smo aplikaciju ponovno napisali iz nule i uspješno isporučili",
+          "newWeb": "novu web verziju."
         },
-          "Croatia": {
-            "love": "Prvi put sam došala u Hrvatsku 2016. i od tog sam se trenutka zaljubila u ovu zemlju. Jako mi se sviđa klima Hrvatske, mentalitet ovih ljudi, njihova ljubav prema nogometu. Država mi jako odgovara.",
-            "zg80": "2020. <b>prevela sam s hrvatskog na ruski</b> film ZG80, o odlasku navijača zagrebačkog Dinama u Srbiju na utakmicu sa Crvenoj Zvezdoj.",
-            "friends": "Tijekom svih ovih godina stekala sam prijatelje u Zagrebu, Splitu, Osijeku, Dubrovniku. <b>Naučila sam hrvatski jezik</b>, čak sam učila i s profesorom.",
-            "twitter": "Na Twitteru sam se sprijateljila s nogometnim klubom Lokomotiva Zagreb, a SMM menadžer s klupskog računa lajkao je moje objave o Lokomotivi :)",
-            "dreams": "2023. sam se odlučila aktivno kretati, ali planove mi je pokvarila potraga za poslom u Hrvatskoj.",
-            "work": "U veljači 2024. prijavila sam se na natječaj za Frontend developera u IT tvrtki iz Zagreba. Potreban tehnološki skup bio je idealan za moj. Nekoliko dana kasnije primio sam poštom ugovor o tajnosti podataka i <b>poziv na razgovor</b>.",
-            "happy": "Bila sam nevjerojatno sretan i pripremala se doslovno danima i noćima. Mogala sam na hrvatskom pričati o event-loopu, o zatvaranjima, o svemu na svijetu.",
-            "interview": "Bio je to vrlo zanimljiv intervju. Razgovarali smo o mom iskustvu, o tehnologiji, bilo je psiholoških pitanja. Cijeli intervju trajao je 40 minuta i bio je na hrvatskom jeziku. Na kraju me HR jako pohvalila, ali ju je zbunilo što sam u Rusiji, te da bi moj preseljenje moglo trajati 4 mjeseca, po njezinom iskustvu. Dobila sam odbijenicu.",
-            "sad": "Bila sam jako uzrujan, ali sam odlučila da ću nastaviti pokušavati. U vrijeme traženja posla već sam bila našala stan u Zagrebu u blizini stadiona Lokomotiva, ali pokazalo se da je teško naći posao u Hrvatskoj"
-          } 
+        "Kanal": {
+          "kanal": "Koliko god to glasno zvučalo, najvažnija stvar koju sada imam je moj kanal. Moja zamisao!",
+          "save": "Jednog dana došala sam na ideju da vodim bilješke u telegramu. Napravila sam kanal za sebe i tamo spremila korisne IT poveznice, članke i zanimljive projekte. Napravila sam neke bilješke za sebe i napisala komentare.",
+          "story": "Odjednom sam otkrila da kanal počinje dobivati pretplatnike i u tom trenutku odlučila da ću u procesu stjecanja iskustva tamo zapisivati svoje priče, postignuća i događaje iz života na poslu.",
+          "qweez": "Do oznake od <b>500 pretplatnika</b>, publika kanala postala je potpuno jasna, čak se formirala i određena zajednica. Dobili smo lokalne memeove, počeli smo održavati kvizove na kanalu, uključujući i od pretplatnika, svaki dan proučavamo različite programske jezike.",
+          "memes": "Svake srijede imamo <b>it’s Wednesday, my dudes</b>, au petak <b>Friday day</b> je dan kada pretplatnici šalju svoje memeove u komentarima. Da, da, samo u petak! Inače će biti uhićeni :)",
+          "qween": "Pretplatnici su me počeli zvati <b>Queen of Dudes</b>, beskrajno mi zahvaljivati i pisati pisma ljubavi zbog činjenice da imamo ovo nevjerojatno mjesto.",
+          "people": "Kanal je ujedinio ne samo juniors, već i iskusne programere koji pišu na raznim jezicima. Među pretplatnicima ima studenata koji tek studiraju. Također, unatoč temi kanala, ovdje ima ljudi iz potpuno različitih područja koje jednostavno zanima gledanje memeova i komunikacija, a nekima je moje iskustvo <b>motivacija za promjene u životu</b>.",
+          "stickers": "Krajem 2023. napravila sam paket naljepnica sa svojim psićem. Moj Oski je postao ambasador kanala i svačiji miljenik, bukvalno je počeo da ima fanove. I to je postao tako uspješan razvoj da je do danas <b>više od tisuću korisnika telegrama</b> instaliralo naljepnice i upotrijebilo ih više od <b>27 tisuća puta</b> - i to u manje od pola godine!"
+        },
+        "Doggy": {
+          "dog": "«Oprostite, zašto sam bio groundhopper - jer nisam imao psa!»",
+          "gh": "Počnimo s onim što je to - <b>groundhopping</b> i s čime to jedu.",
+          "beer": "Njemački čitatelji moje stranice sada bi vam rekli: s pivom i kobasicama!",
+          "stadiums": "Groundhopping je nogometno putovanje bez vezanja uz određeni klub. Prilikom odabira utakmice takvi putnici obično vode računa o tome koliko će utakmica biti zanimljiva: hoće li momčadi imati navijače koji pjevaju pjesme, hoće li povijest kluba biti fascinantna i naravno ljepota samog stadiona.",
+          "football": "Malo koga zanima sam nogomet u takvoj priči, ali su mi poznati groundhopperi koji stvarno gledaju utakmicu od prve do zadnje minute i ocjenjuju samu igru ​​i brinu se :)",
+          "club": "To je i logično, uostalom, svi smo se okupili iz jednog razloga - nogometa, pa intuitivno na sat vremena počneš brinuti koji ti je klub privlačniji.",
+          "groundhopper": "Odakle dolazi groundhopper",
+          "tired": "U pravilu je riječ o nogometnom navijaču koji je tijekom svog života proputovao mnoge gradove i zemlje za svoj klub, a svako putovanje već je postalo zamorno i nezanimljivo.",
+          "cities": "Ništa se ne mijenja svake godine: Sankt Peterburg, Tula, Rostov, Samara, Kazan...",
+          "hobby": "Svaki od ovih gradova mi se jako sviđa, ali jednostavno u njima više nemam što vidjeti. Ovako dolazite do nove aktivnosti vezane uz vaš omiljeni hobi - <b>groundhopping</b>.",
+          "loko": "Prije nekoliko godina otišala sam u Sankt Petersburg za svoj Lokomotiv, a vratila sam se Lokovoj igri u Khimkiju bez gostovanja u Moskvi (u biti dvostruki).",
+          "matches": "Tijekom ovog putovanja prisustvovala sam <b>10 nogometnih utakmica</b>u Lenjingradskoj i Tverskoj oblasti.",
+          "book": "Moj članak o jednoj od tih utakmica objavljen je u knjizi o groundhoppingu.",
+          "stat": "Do danas sam posjetila <b>više od stotinu jedinstvenih nogometnih stadiona</b> s tamošnjim utakmicama i među <b>100 najboljih</b> grondhopperi u Rusiji. 2021. sam se pridružila Ruskoj Groundhopper ligi.",
+          "buy": "Ali! Kao što je moj bivši šef rekao <b>«Žena je kupila svinju!»</b>",
+          "fox": "U kolovozu 2023. postala sam sretna vlasnica male crvene lisice. I tu su moja putovanja zaiskrila novim bojama.",
+          "meet": "Ubrzo sam počela uvoditi Oscara u nogomet. Napravila sam Oski račun na web stranici groundhopper.ru i započela je nova potraga.",
+          "dogFriendly": "Sada se moram osloniti ne samo na gore navedene čimbenike pri odabiru igre, već se trebam fokusirati i na <b>Dog Friendly</b> stadione, a takvih, nažalost, praktički nema :(",
+          "metallist": "Prva utakmica u Oscarovom životu bila je igra Metalista iz grada Korolev. Unatoč znakovima postavljenim po cijelom stadionu koji zabranjuju psima dolazak na utakmice, Oski je slobodno ušao na teritorij i mogao gledati nogomet.",
+          "belarus": "Moj je hobi postao još uzbudljiviji. Imam idealnog psa za putovanja, a Oski je već putovao sa mnom u susjednu državu - Bjelorusiju.",
+          "like": "Najnevjerojatnije je što vidim da se mojoj lisici sve to jako sviđa.",
+          "more": "Dalje više!"
+        },
+        "Croatia": {
+          "love": "Prvi put sam došala u Hrvatsku 2016. i od tog sam se trenutka zaljubila u ovu zemlju. Jako mi se sviđa klima Hrvatske, mentalitet ovih ljudi, njihova ljubav prema nogometu. Država mi jako odgovara.",
+          "zg80": "2020. <b>prevela sam s hrvatskog na ruski</b> film ZG80, o odlasku navijača zagrebačkog Dinama u Srbiju na utakmicu sa Crvenoj Zvezdoj.",
+          "friends": "Tijekom svih ovih godina stekala sam prijatelje u Zagrebu, Splitu, Osijeku, Dubrovniku. <b>Naučila sam hrvatski jezik</b>, čak sam učila i s profesorom.",
+          "twitter": "Na Twitteru sam se sprijateljila s nogometnim klubom Lokomotiva Zagreb, a SMM menadžer s klupskog računa lajkao je moje objave o Lokomotivi :)",
+          "dreams": "2023. sam se odlučila aktivno kretati, ali planove mi je pokvarila potraga za poslom u Hrvatskoj.",
+          "work": "U veljači 2024. prijavila sam se na natječaj za Frontend developera u IT tvrtki iz Zagreba. Potreban tehnološki skup bio je idealan za moj. Nekoliko dana kasnije primio sam poštom ugovor o tajnosti podataka i <b>poziv na razgovor</b>.",
+          "happy": "Bila sam nevjerojatno sretan i pripremala se doslovno danima i noćima. Mogala sam na hrvatskom pričati o event-loopu, o zatvaranjima, o svemu na svijetu.",
+          "interview": "Bio je to vrlo zanimljiv intervju. Razgovarali smo o mom iskustvu, o tehnologiji, bilo je psiholoških pitanja. Cijeli intervju trajao je 40 minuta i bio je na hrvatskom jeziku. Na kraju me HR jako pohvalila, ali ju je zbunilo što sam u Rusiji, te da bi moj preseljenje moglo trajati 4 mjeseca, po njezinom iskustvu. Dobila sam odbijenicu.",
+          "sad": "Bila sam jako uzrujan, ali sam odlučila da ću nastaviti pokušavati. U vrijeme traženja posla već sam bila našala stan u Zagrebu u blizini stadiona Lokomotiva, ali pokazalo se da je teško naći posao u Hrvatskoj"
+        }
       }
-     }
     }
+  }
 }
-
-

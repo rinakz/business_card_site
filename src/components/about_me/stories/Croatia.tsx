@@ -11,12 +11,14 @@ import {
   IconPicture,
 } from "../../icons";
 import useWindowSize from "../../hooks/useWindowSize";
+import { useTranslation } from "react-i18next";
 
 function Croatia() {
   const { colors } = useContext(ThemeContext);
   const navigate = useNavigate();
 
   const { width } = useWindowSize();
+  const { t } = useTranslation();
 
   const [mobile, setMobile] = useState(false);
 
@@ -88,9 +90,9 @@ function Croatia() {
               color: colors.beta,
             }}
           >
-            Личные проекты
+            {t("header.pet")}
             <IconHeart width={mobile ? "50" : undefined} />
-            </span>
+          </span>
           <div>
             <div
               className={stls.projectLink}

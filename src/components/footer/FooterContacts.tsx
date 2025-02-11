@@ -6,11 +6,13 @@ import { ThemeContext } from "../context/Theme_context";
 import { IconChat } from "../icons/IconChat";
 import stls from "../../styles/components/Footer.module.sass";
 import useWindowSize from "../hooks/useWindowSize";
+import { useTranslation } from "react-i18next";
 
 function FooterContacts() {
   const { colors } = useContext(ThemeContext);
 
   const { width } = useWindowSize();
+  const { t } = useTranslation();
 
   const [mobile, setMobile] = useState(false);
 
@@ -29,18 +31,13 @@ function FooterContacts() {
               color: colors.beta,
             }}
           >
-            Поболтаем?
+            {t("main.talk")}
             <IconChat width={mobile ? "50" : undefined} />
           </div>
         </div>
         <div className={stls.footerInfo}>
           <div style={{ minWidth: "50%" }}>
-            <p>
-              Я работаю в сфере разработки уже более четырех лет и с каждым
-              проектом я стараюсь внедрять новые технологии и следить
-              за актуальными трендами в индустрии, что помогает мне оставаться
-              на передовой инновационных решений.
-            </p>
+            <p>{t("footer.info")}</p>
           </div>
           <div
             style={{

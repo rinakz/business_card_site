@@ -8,13 +8,14 @@ import { IconDinosaur } from "../icons/IconDinosaur";
 import { IconArrow } from "../icons/IconArrow";
 import { PATH } from "../../constants/common";
 import useWindowSize from "../hooks/useWindowSize";
+import { useTranslation } from "react-i18next";
 
 export function AboutMe() {
   const navigate = useNavigate();
 
   const { colors } = useContext(ThemeContext);
-
   const { width } = useWindowSize();
+  const { t } = useTranslation();
 
   const [mobile, setMobile] = useState(false);
 
@@ -39,35 +40,33 @@ export function AboutMe() {
         >
           <div style={{ display: "flex", gap: "16px", alignItems: "end" }}>
             <span className={stls.aboutMeTitle} style={{ color: colors.beta }}>
-              Обо мне
+              {t("header.aboutMe")}
             </span>
             <IconDinosaur width={mobile ? "50" : undefined} />
           </div>
 
           <div>
-            Вспоминая начало своего пути, стоит упомянуть, что я родилась
-            в Москве в пятницу 13-го и всё детство провела, занимаясь
-            компьютерами вместе с братьями. Старший из нас — преподаватель
-            информатики, второй — инженер по информационной безопасности.
+            <p
+              dangerouslySetInnerHTML={{
+                __html: `${t("story.Work.start")}`,
+              }}
+            />
+            <p
+              dangerouslySetInnerHTML={{
+                __html: `${t("story.Work.education")}`,
+              }}
+            />
+            <p dangerouslySetInnerHTML={{ __html: `${t("story.Work.js")}` }} />
             <br />
-            В школе училась в физико-математическом классе. Высшее образование
-            получила в Российском университете кооперации защитив диплом
-            на отлично.
+            <p
+              dangerouslySetInnerHTML={{
+                __html: `${t("story.Work.frontend")}`,
+              }}
+            />
             <br />
-            Также успешно прошла обучение в школе программирования, выпустившись
-            с дипломом JavaScript разработчика.
-            <br />
-            <br />
-            На текущий день занимаюсь разработкой около пяти лет.
-            <br />
-            С удовольствием берусь за дополнительные проекты и постоянно
-            развиваюсь.
-            <br />
-            <br />
-            Мой первый личный проект — это была электронная библиотека.
-            В процессе поиска работы нужно было себя чем-то занять, и я начала
-            писать. Идею подкинули подружки:
-            <br /> «Хочется выкладывать свои книги онлайн и также бронировать!»…
+            <p>{t("story.Work.lib")}</p>
+            <p>{t("story.Work.friend")}</p>
+            <p>{t("story.Work.whantLib")}..</p>
           </div>
           <div style={{ display: "flex", justifyContent: "end" }}>
             <IconArrow color={colors.beta} />

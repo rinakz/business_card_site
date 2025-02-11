@@ -18,6 +18,7 @@ import {
 import { PATH } from "../../constants/common";
 import useWindowSize from "../hooks/useWindowSize";
 import { Header } from "../header";
+import { useTranslation } from "react-i18next";
 
 export function AboutMePage() {
   const id = useMatch(PATH.aboutMe.id);
@@ -25,7 +26,7 @@ export function AboutMePage() {
   const navigate = useNavigate();
 
   const { colors } = useContext(ThemeContext);
-
+  const { t } = useTranslation();
   const { width } = useWindowSize();
 
   const [mobile, setMobile] = useState(false);
@@ -48,7 +49,7 @@ export function AboutMePage() {
                 color: colors.beta,
               }}
             >
-              Обо мне
+              {t("header.aboutMe")}
               <IconDinosaur width={mobile ? "50" : undefined} />
             </span>
             <div className={stls.content}>
@@ -64,19 +65,19 @@ export function AboutMePage() {
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
                         <IconGirl />
-                        Имя:
+                        {t("aboutMe.name")}
                       </span>
-                      <span>Екатерина</span>
+                      <span>{t("aboutMe.Ekaterina")}</span>
                     </div>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
-                        <IconSchool /> Образование:
+                        <IconSchool /> {t("aboutMe.education")}
                       </span>
-                      <span> Высшее</span>
+                      <span> {t("aboutMe.higher")}</span>
                     </div>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
-                        <IconBloknot /> Возраст:
+                        <IconBloknot /> {t("aboutMe.years")}
                       </span>
                       <span>30</span>
                     </div>
@@ -85,22 +86,22 @@ export function AboutMePage() {
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
                         <IconCity />
-                        Город:{" "}
+                        {t("aboutMe.city")}
                       </span>
-                      <span>Москва</span>
+                      <span>{t("aboutMe.Moscow")}</span>
                     </div>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
                         <IconProgrammist />
-                        Специализация:{" "}
+                        {t("aboutMe.spec")}
                       </span>
-                      <span>Программист</span>
+                      <span>{t("aboutMe.programer")}</span>
                     </div>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
-                        <IconZnak /> Знак зодиака:{" "}
+                        <IconZnak /> {t("aboutMe.zodiac")}
                       </span>
-                      <span>Козерог</span>
+                      <span>{t("aboutMe.capricorn")}</span>
                     </div>
                   </div>
                 </div>
@@ -113,35 +114,32 @@ export function AboutMePage() {
               </div>
               <div className={stls.textContainer}>
                 <div>
-                  Вспоминая начало своего пути, стоит упомянуть, что я родилась
-                  в Москве в пятницу 13-го и всё детство провела, занимаясь
-                  компьютерами вместе с братьями. информатики. В школе училась
-                  в физико-математическом классе. Высшее образование получила
-                  в Российском университете кооперации защитив диплом
-                  на отлично.
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: `${t("story.Work.start")} ${t(
+                        "story.Work.education"
+                      )} `,
+                    }}
+                  />
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: `${t("story.Work.js")}`,
+                    }}
+                  />
                   <br />
-                  Также успешно прошла обучение в школе программирования,
-                  выпустившись с дипломом JavaScript разработчика.
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: `${t("story.Work.frontend")} ${t(
+                        "story.Work.lib"
+                      )} ${t("story.Work.friend")}`,
+                    }}
+                  />
+                  <p>{t("story.Work.whantLib")}</p>
                   <br />
-                  <br />
-                  На текущий день занимаюсь разработкой около четырех лет.
-                  С удовольствием берусь за дополнительные проекты и постоянно
-                  развиваюсь. Мой первый личный проект — это была электронная
-                  библиотека. В процессе поиска работы нужно было себя
-                  чем-то занять, и я начала писать. Идею подкинули подружки:
-                  <br />
-                  «Хочется выкладывать свои книги электронно и также
-                  бронировать!».
-                  <br />
-                  <br />
-                  Приложение позволяло зарегистрироваться, выложить собственную
-                  книгу в общий доступ, найти и забронировать интересующую.
-                  К книге можно было написать комментарий или же просто оставить
-                  оценку. Самостоятельно разработала дизайн. Создала интерфейс
-                  без использования UI библиотек. Подключила базу данных,
-                  выкатила проект на heroku и вуаля.
-                  <br />
-                  <b>Первый оффер в кармане!</b>
+                  <p>
+                    {t("story.Work.app")} {t("story.Work.deploy")}
+                  </p>
+                  <b> {t("story.Work.offer")}</b>
                 </div>
                 <div
                   style={{
@@ -152,23 +150,24 @@ export function AboutMePage() {
                   }}
                 >
                   <div>
-                    Не остановившись на достигнутом я продолжала изучать новые
-                    технологии и создавать классные штуки.
+                    <p>{t("story.Work.dontStop")}</p>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: `${t("story.Work.fgk")} `,
+                      }}
+                    />
                     <br />
-                    Одним из интересных и важных для меня опытов стала работа
-                    в Федеральной грузовой компании.
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: `${t("story.Work.backend")} ${t(
+                          "story.Work.vue"
+                        )}`,
+                      }}
+                    />
                     <br />
-                    В ФГК я разрабатывала кабинеты менеджеров и клиентов и мне
-                    посчастливилось изучить PHP и Laravel и самостоятельно
-                    дорабатывать бэк. Я открыла для себя Vue в коммерческой
-                    разработке, написала с помощью него IDE.
-                    <br />
-                    <br />
-                    Сейчас я вернулась к React и помимо основной работы
-                    продолжаю помогать разрабатывать функционал приложений для
-                    B2B, IT компании QWEP, для которой в  2023 году совместно
-                    с коллегой-разработчиком мы переписали приложения с нуля
-                    и успешно выкатили новую WEB-версию.
+                    <p>
+                      {t("story.Work.qwep")} {t("story.Work.newWeb")}
+                    </p>
                   </div>
                   <div className={stls.mother}>
                     « mother of react »<span>©</span>{" "}
@@ -211,7 +210,7 @@ export function AboutMePage() {
                       color: colors.beta,
                     }}
                   >
-                    Личные проекты
+                    {t("header.pet")}
                     <IconHeart width={mobile ? "50" : undefined} />
                   </span>
                   <div>

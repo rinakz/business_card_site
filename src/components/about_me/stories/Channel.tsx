@@ -13,12 +13,14 @@ import {
 } from "../../icons";
 import { ChannelContent } from "./Stories.helpers";
 import useWindowSize from "../../hooks/useWindowSize";
+import { useTranslation } from "react-i18next";
 
 function Channel() {
   const { colors } = useContext(ThemeContext);
   const navigate = useNavigate();
 
   const { width } = useWindowSize();
+  const { t } = useTranslation();
 
   const [mobile, setMobile] = useState(false);
 
@@ -115,7 +117,7 @@ function Channel() {
               color: colors.beta,
             }}
           >
-            Личные проекты
+            {t("header.pet")}
             <IconHeart width={mobile ? "50" : undefined} />
           </span>
           <div>

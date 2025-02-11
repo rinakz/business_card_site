@@ -8,10 +8,12 @@ import { ProjectType } from "../../types/Projects";
 import { PATH } from "../../constants/common";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { useTranslation } from "react-i18next";
 
 const ProjectSlider = () => {
   const { projects } = useContext(AppContext);
   const { colors } = useContext(ThemeContext);
+  const { t } = useTranslation();
 
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
@@ -70,11 +72,11 @@ const ProjectSlider = () => {
                   }}
                 >
                   <div className={stls.info}>
-                    <b>Сфера:</b>
+                    <b>{t("card.sphere")}</b>
                     <span>{el.sphere}</span>
                   </div>
                   <div className={stls.info}>
-                    <b>Что делала:</b>
+                    <b>{t("card.whatDoing")}</b>
                     <span>{el.task}</span>
                   </div>
                 </div>

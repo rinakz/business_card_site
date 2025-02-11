@@ -5,10 +5,11 @@ import ProjectSlider from "./Carousel";
 import { ThemeContext } from "../context/Theme_context";
 import stls from "../../styles/components/Projects.module.sass";
 import useWindowSize from "../hooks/useWindowSize";
+import { useTranslation } from "react-i18next";
 
 export function Projects() {
   const { colors } = useContext(ThemeContext);
-
+  const { t } = useTranslation();
   const { width } = useWindowSize();
 
   const [mobile, setMobile] = useState(false);
@@ -28,7 +29,8 @@ export function Projects() {
               color: colors.beta,
             }}
           >
-            Проекты <IconProject width={mobile ? "50" : undefined} />
+            {t("header.projects")}
+            <IconProject width={mobile ? "50" : undefined} />
           </div>
         </div>
         <ProjectSlider />

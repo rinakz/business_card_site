@@ -10,10 +10,13 @@ import { Outlet, useMatch, useNavigate } from "react-router-dom";
 import { PATH } from "../../constants/common";
 import useWindowSize from "../hooks/useWindowSize";
 import { Header } from "../header";
+import { useTranslation } from "react-i18next";
 
 export function ProjectsPage() {
   const { projects } = useContext(AppContext);
   const { colors } = useContext(ThemeContext);
+  const { t } = useTranslation();
+
   const navigate = useNavigate();
 
   const id = useMatch(PATH.projects.id);
@@ -41,7 +44,8 @@ export function ProjectsPage() {
                 color: colors.beta,
               }}
             >
-              Проекты <IconProject width={mobile ? "50" : undefined} />
+              {t("header.projects")}
+              <IconProject width={mobile ? "50" : undefined} />
             </div>
 
             <div
