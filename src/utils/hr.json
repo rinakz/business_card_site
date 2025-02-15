@@ -75,7 +75,7 @@
         "work": "«Znaš da ćeš biti mega senjorka»",
         "kanal": "2022. pokrenula je najunikatniji IT kanal «Что-то на джуновском» (“Something in Junior”)",
         "shiba": "Vladar lokalnih digitalnih zemalja i lisica",
-        "croatia": "Glavni životni cilj je preseliti se u Hrvatsku",
+        "croatia": "Glavni zivotni cilj je preseliti se u Hrvatsku",
         "Work": {
           "start": "Istražujući svoje korijene, vrijedno je spomenuti da sam rođena u Moskvi, na petak trinaesti, i da sam se tijekom djetinjstva bavila računalima zajedno sa svojom braćom. Moj najstariji brat je profesor informatike. Drugi je inženjer sigurnosti.",
           "education": "U školi sam pohađala razred s naglaskom na <b>fiziku i matematiku</b>. Visokoškolsko obrazovanje stekla sam na Ruskom sveučilištu za kooperaciju, gdje sam diplomirala s odličnim uspjehom.",
@@ -95,6 +95,13 @@
           "newWeb": "novu web verziju."
         },
         "Kanal": {
+          "name": "ime",
+          "theme": "tema",
+          "it": "IT, obrazovanje i humor",
+          "quantity": ">700 ljudi",
+          "devis": "Terry Davis u suknji",
+          "audience": "publika",
+          "slogan": "slogan",
           "kanal": "Koliko god to glasno zvučalo, najvažnija stvar koju sada imam je moj kanal. Moja zamisao!",
           "save": "Jednog dana došala sam na ideju da vodim bilješke u telegramu. Napravila sam kanal za sebe i tamo spremila korisne IT poveznice, članke i zanimljive projekte. Napravila sam neke bilješke za sebe i napisala komentare.",
           "story": "Odjednom sam otkrila da kanal počinje dobivati pretplatnike i u tom trenutku odlučila da ću u procesu stjecanja iskustva tamo zapisivati svoje priče, postignuća i događaje iz života na poslu.",
@@ -105,6 +112,11 @@
           "stickers": "Krajem 2023. napravila sam paket naljepnica sa svojim psićem. Moj Oski je postao ambasador kanala i svačiji miljenik, bukvalno je počeo da ima fanove. I to je postao tako uspješan razvoj da je do danas <b>više od tisuću korisnika telegrama</b> instaliralo naljepnice i upotrijebilo ih više od <b>27 tisuća puta</b> - i to u manje od pola godine!"
         },
         "Doggy": {
+          "name": "groundhopper",
+          "groundhopping": "groundhopping",
+          "description": "nogometno putovanje",
+          "top": "top 100 rusija",
+          "slogan": "slogan",
           "dog": "«Oprostite, zašto sam bio groundhopper - jer nisam imao psa!»",
           "gh": "Počnimo s onim što je to - <b>groundhopping</b> i s čime to jedu.",
           "beer": "Njemački čitatelji moje stranice sada bi vam rekli: s pivom i kobasicama!",
@@ -129,6 +141,10 @@
           "more": "Dalje više!"
         },
         "Croatia": {
+          "name": "cilj",
+          "like": "svida",
+          "goal": "Preseljenje u Hrvatsku",
+          "climate": "Klima, ljudi i nogomet",
           "love": "Prvi put sam došala u Hrvatsku 2016. i od tog sam se trenutka zaljubila u ovu zemlju. Jako mi se sviđa klima Hrvatske, mentalitet ovih ljudi, njihova ljubav prema nogometu. Država mi jako odgovara.",
           "zg80": "2020. <b>prevela sam s hrvatskog na ruski</b> film ZG80, o odlasku navijača zagrebačkog Dinama u Srbiju na utakmicu sa Crvenoj Zvezdoj.",
           "friends": "Tijekom svih ovih godina stekala sam prijatelje u Zagrebu, Splitu, Osijeku, Dubrovniku. <b>Naučila sam hrvatski jezik</b>, čak sam učila i s profesorom.",

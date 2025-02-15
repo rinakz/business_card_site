@@ -36,7 +36,7 @@ function Doggy() {
           color: colors.zeta,
         }}
       >
-        Правительница здешних цифровых земель и лисица
+        {t("story.shiba")}
         <IconPin />
       </div>
       <div
@@ -57,30 +57,30 @@ function Doggy() {
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>
                   <IconHot />
-                  граундхоппер:
+                  {t("story.Doggy.name")}:
                 </span>
                 <span>@rinakz</span>
               </div>
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>
-                  <IconEmoji /> {mobile ? "гх" : "граундхоппинг"}:
+                  <IconEmoji /> {mobile ? "gh" : t("story.Doggy.groundhopping")}:
                 </span>
-                <span>футбольные путешествия</span>
+                <span> {t("story.Doggy.description")}:</span>
               </div>
             </div>{" "}
             <div style={{ display: "flex", gap: "24px" }}>
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>
                   <IconUser />
-                  топ-100 россии:
+                  {t("story.Doggy.top")}:
                 </span>
                 <span>#70</span>
               </div>
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>
-                  <IconGhChat /> слоган:
+                  <IconGhChat /> {t("story.Doggy.slogan")}:
                 </span>
-                <span>Дальше - больше!</span>
+                <span>{t("story.Doggy.more")}</span>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ function Doggy() {
               className={stls.projectLink}
               onClick={() => navigate("/about_me/channel")}
             >
-              С 2022 году запустила уникальний IT-канал «Что-то на джуновском»
+              {t("story.kanal")}
               <IconArrowBottom />
             </div>
             <hr />
@@ -123,7 +123,7 @@ function Doggy() {
               className={stls.projectLink}
               onClick={() => navigate("/about_me/croatia")}
             >
-              Основная жизненная цель — переезд в Хорватию
+              {t("story.croatia")}
               <IconArrowBottom />
             </div>
             <hr />

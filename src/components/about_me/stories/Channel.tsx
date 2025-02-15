@@ -36,8 +36,7 @@ function Channel() {
           color: colors.zeta,
         }}
       >
-        в 2022 году запустила уникальный IT-канал «Что-то на джуновском»
-        <IconKanal />
+        {t("story.kanal")} <IconKanal />
       </div>
       <div
         style={{
@@ -61,7 +60,7 @@ function Channel() {
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>
                   <IconHot />
-                  название:
+                  {t("story.Kanal.name")}:
                 </span>
                 <a style={{ color: "inherit" }} href="https://t.me/reenakz">
                   <span>@lonely_junior</span>
@@ -69,24 +68,24 @@ function Channel() {
               </div>
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>
-                  <IconEmoji /> тема:
+                  <IconEmoji /> {t("story.Kanal.theme")}:
                 </span>
-                <span>IT образование и юмор</span>
+                <span> {t("story.Kanal.it")}</span>
               </div>
             </div>{" "}
             <div style={{ display: "flex", gap: "24px" }}>
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>
                   <IconUser />
-                  аудитория:
+                  {t("story.Kanal.audience")}:
                 </span>
-                <span>&gt; 600 человек</span>
+                <span> {t("story.Kanal.quantity")} </span>
               </div>
               <div className={stls.cardInfo}>
                 <span className={stls.textContainer}>
-                  <IconGhChat /> слоган:
+                  <IconGhChat /> {t("story.Kanal.slogan")} :
                 </span>
-                <span>Терри Дэвис в юбке</span>
+                <span> {t("story.Kanal.devis")} </span>
               </div>
             </div>
           </div>
@@ -125,7 +124,7 @@ function Channel() {
               className={stls.projectLink}
               onClick={() => navigate("/about_me/shiba")}
             >
-              Правительница здешних цифровых земель и лисица
+              {t("story.shiba")}
               <IconArrowBottom />
             </div>
             <hr />
@@ -133,7 +132,7 @@ function Channel() {
               className={stls.projectLink}
               onClick={() => navigate("/about_me/croatia")}
             >
-              Основная жизненная цель — переезд в Хорватию
+              {t("story.croatia")}
               <IconArrowBottom />
             </div>
             <hr />

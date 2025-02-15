@@ -218,8 +218,7 @@ export function AboutMePage() {
                       className={stls.projectLink}
                       onClick={() => navigate("channel")}
                     >
-                      С 2022 году запустила уникальний IT-канал «Что-то на
-                      джуновском»
+                      {t("story.kanal")}
                       <IconArrowBottom />
                     </div>
                     <hr />
@@ -227,7 +226,7 @@ export function AboutMePage() {
                       className={stls.projectLink}
                       onClick={() => navigate("shiba")}
                     >
-                      Правительница здешних цифровых земель и лисица
+                      {t("story.shiba")}
                       <IconArrowBottom />
                     </div>
                     <hr />
@@ -235,7 +234,7 @@ export function AboutMePage() {
                       className={stls.projectLink}
                       onClick={() => navigate("croatia")}
                     >
-                      Основная жизненная цель — переезд в Хорватию
+                      {t("story.croatia")}
                       <IconArrowBottom />
                     </div>
                     <hr />

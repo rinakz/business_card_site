@@ -34,7 +34,7 @@ function Croatia() {
           color: colors.zeta,
         }}
       >
-        Основная жизненная цель — переезд в Хорватию
+        {t("story.croatia")}
         <IconLife />
       </div>
       <div
@@ -52,15 +52,15 @@ function Croatia() {
             <div className={stls.cardInfo}>
               <span className={stls.textContainer}>
                 <IconFinder />
-                Цель
+                {t("story.Croatia.name")}:
               </span>
-              <span>Переезд в Хорватию</span>
+              <span> {t("story.Croatia.goal")}</span>
             </div>
             <div className={stls.cardInfo}>
               <span className={stls.textContainer}>
-                <IconPicture /> Нравится
+                <IconPicture />  {t("story.Croatia.like")}:
               </span>
-              <span>Климат, люди, футбол</span>
+              <span> {t("story.Croatia.climate")}</span>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ function Croatia() {
               className={stls.projectLink}
               onClick={() => navigate("/about_me/channel")}
             >
-              С 2022 году запустила уникальний IT-канал «Что-то на джуновском»
+              {t("story.kanal")}
               <IconArrowBottom />
             </div>
             <hr />
@@ -106,7 +106,7 @@ function Croatia() {
               className={stls.projectLink}
               onClick={() => navigate("/about_me/shiba")}
             >
-              Правительница здешних цифровых земель и лисица
+              {t("story.shiba")}
               <IconArrowBottom />
             </div>
             <hr />

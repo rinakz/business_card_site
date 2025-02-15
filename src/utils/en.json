@@ -95,6 +95,13 @@
           "newWeb": "a new WEB version."
         },
         "Kanal": {
+          "name": "name",
+          "theme": "theme",
+          "it": "IT, education и humor",
+          "quantity": ">700 people",
+          "devis": "Terry Davis in a skirt",
+          "audience": "audience",
+          "slogan": "slogan",
           "kanal": "No matter how loud it may sound, the most important thing I have now is my channel. My brainchild!",
           "save": "One day I came up with the idea of taking notes in a telegram. I created a channel for myself and saved useful IT links, articles, and interesting projects there. I made some footnotes for myself and wrote comments.",
           "story": "I suddenly discovered that the channel was starting to gain subscribers and decided at that moment that in the process of gaining experience I would write down my stories, achievements and events from life at work there.",
@@ -105,6 +112,11 @@
           "stickers": "At the end of 2023, I created a sticker pack with my puppy. My Oski became the ambassador of the channel and everyone’s favorite, he literally began to have fans. And this became such a successful development that to date, <b>more than a thousand telegram users</b> have installed stickers, and have used them more than <b>27 thousand times</b> - and this in less than half a year!"
         },
         "Doggy": {
+          "name": "groundhopper",
+          "groundhopping": "groundhopping",
+          "description": "football travel",
+          "top": "top 100 russia",
+          "slogan": "slogan",
           "dog": "«Sorry, why was I a groundhopper - because I didn’t have a dog!»",
           "gh": "Let's start with what it is - <b>groundhopping</b> and what eat it with.",
           "beer": "German readers of my site would now tell you: with beer and sausages!",
@@ -129,6 +141,10 @@
           "more": "Will be more!"
         },
         "Croatia": {
+          "name": "goal",
+          "like": "like",
+          "goal": "Movimg to Croatia",
+          "climate": "Climate, people and football",
           "love": "The first time I came to Croatia was in 2016 and from that moment I fell in love with this country. I really like the climate of Croatia, the mentality of these people, their love for football. The country suits me very well.",
           "zg80": "In 2020, I <b>translated from Croatian into Russian</b> the film ZG80, about the trip of Dinamo Zagreb fans to Serbia for a game with Red Star.",
           "friends": "Over all these years I have made friends in Zagreb, Split, Osijek, Dubrovnik. <b>I learned the Croatian language</b>, I even studied with a tutor.",
