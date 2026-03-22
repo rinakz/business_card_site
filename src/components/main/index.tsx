@@ -8,10 +8,13 @@ import { IconTg } from "../icons/IconTg";
 import { Header } from "../header";
 import { ThemeContext } from "../context/Theme_context";
 import { useContext } from "react";
+import useWindowSize from "../hooks/useWindowSize";
 
 export function Main() {
   const { t } = useTranslation();
   const { currentTheme } = useContext(ThemeContext);
+  const { width } = useWindowSize();
+  const mobile = width < 600;
 
   return (
     <div className={stls.appContainer}>
@@ -23,7 +26,11 @@ export function Main() {
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <img
-              style={{ marginTop: "-70px", maxHeight: "300px" }}
+              style={{
+                marginTop: "-70px",
+                maxWidth: mobile ? "280px" : undefined,
+                maxHeight: mobile ? undefined : "300px",
+              }}
               src="/photo.jpg"
               alt="Marchenko"
             />

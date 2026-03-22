@@ -24,7 +24,7 @@ const Slider = () => {
 
   return (
     <div ref={emblaRef} style={{ overflow: "hidden" }}>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", gap: "10px" }}>
         {technology.map((el, idx) => (
           <div
             className={stls.tech}

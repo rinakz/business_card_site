@@ -109,7 +109,8 @@ function Channel() {
             src="/Oski.svg"
             alt="Oski"
             style={{
-              height: "300px",
+              height: mobile ? "auto" : "300px",
+              width: mobile ? "100%" : undefined,
               background: colors.beta,
             }}
           />

@@ -87,7 +87,7 @@ function AppProvider(props: any) {
     {
       name: t("card.fgk"),
       link: "railfgk",
-      color: colors.epsilon,
+      color: colors.theta,
       technologies: ["Php", "Laravel", "Vue", "Backend", "Frontend"],
       sphere: "Logistic",
       task: t("card.fgkDo"),
@@ -96,7 +96,7 @@ function AppProvider(props: any) {
     {
       name: t("card.qwep"),
       link: "qwep",
-      color: colors.theta,
+      color: colors.eta,
       technologies: ["React", "Typescript", "SQL", "Frontend"],
       sphere: "IT, b2b",
       task: t("card.qwepDo"),

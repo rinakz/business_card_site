@@ -192,7 +192,14 @@ export function AboutMePage() {
                   flexWrap: "wrap",
                 }}
               >
-                <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "24px",
+                    flexWrap: "wrap",
+                    width: mobile ? "100%" : "auto",
+                  }}
+                >
                   <img
                     style={{
                       maxHeight: "280px",
@@ -204,7 +211,7 @@ export function AboutMePage() {
                   />
                   <img
                     style={{
-                      maxHeight: "280px",
+                      maxHeight: mobile ? undefined : "280px",
                       height: "auto",
                       width: mobile ? "100%" : "auto",
                     }}
