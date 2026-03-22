@@ -13,7 +13,6 @@ import {
   IconProgrammist,
   IconSchool,
   IconZnak,
-  WithOskiAboutMe,
 } from "../icons";
 import { PATH } from "../../constants/common";
 import useWindowSize from "../hooks/useWindowSize";
@@ -57,124 +56,134 @@ export function AboutMePage() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  flexWrap: "wrap",
+                  flexWrap: mobile ? "wrap" : "nowrap",
+                  gap: "24px",
+                  alignItems: "flex-start",
                 }}
               >
-                <div style={{ display: "flex", gap: "24px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "24px",
+                    flexWrap: mobile ? "wrap" : "nowrap",
+                    width: mobile ? "100%" : "auto",
+                    flex: 1,
+                  }}
+                >
                   <div className={stls.cardsContainer}>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
                         <IconGirl />
-                        {t("aboutMe.name")}
+                        {t("aboutMe.profileNameLabel")}
                       </span>
-                      <span>{t("aboutMe.Ekaterina")}</span>
+                      <span>{t("aboutMe.profileNameValue")}</span>
                     </div>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
-                        <IconSchool /> {t("aboutMe.education")}
+                        <IconProgrammist />
+                        {t("aboutMe.profileSpecLabel")}
                       </span>
-                      <span> {t("aboutMe.higher")}</span>
+                      <span>{t("aboutMe.profileSpecValue")}</span>
                     </div>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
-                        <IconBloknot /> {t("aboutMe.years")}
+                        <IconBloknot /> {t("aboutMe.profileExpLabel")}
                       </span>
-                      <span>30</span>
+                      <span>{t("aboutMe.profileExpValue")}</span>
                     </div>
                   </div>
                   <div className={stls.cardsContainer}>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
                         <IconCity />
-                        {t("aboutMe.city")}
+                        {t("aboutMe.profileCityLabel")}
                       </span>
-                      <span>{t("aboutMe.Moscow")}</span>
+                      <span>{t("aboutMe.profileCityValue")}</span>
                     </div>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
-                        <IconProgrammist />
-                        {t("aboutMe.spec")}
+                        <IconSchool /> {t("aboutMe.profileAwardLabel")}
                       </span>
-                      <span>{t("aboutMe.programer")}</span>
+                      <span>{t("aboutMe.profileAwardValue")}</span>
                     </div>
                     <div className={stls.cardInfo}>
                       <span className={stls.card}>
-                        <IconZnak /> {t("aboutMe.zodiac")}
+                        <IconZnak /> {t("aboutMe.profileAiLabel")}
                       </span>
-                      <span>{t("aboutMe.capricorn")}</span>
+                      <span>{t("aboutMe.profileAiValue")}</span>
                     </div>
                   </div>
                 </div>
 
-                <div
-                  style={{ minWidth: "50%", width: mobile ? "100%" : "auto" }}
-                >
-                  <WithOskiAboutMe />
+                <div style={{ width: mobile ? "100%" : "40%", flexShrink: 0 }}>
+                  <img
+                    src="/aboutMe.jpeg"
+                    alt="aboutMe"
+                    style={{ width: "100%", maxHeight: "800px" }}
+                  />
                 </div>
               </div>
               <div className={stls.textContainer}>
-                <div>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `${t("story.Work.start")} ${t(
-                        "story.Work.education"
-                      )} `,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `${t("story.Work.js")}`,
-                    }}
-                  />
-                  <br />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `${t("story.Work.frontend")} ${t(
-                        "story.Work.lib"
-                      )} ${t("story.Work.friend")}`,
-                    }}
-                  />
-                  <p>{t("story.Work.whantLib")}</p>
-                  <br />
-                  <p>
-                    {t("story.Work.app")} {t("story.Work.deploy")}
-                  </p>
-                  <b> {t("story.Work.offer")}</b>
-                </div>
                 <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "16px",
-                    minWidth: "50%",
-                  }}
+                  className={stls.expSection}
+                  style={{ borderColor: colors.zeta, width: "100%" }}
                 >
-                  <div>
-                    <p>{t("story.Work.dontStop")}</p>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: `${t("story.Work.fgk")} `,
-                      }}
-                    />
-                    <br />
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: `${t("story.Work.backend")} ${t(
-                          "story.Work.vue"
-                        )}`,
-                      }}
-                    />
-                    <br />
-                    <p>
-                      {t("story.Work.qwep")} {t("story.Work.newWeb")}
-                    </p>
+                  <div className={stls.expGrid}>
+                    <article
+                      className={stls.expCard}
+                      style={{ borderColor: colors.zeta }}
+                    >
+                      <div className={stls.featureHeader}>
+                        <h3 className={stls.card}>{t("aboutMe.featureLogicTitle")}</h3>
+                        <span className={stls.featureIcon} style={{ color: colors.beta }}>
+                          <IconSchool />
+                        </span>
+                      </div>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: `${t("aboutMe.featureLogicText")}`,
+                        }}
+                      />
+                    </article>
+
+                    <article
+                      className={stls.expCard}
+                      style={{ borderColor: colors.zeta }}
+                    >
+                      <div className={stls.featureHeader}>
+                        <h3 className={stls.card}>{t("aboutMe.featureProductTitle")}</h3>
+                        <span className={stls.featureIcon} style={{ color: colors.beta }}>
+                          <IconProgrammist />
+                        </span>
+                      </div>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: `${t("aboutMe.featureProductText")}`,
+                        }}
+                      />
+                    </article>
+
+                    <article
+                      className={stls.expCard}
+                      style={{ borderColor: colors.zeta }}
+                    >
+                      <div className={stls.featureHeader}>
+                        <h3 className={stls.card}>{t("aboutMe.featureFutureTitle")}</h3>
+                        <span className={stls.featureIcon} style={{ color: colors.beta }}>
+                          <IconZnak />
+                        </span>
+                      </div>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: `${t("aboutMe.featureFutureText")}`,
+                        }}
+                      />
+                    </article>
                   </div>
-                  <div className={stls.mother}>
-                    « mother of react »<span>©</span>{" "}
-                  </div>
+                  <p className={stls.quoteLarge}>{t("aboutMe.quote")}</p>
                 </div>
-                <div></div>
               </div>
+              {/* Experience grid moved to Projects per request */}
               <div
                 style={{
                   display: "flex",
@@ -222,6 +231,7 @@ export function AboutMePage() {
                       <IconArrowBottom />
                     </div>
                     <hr />
+                    {/* Hidden for business-card focus, can be restored later.
                     <div
                       className={stls.projectLink}
                       onClick={() => navigate("shiba")}
@@ -237,7 +247,7 @@ export function AboutMePage() {
                       {t("story.croatia")}
                       <IconArrowBottom />
                     </div>
-                    <hr />
+                    <hr /> */}
                   </div>
                 </div>
               </div>

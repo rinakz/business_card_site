@@ -3,12 +3,21 @@
 .buttonHome
   flex-grow: 1
   display: flex
+  justify-content: center
+
+.navContainer
+  width: 100%
+  display: flex
+  justify-content: center
+  gap: 12px
+  flex-wrap: nowrap
+  min-width: 0
   @include m.media(phone)
-    display: none
+    gap: 4px
 
 .navigationButton
   border-radius: 20px
-  font-size: 20px
+  font-size: 18px
   padding: 12px 20px 8px 20px
   height: 40px
   display: flex
@@ -16,6 +25,27 @@
   background: transparent
   cursor: pointer
   font-family: Font-Over !important
+  transition: transform .2s ease, background .2s ease, color .2s ease
+  &:hover
+    transform: translateY(-1px)
+  @include m.media(phone)
+    font-size: 11px
+    padding: 6px 8px 4px 8px
+    height: 28px
+
+.navigationButtonActive
+  border-radius: 20px
+  font-size: 18px
+  padding: 12px 20px 8px 20px
+  height: 40px
+  display: flex
+  align-items: center
+  cursor: pointer
+  font-family: Font-Over !important
+  @include m.media(phone)
+    font-size: 11px
+    padding: 6px 8px 4px 8px
+    height: 28px
 
 .navigationIcon
   border-radius: 20px
@@ -25,6 +55,9 @@
   align-items: center
   background: transparent
   cursor: pointer
+  @include m.media(phone)
+    padding: 5px 8px
+    height: 28px
 
 .langList
   display: flex

@@ -23,9 +23,7 @@ export function Main() {
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <img
-              style={{ marginTop: "-70px" }}
-              width="145px"
-              height="180px"
+              style={{ marginTop: "-70px", maxHeight: "300px" }}
               src="/photo.jpg"
               alt="Marchenko"
             />

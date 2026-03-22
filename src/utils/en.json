@@ -2,7 +2,7 @@
   "en": {
     "translation": {
       "main": {
-        "hello": "KATYA MARCHENKO",
+        "hello": "SUSOVA EKATERINA",
         "katya": "Katya",
         "frontendDeveloper": "FRONTEND DEVELOPER",
         "welcome": "Welcome to my business card website.",
@@ -13,7 +13,7 @@
         "aboutMe": "About me",
         "contacts": "Contacts",
         "projects": "Projects",
-        "pet": "Personal projects"
+        "pet": "My projects"
       },
       "drawer": {
         "myHome": "Room",
@@ -45,6 +45,25 @@
           "position": "Frontend Developer",
           "first": "Complete redesign and launch of a new web version of platform applications, completed in a team with a fellow developer. The project involved rewriting the applications from scratch, resulting in improved performance, a modern user interface, and greater system scalability.",
           "second": "Development of additional functionality for applications as an ongoing task."
+        },
+        "digital": {
+          "sphere": "IT",
+          "position": "Lead Frontend Developer",
+          "period": "06/2025 — present",
+          "first": "Developed and launched work schedule features with flexible views, filters, and search.",
+          "second": "Built a Draft.js text editor for complex reporting.",
+          "third": "Improved the design system (UI Kit) and participated in migration to microfrontends.",
+          "fourth": "Planning, estimation, and mentoring."
+        },
+        "revoluterra": {
+          "sphere": "SEO tools",
+          "position": "Senior Developer (Team Lead)",
+          "period": "02/2025 — 06/2025",
+          "first": "Built SEO applications in React and launched the PRO version in Vue.",
+          "second": "Redesigned UX/UI for result tables and onboarding.",
+          "third": "Implemented keyword recommendations and Excel export.",
+          "fourth": "Created charts and collaborated across teams.",
+          "fifth": "Planning, task breakdown, and mentoring."
         }
       },
       "aboutMe": {
@@ -59,7 +78,56 @@
         "capricorn": "Capricorn",
         "spec": "Specialization:",
         "programer": "Programmer",
-        "talk": "let's chat?"
+        "talk": "let's chat?",
+        "awardTitle": "Achievement 2025:",
+        "awardValue": "Frontend Developer of the Year",
+        "aiTitle": "AI in Development (2026):",
+        "aiValue": "Completed the “AI for Developers” course and received a diploma.",
+        "aiProject": "Built a Telegram bot for online communities: reducing toxic communication, launching IT quizzes, helping resolve disputes, assigning participant ranks, and improving engagement.",
+        "growthTitle": "Current focus:",
+        "growthValue": "I lead an educational stream, help grow the team, and continuously improve as an engineer and leader.",
+        "intro": "Frontend developer with solid commercial experience and strong focus on product outcomes, UX, and engineering quality.",
+        "current": "I work with React/Vue/TypeScript, improve architecture, design systems, and team delivery processes.",
+        "bio1": "I have been in IT for over 5 years. It all started with my love for physics and math, and evolved into a JavaScript developer diploma and a passion for building complex interfaces.",
+        "bio2": "My development journey is all about momentum and continuous learning. At Federal Freight Company (FGK), I worked not only on manager dashboards in Vue, but also went under the hood of the backend with PHP and Laravel. Later, within the QWEP project, our team rewrote the app from scratch and successfully launched a new React-based web version.",
+        "bio3": "Recent achievements:",
+        "bio4": "2025: Recognized as “Frontend Developer of the Year” at my primary workplace.",
+        "bio5": "2026: Deep-dived into neural networks and completed the “AI for Developers” course.",
+        "bio6": "To turn theory into practice, I built an AI bot for my Telegram channel. It not only engages the audience with IT quizzes and activities, but also analyzes chat sentiment to help maintain a healthy community atmosphere.",
+        "bio7": "Now I continue building complex frontend solutions, integrating AI tools into workflows, and, as my colleagues say, proudly carrying the title “mother of react” ©.",
+        "profileNameLabel": "Name:",
+        "profileNameValue": "Ekaterina",
+        "profileSpecLabel": "Specialization:",
+        "profileSpecValue": "Frontend Developer (React / AI)",
+        "profileExpLabel": "Experience:",
+        "profileExpValue": "5+ years in commercial development",
+        "profileCityLabel": "City:",
+        "profileCityValue": "Moscow",
+        "profileAwardLabel": "Achievement '25:",
+        "profileAwardValue": "Frontend Developer of the Year",
+        "profileAiLabel": "AI Expert '26:",
+        "profileAiValue": "Diploma “AI for Developers”",
+        "journeyTitle": "Path in Code: From Logic to Interfaces",
+        "journeyText": "It all started with a physics-math background and a love for exact sciences. This foundation helped me quickly move from first lines of code to a JavaScript developer diploma. My drive in the profession is constant learning and working at the intersection of technologies.",
+        "expTitle": "Experience in Numbers and Products",
+        "expIntro": "In 5+ years of development, I have worked on projects of different complexity:",
+        "expScaleTitle": "Scaling:",
+        "expScaleText": "Within the QWEP project, our team rewrote the app from scratch and successfully launched a new React-based web version.",
+        "expFullstackTitle": "Fullstack background:",
+        "expFullstackText": "At Federal Freight Company (FGK), I not only built Vue dashboards but also worked under the hood with PHP and Laravel, independently improving backend logic and building an IDE.",
+        "aiTitleBlock": "New Era: AI and Community",
+        "aiEraText": "In 2026, I integrated neural networks into my workflow, confirming my expertise with an “AI for Developers” diploma. To reinforce theory with practice, I built a smart AI bot for my IT Telegram channel. It became a full participant in the community: runs IT quizzes, adds activities, and analyzes chat sentiment.",
+        "quote": "“mother of react” ©",
+        "featureLogicTitle": "From Physics & Math to JS",
+        "featureLogicText": "It started with a physics-math background and a love for exact sciences. This foundation helped me quickly move from first lines of code to a JavaScript developer diploma.",
+        "featureProductTitle": "5+ Years of Drive",
+        "featureProductText": "Within the QWEP project, our team rewrote the product from scratch and successfully launched a new web version on <b>React</b>. At FGC, I built dashboards in <b>Vue</b> and worked with backend in <b>PHP</b>/<b>Laravel</b>, so I am confident with both frontend and backend-adjacent tasks.",
+        "featureFutureTitle": "AI & Community",
+        "featureFutureText": "In 2026, I confirmed my expertise with an “AI for Developers” diploma and integrated <b>AI</b> into my workflow. I also built a smart bot, Oski, for my <b>IT channel</b>: it runs quizzes, boosts activity, and analyzes chat sentiment.",
+        "mainPreview1": "I have been in IT for over 5 years. It started with a love for physics and math, and evolved into the title “mother of react” © and a passion for complex interface architecture.",
+        "mainPreview2": "I progressed from building my own IDEs to large-scale refactoring of major web services. I continuously expand my stack: from deep React and Vue expertise to integrating AI tools into real products.",
+        "mainPreview3": "Current highlights:\n🏆 2025: “Frontend Developer of the Year”\n🤖 2026: Certified AI engineer and creator of a smart community assistant",
+        "mainPreviewMore": "Learn more about my journey and projects →"
       },
       "card": {
         "ic8": "IC8",
@@ -69,11 +137,15 @@
         "fgk": "Federal Freight Company",
         "fgkDo": "I developed manager and client dashboards, independently refined the backend. I discovered Vue in commercial development and wrote an IDE using it.",
         "qwep": "qwep",
-        "qwepDo": "In 2023, we rewrote the platform applications from scratch and successfully launched a new web version. I continue to develop QWEP application functionality in addition to my main work."
+        "qwepDo": "In 2023, we rewrote the platform applications from scratch and successfully launched a new web version. I continue to develop QWEP application functionality in addition to my main work.",
+        "digital": "Tsifrov",
+        "digitalDo": "Work schedules, Draft.js text editor, UI Kit, microfrontends migration, planning & mentoring.",
+        "revoluterra": "Revoluterra",
+        "revoluterraDo": "SEO apps in React, PRO in Vue, UX/UI redesign, keyword recommendations, Excel export, charts, mentoring."
       },
       "story": {
         "work": "«You know that you will be a mega senor»",
-        "kanal": "In 2022, I launched the most unique IT channel «Что-то на джуновском» (“Something in Junior”)",
+        "kanal": "IT channel & community “Что-то на джуновском”",
         "shiba": "Ruler of the local digital lands and fox",
         "croatia": "Main life goal is to move to Croatia",
         "Work": {
@@ -98,7 +170,7 @@
           "name": "name",
           "theme": "theme",
           "it": "IT, education и humor",
-          "quantity": ">700 people",
+          "quantity": ">800 people",
           "devis": "Terry Davis in a skirt",
           "audience": "audience",
           "slogan": "slogan",
@@ -109,7 +181,7 @@
           "memes": "Every Wednesday we have <b>It's Wednesday, my dudes</b>, and on Friday <b>Friday day</b> is the day when subscribers send their memes in the comments. Yes, yes, only on Friday! Otherwise they will be arrested :)",
           "qween": "Subscribers began to call me <b>the Queen of Dudes</b>, thank me endlessly and write letters of love for the fact that we have this amazing place.",
           "people": "The channel united not only juniors, but also experienced programmers writing in a variety of languages. Among the subscribers there are students who are just studying. Also, despite the theme of the channel, there are people here from completely different areas who are simply interested in watching memes and communicating, and for some, my experience is <b>motivation for changes in life</b>.",
-          "stickers": "At the end of 2023, I created a sticker pack with my puppy. My Oski became the ambassador of the channel and everyone’s favorite, he literally began to have fans. And this became such a successful development that to date, <b>more than a thousand telegram users</b> have installed stickers, and have used them more than <b>27 thousand times</b> - and this in less than half a year!"
+          "stickers": "At the end of 2023, I created a sticker pack with my puppy. My Oski became the ambassador of the channel and everyone’s favorite, and quickly got fans. It turned out to be a great success: to date, <b>more than 4,000 Telegram users</b> have installed the stickers, and they have been used <b>more than 150,000 times</b>!"
         },
         "Doggy": {
           "name": "groundhopper",

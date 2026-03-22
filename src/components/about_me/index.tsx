@@ -46,29 +46,14 @@ export function AboutMe() {
           </div>
 
           <div>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `${t("story.Work.start")}`,
-              }}
-            />
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `${t("story.Work.education")}`,
-              }}
-            />
-            <p dangerouslySetInnerHTML={{ __html: `${t("story.Work.js")}` }} />
-            <br />
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `${t("story.Work.frontend")}`,
-              }}
-            />
-            <br />
-            <p>{t("story.Work.lib")}</p>
-            <p>{t("story.Work.friend")}</p>
-            <p>{t("story.Work.whantLib")}..</p>
+            <div className={stls.aboutMePreviewText}>
+              <p>{t("aboutMe.mainPreview1")}</p>
+              <p>{t("aboutMe.mainPreview2")}</p>
+              <p>{t("aboutMe.mainPreview3")}</p>
+            </div>
           </div>
-          <div style={{ display: "flex", justifyContent: "end" }}>
+          <div className={stls.moreRow}>
+            <span>{t("aboutMe.mainPreviewMore")}</span>
             <IconArrow color={colors.beta} />
           </div>
         </div>

@@ -10,7 +10,6 @@ export { IconFinder } from "./IconFinder";
 export { IconLife } from "./IconLife";
 export { IconPin } from "./IconPin";
 export { IconDinosaur } from "./IconDinosaur";
-export { WithOskiAboutMe } from "./WithOskiAbout";
 export { IconZnak } from "./IconZnak";
 export { IconProgrammist } from "./IconProgrammist";
 export { IconCity } from "./IconCity";

@@ -14,14 +14,17 @@ import { Logo } from "../icons/Logo";
 import { HeaderType } from "../../types/Header";
 import { useLocation, useNavigate } from "react-router-dom";
 import { PATH } from "../../constants/common";
+import useWindowSize from "../hooks/useWindowSize";
 
 export function Header() {
   const anchorRef = React.useRef<HTMLDivElement>(null);
   const { pathname } = useLocation();
+  const { width } = useWindowSize();
+  const mobile = width < 600;
 
   const { colors, toggleLanguage, currentTheme, toggleTheme, language } =
     useContext(ThemeContext);
-  const { navItemsRightPage, navItemsLeftPage } = useContext(HeaderContext);
+  const { navItems } = useContext(HeaderContext);
 
   const navigate = useNavigate();
 
@@ -38,7 +41,6 @@ export function Header() {
     }
   );
   const [open, setOpen] = React.useState(false);
-  const [hover, setHover] = React.useState(false);
 
   const isMainPage = pathname === PATH.main;
 
@@ -55,6 +57,34 @@ export function Header() {
     setOpen(false);
   };
 
+  const goToContacts = () => {
+    const scroll = () => {
+      const el = document.getElementById("contacts");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+    if (pathname !== PATH.main) {
+      navigate(PATH.main);
+      setTimeout(scroll, 120);
+      return;
+    }
+    scroll();
+  };
+
+  const handleNavClick = (link: string) => {
+    if (link === "#contacts") {
+      goToContacts();
+      return;
+    }
+    navigate(link);
+  };
+
+  const isNavItemActive = (link: string) => {
+    if (link === "#contacts") return false;
+    return pathname.startsWith(link);
+  };
+
   return (
     <div
       style={{
@@ -63,50 +93,51 @@ export function Header() {
         alignItems: "center",
       }}
     >
-      <Toolbar sx={{ position: "absolute", width: "100%", flexWrap: "wrap" }}>
-        <div className={stls.buttonHome}>
-          {navItemsLeftPage.map((item: HeaderType) => (
+      <Toolbar
+        sx={{
+          position: "absolute",
+          width: "100%",
+          flexWrap: "nowrap",
+          gap: mobile ? "4px" : "8px",
+          px: { xs: 1, sm: 2 },
+        }}
+      >
+        <div className={stls.navContainer}>
+          {navItems.map((item: HeaderType) => (
             <button
               key={item.id}
-              onClick={() => navigate(item.link)}
-              className={stls.navigationButton}
+              onClick={() => handleNavClick(item.link)}
+              className={
+                isNavItemActive(item.link)
+                  ? stls.navigationButtonActive
+                  : stls.navigationButton
+              }
               id={`header_pages${item.id}`}
               style={{
-                border: `4px solid ${colors.beta}`,
-                color: colors.beta,
+                border: `${mobile ? 2 : 4}px solid ${colors.beta}`,
+                color: isNavItemActive(item.link) ? colors.alpha : colors.beta,
+                background: isNavItemActive(item.link)
+                  ? colors.beta
+                  : "transparent",
               }}
             >
               {item.name}
             </button>
           ))}
         </div>
-        <Box sx={{ display: { xs: "none", sm: "block" } }}>
-          {navItemsRightPage.map((item: HeaderType) => (
-            <a key={item.id} href={item.link ? `../${item.link}` : ""}>
-              <button
-                className={stls.navigationButton}
-                id={`header_pages${item.id}`}
-                style={{
-                  border: `4px solid ${colors.beta}`,
-                  color: colors.beta,
-                }}
-              >
-                {item.name}
-              </button>
-            </a>
-          ))}
-        </Box>
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            gap: mobile ? "6px" : "10px",
+            marginLeft: "auto",
           }}
         >
           <button
             className={stls.navigationIcon}
             style={{
-              border: `4px solid ${colors.beta}`,
+              border: `${mobile ? 2 : 4}px solid ${colors.beta}`,
               color: colors.beta,
             }}
           >
@@ -115,23 +146,23 @@ export function Header() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: "10px",
+                  gap: mobile ? "4px" : "10px",
                 }}
                 onClick={() => toggleTheme("light")}
               >
                 <IconPackman />
-                <IconDarkDots />
+                {!mobile && <IconDarkDots />}
               </div>
             ) : (
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: "10px",
+                  gap: mobile ? "4px" : "10px",
                 }}
                 onClick={() => toggleTheme("dark")}
               >
-                <IconLightDots />
+                {!mobile && <IconLightDots />}
                 <IconGhost />
               </div>
             )}
@@ -142,7 +173,7 @@ export function Header() {
               className={stls.navigationButton}
               onClick={handleToggle}
               style={{
-                border: `4px solid ${colors.beta}`,
+                border: `${mobile ? 2 : 4}px solid ${colors.beta}`,
                 color: colors.beta,
               }}
             >
@@ -175,8 +206,6 @@ export function Header() {
                     >
                       {langs.map((el) => (
                         <div
-                          onMouseEnter={() => setHover(true)}
-                          onMouseLeave={() => setHover(false)}
                           className={stls.listItem}
                           style={{
                             color: colors.alpha,

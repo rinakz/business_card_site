@@ -48,11 +48,6 @@ function Channel() {
         }}
       >
         <div className={stls.infoContainer}>
-          <img
-            src="/Kanal.jpg"
-            alt="kanal"
-            style={{ maxHeight: mobile ? "300px" : "473px" }}
-          />
           <div
             style={{ display: "flex", gap: "40px", flexDirection: "column" }}
           >
@@ -93,7 +88,11 @@ function Channel() {
         <img
           src="/Ava.jpg"
           alt="ava"
-          style={{ maxWidth: mobile ? "300px" : "50%" }}
+          style={{
+            maxHeight: "600px",
+            maxWidth: mobile ? "100%" : "50%",
+            width: mobile ? "100%" : undefined,
+          }}
         />
       </div>
 
@@ -101,11 +100,18 @@ function Channel() {
 
       <div className={stls.footerContainer}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "24px" }}>
-          <img src="/Stickers.jpg" alt="stickers" style={{ height: "300px" }} />
+          <img
+            src="/Stickers.jpg"
+            alt="stickers"
+            style={{ height: mobile ? "auto" : "300px", width: mobile ? "100%" : undefined }}
+          />
           <img
             src="/Oski.svg"
             alt="Oski"
-            style={{ height: "300px", background: colors.beta }}
+            style={{
+              height: "300px",
+              background: colors.beta,
+            }}
           />
         </div>
 
@@ -122,12 +128,13 @@ function Channel() {
           <div>
             <div
               className={stls.projectLink}
-              onClick={() => navigate("/about_me/shiba")}
+              onClick={() => navigate("/about_me")}
             >
-              {t("story.shiba")}
+              {t("header.aboutMe")}
               <IconArrowBottom />
             </div>
             <hr />
+            {/* Hidden for business-card focus, can be restored later.
             <div
               className={stls.projectLink}
               onClick={() => navigate("/about_me/croatia")}
@@ -135,7 +142,7 @@ function Channel() {
               {t("story.croatia")}
               <IconArrowBottom />
             </div>
-            <hr />
+            <hr /> */}
           </div>
         </div>
       </div>

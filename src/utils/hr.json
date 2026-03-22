@@ -2,7 +2,7 @@
   "hr": {
     "translation": {
       "main": {
-        "hello": "KATJA MARČENKO",
+        "hello": "SUSOVA EKATERINA",
         "katya": "Katja",
         "frontendDeveloper": "FRONTEND DEVELOPER",
         "welcome": "Dobrodošli na moj web portfelj.",
@@ -14,7 +14,7 @@
         "aboutMe": "O meni",
         "contacts": "Kontakti",
         "projects": "Projekti",
-        "pet": "Osobni projekti"
+        "pet": "Moji projekti"
       },
       "work": {
         "position": "Pozicija",
@@ -38,6 +38,25 @@
           "position": "Frontend programer",
           "first": "Potpuna prerada i pokretanje nove web verzije platformnih aplikacija, dovršeno u timu s kolegom programerom. Projekt je uključivao prepisivanje aplikacija od nule, što je rezultiralo poboljšanim performansama, modernim korisničkim sučeljem i većom skalabilnošću sustava.",
           "second": "Razvoj dodatnih funkcionalnosti za aplikacije kao kontinuirani zadatak."
+        },
+        "digital": {
+          "sphere": "IT",
+          "position": "Vodeća frontend developerica",
+          "period": "06/2025 — danas",
+          "first": "Razvoj i uspješno lansiranje funkcionalnosti rasporeda rada s fleksibilnim prikazima, filtrima i pretragom.",
+          "second": "Razvoj Draft.js uređivača teksta za izradu složenih izvještaja.",
+          "third": "Razvoj dizajn sustava (UI Kit) i prijelaz na mikro-frontendove.",
+          "fourth": "Planiranje, procjena zadataka i mentoriranje."
+        },
+        "revoluterra": {
+          "sphere": "SEO alati",
+          "position": "Viša developerica (Team Lead)",
+          "period": "02/2025 — 06/2025",
+          "first": "Razvoj SEO aplikacija u Reactu i lansiranje PRO verzije u Vueu.",
+          "second": "UX/UI redizajn tablica rezultata i korisničkog onboardinga.",
+          "third": "Implementacija preporučenih ključnih riječi i izvoza u Excel.",
+          "fourth": "Razvoj grafova i aktivna suradnja s drugim timovima.",
+          "fifth": "Planiranje, priprema zadataka i mentoriranje."
         }
       },
       "footer": {
@@ -59,7 +78,56 @@
         "zodiac": "Zodijački znak:",
         "capricorn": "Jarac",
         "spec": "Specijalizacija:",
-        "programer": "Programer"
+        "programer": "Programer",
+        "awardTitle": "Postignuće 2025:",
+        "awardValue": "Frontend Developer of the Year",
+        "aiTitle": "AI u razvoju (2026):",
+        "aiValue": "Završila sam tečaj “AI za developere” i dobila diplomu.",
+        "aiProject": "Razvila sam Telegram bot za online zajednice: smanjenje toksične komunikacije, pokretanje IT kvizova, pomoć u rješavanju sporova, dodjelu rangova sudionicima i povećanje angažmana.",
+        "growthTitle": "Trenutni fokus:",
+        "growthValue": "Vodim edukativni blok, razvijam tim i kontinuirano napredujem kao inženjer i lider.",
+        "intro": "Frontend developerica s komercijalnim iskustvom i snažnim fokusom na produktne rezultate, UX i inženjersku kvalitetu.",
+        "current": "Radim s React/Vue/TypeScript, unapređujem arhitekturu, dizajn sustave i timske procese isporuke.",
+        "bio1": "U IT-u sam više od 5 godina. Sve je počelo ljubavlju prema fizici i matematici, a preraslo u diplomu JavaScript developerice i strast prema izradi složenih sučelja.",
+        "bio2": "Moj razvojni put obilježen je stalnim napretkom i učenjem. U Federal Freight Company (FGK) nisam radila samo na menadžerskim sučeljima u Vueu, nego sam ušla i u backend na PHP-u i Laravelu. Kasnije smo u sklopu projekta QWEP timski prepisali aplikaciju od nule i uspješno lansirali novu web verziju na Reactu.",
+        "bio3": "Nedavna postignuća:",
+        "bio4": "2025.: Prepoznata kao „Frontend Developer of the Year” na glavnom radnom mjestu.",
+        "bio5": "2026.: Dubinski sam se posvetila neuronskim mrežama i završila tečaj „AI za developere”.",
+        "bio6": "Kako bih teoriju pretvorila u praksu, razvila sam AI bota za svoj Telegram kanal. On ne samo da pokreće IT kvizove i aktivnosti, nego i analizira raspoloženje u chatu kako bi održao kvalitetnu atmosferu zajednice.",
+        "bio7": "Trenutno nastavljam razvijati složena frontend rješenja, uvoditi AI alate u radne procese i, kako kažu kolege, s razlogom nosim titulu „mother of react” ©.",
+        "profileNameLabel": "Ime:",
+        "profileNameValue": "Ekaterina",
+        "profileSpecLabel": "Specijalizacija:",
+        "profileSpecValue": "Frontend Developer (React / AI)",
+        "profileExpLabel": "Iskustvo:",
+        "profileExpValue": "5+ godina u komercijalnom razvoju",
+        "profileCityLabel": "Grad:",
+        "profileCityValue": "Moskva",
+        "profileAwardLabel": "Postignuće '25:",
+        "profileAwardValue": "Frontend Developer of the Year",
+        "profileAiLabel": "AI Expert '26:",
+        "profileAiValue": "Diploma “AI za developere”",
+        "journeyTitle": "Put u kodu: od logike do sučelja",
+        "journeyText": "Sve je počelo u fizikalno-matematičkom razredu i ljubavi prema egzaktnim znanostima. Taj temelj mi je pomogao da brzo prođem put od prvih linija koda do diplome JavaScript developerice. Moj profesionalni pogon je stalno učenje i rad na sjecištu tehnologija.",
+        "expTitle": "Iskustvo u brojkama i proizvodima",
+        "expIntro": "U više od 5 godina razvoja radila sam na projektima različite složenosti:",
+        "expScaleTitle": "Skaliranje:",
+        "expScaleText": "U okviru projekta QWEP timski smo prepisali aplikaciju od nule i uspješno lansirali novu React WEB-verziju.",
+        "expFullstackTitle": "Fullstack pozadina:",
+        "expFullstackText": "U Federal Freight Company (FGK) nisam samo razvijala Vue sučelja, nego i radila “ispod haube” s PHP-om i Laravelom, samostalno doradivala backend i gradila IDE.",
+        "aiTitleBlock": "Nova era: AI i community",
+        "aiEraText": "U 2026. integrirala sam neuronske mreže u svoj radni proces i potvrdila ekspertizu diplomom “AI za developere”. Kako bih teoriju pretvorila u praksu, razvila sam pametnog AI bota za svoj IT Telegram kanal. Postao je punopravan član zajednice: pokreće IT kvizove, dodaje aktivnosti i analizira raspoloženje chata.",
+        "quote": "„mother of react” ©",
+        "featureLogicTitle": "Od fizike i matematike do JS-a",
+        "featureLogicText": "Sve je počelo u fizikalno-matematičkom razredu i ljubavi prema egzaktnim znanostima. Taj temelj mi je pomogao da brzo napredujem od prvih linija koda do diplome JavaScript developerice.",
+        "featureProductTitle": "5+ godina razvoja",
+        "featureProductText": "U projektu QWEP timski smo prepisali proizvod od nule i uspješno lansirali novu web verziju na <b>Reactu</b>. U FGC-u sam gradila sučelja na <b>Vueu</b> i radila s backendom na <b>PHP-u</b>/<b>Laravelu</b>, pa se ne bojim zadataka na spoju frontenda i backenda.",
+        "featureFutureTitle": "AI & Community",
+        "featureFutureText": "Godine 2026. potvrdila sam ekspertizu diplomom “AI za developere” i integrirala <b>AI</b> u radni proces. Razvila sam i pametnog bota Oskija za svoj <b>IT kanal</b>: pokreće kvizove, povećava aktivnost i analizira raspoloženje chata.",
+        "mainPreview1": "U IT-u sam više od 5 godina. Sve je počelo ljubavlju prema fizici i matematici, a preraslo u titulu „mother of react” © i strast prema arhitekturi složenih sučelja.",
+        "mainPreview2": "Prošla sam put od razvoja vlastitih IDE rješenja do velikih refaktoringa kompleksnih web servisa. Stalno širim svoj stack: od dubinskog znanja Reacta i Vuea do uvođenja AI alata u stvarne proizvode.",
+        "mainPreview3": "Najvažnije sada:\n🏆 2025: „Frontend Developer of the Year”\n🤖 2026: Diplomirana AI inženjerka i autorica pametnog community asistenta",
+        "mainPreviewMore": "Saznaj više o mom putu i projektima →"
       },
       "card": {
         "ic8": "IC8",
@@ -69,11 +137,15 @@
         "fgk": "Federal Freight Company",
         "fgkDo": "Razvijala sam nadzorne ploče za menadžere i klijente, samostalno sam dorađivala backend. Otkrila sam Vue u komercijalnom razvoju i napisala IDE koristeći ga.",
         "qwep": "qwep",
-        "qwepDo": "U 2023. godini prepisali smo aplikacije platforme od nule i uspješno pokrenuli novu web verziju. Nastavljam razvijati funkcionalnost aplikacija QWEP uz glavni posao."
+        "qwepDo": "U 2023. godini prepisali smo aplikacije platforme od nule i uspješno pokrenuli novu web verziju. Nastavljam razvijati funkcionalnost aplikacija QWEP uz glavni posao.",
+        "digital": "Tsifrov",
+        "digitalDo": "Rasporedi rada, Draft.js urednik teksta, UI Kit, prijelaz na mikro-frontendove, planiranje i mentorstvo.",
+        "revoluterra": "Revoluterra",
+        "revoluterraDo": "SEO aplikacije u Reactu, PRO u Vueu, UX/UI redizajn, preporučene ključne riječi, izvoz u Excel, grafikoni, mentorstvo."
       },
       "story": {
         "work": "«Znaš da ćeš biti mega senjorka»",
-        "kanal": "2022. pokrenula je najunikatniji IT kanal «Что-то на джуновском» (“Something in Junior”)",
+        "kanal": "IT kanal i zajednica “Что-то на джуновском”",
         "shiba": "Vladar lokalnih digitalnih zemalja i lisica",
         "croatia": "Glavni zivotni cilj je preseliti se u Hrvatsku",
         "Work": {
@@ -98,7 +170,7 @@
           "name": "ime",
           "theme": "tema",
           "it": "IT, obrazovanje i humor",
-          "quantity": ">700 ljudi",
+          "quantity": ">800 ljudi",
           "devis": "Terry Davis u suknji",
           "audience": "publika",
           "slogan": "slogan",
@@ -109,7 +181,7 @@
           "memes": "Svake srijede slavimo <b>'It’s Wednesday, my dudes'</b>, a petkom je <b>'Friday Day'</b> – dan kada pretplatnici u komentarima dijele svoje memeove. Da, samo petkom! Inače će biti 'uhićeni' :)",
           "qween": "Pretplatnici su me počeli zvati <b>'Queen of Dudes'</b>, neizmjerno mi zahvaljuju i šalju ljubavna pisma zbog toga što smo stvorili ovo nevjerojatno mjesto.",
           "people": "Kanal je ujedinio ne samo početnike već i iskusne programere koji programiraju na različitim jezicima. Među pretplatnicima ima i studenata koji tek uče. Također, unatoč temi kanala, tu su ljudi iz različitih struka koji jednostavno uživaju u gledanju memova i komunikaciji, dok nekima moje iskustvo služi kao <b>motivacija za promjene u životu</b>.",
-          "stickers": "Krajem 2023. napravila sam set naljepnica s likom svog psa. Moj Oski postao je ambasador kanala i omiljen među korisnicima, doslovno je stekao fanove. To se pokazalo kao izuzetno uspješan potez; do danas je više od <b>tisuću korisnika</b> Telegrama instaliralo naljepnice koje su korištene preko 27 tisuća puta - i to u manje od šest mjeseci!"
+          "stickers": "Krajem 2023. napravila sam set naljepnica sa svojim psićem. Moj Oski postao je ambasador kanala i omiljen među korisnicima. Ovo se pokazalo kao veliki uspjeh: do danas je naljepnice instaliralo <b>više od 4 tisuće korisnika Telegrama</b>, a iskorištene su <b>više od 150 tisuća puta</b>!"
         },
         "Doggy": {
           "name": "groundhopper",

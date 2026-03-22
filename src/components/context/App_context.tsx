@@ -28,27 +28,57 @@ function AppProvider(props: any) {
       path: "about_me/channel",
       text: t("story.kanal"),
     },
-    {
-      id: 4,
-      ava: "/Doggy.jpeg",
-      alt: "Shiba",
-      path: "about_me/shiba",
-      text: t("story.shiba"),
-    },
-    {
-      id: 5,
-      ava: "/Croatia.jpeg",
-      alt: "Croatia",
-      path: "about_me/croatia",
-      text: t("story.croatia"),
-    },
+    // Hidden for business-card focus, can be restored later.
+    // {
+    //   id: 4,
+    //   ava: "/Doggy.jpeg",
+    //   alt: "Shiba",
+    //   path: "about_me/shiba",
+    //   text: t("story.shiba"),
+    // },
+    // {
+    //   id: 5,
+    //   ava: "/Croatia.jpeg",
+    //   alt: "Croatia",
+    //   path: "about_me/croatia",
+    //   text: t("story.croatia"),
+    // },
   ];
 
   const projects: ProjectType[] = [
     {
+      name: t("card.digital"),
+      link: "digital",
+      color: colors.beta,
+      technologies: [
+        "React",
+        "TypeScript",
+        "RTK Query",
+        "Zustand",
+        "FSD",
+      ],
+      sphere: "IT",
+      task: t("card.digitalDo"),
+      icon: <IconComputer />,
+    },
+    {
+      name: t("card.revoluterra"),
+      link: "revoluterra",
+      color: colors.gamma,
+      technologies: [
+        "React",
+        "Vue",
+        "TypeScript",
+        "Zustand",
+      ],
+      sphere: "SEO tools",
+      task: t("card.revoluterraDo"),
+      icon: <IconComp />,
+    },
+    {
       name: t("card.ic8"),
       link: "IC8",
-      color: colors.beta,
+      color: colors.delta,
       technologies: ["React", "Typescript", "Frontend"],
       sphere: "IT",
       task: t("card.ic8Do"),
@@ -57,7 +87,7 @@ function AppProvider(props: any) {
     {
       name: t("card.fgk"),
       link: "railfgk",
-      color: colors.delta,
+      color: colors.epsilon,
       technologies: ["Php", "Laravel", "Vue", "Backend", "Frontend"],
       sphere: "Logistic",
       task: t("card.fgkDo"),
@@ -66,7 +96,7 @@ function AppProvider(props: any) {
     {
       name: t("card.qwep"),
       link: "qwep",
-      color: colors.gamma,
+      color: colors.theta,
       technologies: ["React", "Typescript", "SQL", "Frontend"],
       sphere: "IT, b2b",
       task: t("card.qwepDo"),

@@ -8,21 +8,16 @@ const HeaderContext = React.createContext<any>(null);
 function HeaderProvider(props: any) {
   const { t } = useTranslation();
 
-  const navItemsRightPage: HeaderType[] = [
-    { id: 1, name: t("header.contacts"), link: "#contacts" },
-  ];
-
-  const navItemsLeftPage: HeaderType[] = [
+  const navItems: HeaderType[] = [
     { id: 1, name: t("header.projects"), link: PATH.projects.root },
-
     { id: 2, name: t("header.aboutMe"), link: PATH.aboutMe.root },
+    { id: 3, name: t("header.contacts"), link: "#contacts" },
   ];
 
   return (
     <HeaderContext.Provider
       value={{
-        navItemsRightPage,
-        navItemsLeftPage,
+        navItems,
       }}
       {...props}
     />

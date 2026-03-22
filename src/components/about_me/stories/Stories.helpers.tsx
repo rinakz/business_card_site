@@ -101,11 +101,11 @@ export const ChannelContent = () => {
   return (
     <div className={stls.storyTextContainer}>
       <div className={stls.story}>
-        <p>{t("story.Kanal.kanal")}</p>
+        <p dangerouslySetInnerHTML={{ __html: `${t("story.Kanal.kanal")}` }} />
         <br />
-        <p>{t("story.Kanal.save")}</p>
+        <p dangerouslySetInnerHTML={{ __html: `${t("story.Kanal.save")}` }} />
         <br />
-        <p>{t("story.Kanal.story")}</p>
+        <p dangerouslySetInnerHTML={{ __html: `${t("story.Kanal.story")}` }} />
         <br />
 
         <p dangerouslySetInnerHTML={{ __html: `${t("story.Kanal.qweez")}` }} />

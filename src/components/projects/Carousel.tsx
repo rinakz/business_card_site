@@ -85,6 +85,7 @@ const ProjectSlider = () => {
                     width: "100%",
                     display: "flex",
                     justifyContent: "end",
+                    marginTop: "auto",
                   }}
                 >
                   <IconArrow />

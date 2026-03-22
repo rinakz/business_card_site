@@ -10,7 +10,7 @@
 .projectsPageTitle
     display: flex
     font-size: 60px
-    align-items: end
+    align-items: flex-end
     justify-content: center
     margin-bottom: 60px
     font-family: Font-Over !important
@@ -43,9 +43,16 @@
     display: flex
     flex-direction: column
     gap: 30px
-    height: 550px
+    min-height: 550px
+    height: auto
+    transition: transform .2s ease, box-shadow .2s ease
+    &:hover
+        transform: translateY(-2px)
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .14)
     @include m.media(phone, tablet)
-        gap: 20px
+        gap: 14px
+    @include m.media(phone)
+        min-height: 500px
     .carouselTitle
         display: flex
         justify-content: space-between
@@ -75,7 +82,7 @@
 .projectsTitle
     display: flex
     font-size: 60px
-    align-items: end
+    align-items: flex-end
     justify-content: center
     margin-bottom: 60px
     font-family: Font-Over !important
@@ -126,6 +133,7 @@
         gap: 40px
         @include m.media(phone)
             width: 100%
+            gap: 20px
 
 .projectContainer
     display: flex
@@ -133,6 +141,7 @@
     gap: 100px
     margin-top: -50px
     @include m.media(phone)
+        gap: 40px
         margin-top: -120px
     .header
         display: flex
@@ -161,12 +170,19 @@
         gap: 12px
         align-items: center
         font-family: Font-Over !important
+        svg
+            width: 20px
+            height: 20px
+        @include m.media(phone)
+            svg
+                width: 16px
+                height: 16px
     .info
         display: flex
         justify-content: space-between
         @include m.media(phone)
             flex-direction: column
-            gap: 40px
+            gap: 20px
     .infoContainer
         width: 50%
         display: flex
