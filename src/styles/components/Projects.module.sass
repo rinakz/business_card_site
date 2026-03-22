@@ -173,18 +173,31 @@
         display: flex
         flex-direction: column
         gap: 12px
+        width: 250px
+        @include m.media(phone)
+            width: calc((100% - 16px) / 2)
+            flex: 0 0 calc((100% - 16px) / 2)
+            max-width: 50%
+            min-width: 0
+            font-size: 13px
+    .metaCardsRow
+        display: flex
+        gap: 40px
+        flex-wrap: wrap
+        @include m.media(phone)
+            gap: 16px
     .iconContainer
         display: flex
         gap: 12px
         align-items: center
         font-family: Font-Over !important
         svg
-            width: 20px
-            height: 20px
+            width: 22px
+            height: 22px
         @include m.media(phone)
             svg
-                width: 16px
-                height: 16px
+                width: 18px
+                height: 18px
     .info
         display: flex
         justify-content: space-between

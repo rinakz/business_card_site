@@ -35,7 +35,7 @@ export default function FGK() {
         </div>
       </div>
       <div className={stls.info}>
-        <div style={{ display: "flex", gap: "40px", flexWrap: "wrap" }}>
+        <div className={stls.metaCardsRow}>
           <div className={stls.cardContainer}>
             <div className={stls.iconContainer}>
               <IconSphere />
