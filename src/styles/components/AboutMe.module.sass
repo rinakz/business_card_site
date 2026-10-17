@@ -263,14 +263,10 @@
     font-family: Font-Over !important
 
 .expSection
-    border: 1px solid
-    border-radius: 16px
-    padding: 20px
     display: flex
     flex-direction: column
     gap: 24px
     @include m.media(phone)
-        padding: 14px
         gap: 14px
 
 .expTitle
@@ -282,24 +278,16 @@
 .expGrid
     display: grid
     grid-template-columns: repeat(3, minmax(0, 1fr))
-    gap: 16px
     @include m.media(phone, tablet, laptop)
         grid-template-columns: 1fr
 
 .expCard
-    border: 1px solid
-    border-radius: 12px
     padding: 14px
     display: flex
     flex-direction: column
     gap: 8px
-    background: linear-gradient(135deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .03))
     backdrop-filter: blur(4px)
     transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease
-    &:hover
-        transform: translateY(-5px) scale(1.02)
-        border-color: rgba(166, 193, 223, .85)
-        box-shadow: 0 10px 28px rgba(166, 193, 223, .22)
     h3
         margin: 0
         font-family: Font-Over !important
@@ -308,7 +296,7 @@
 
 .featureHeader
     display: flex
-    justify-content: space-between
+    justify-content: flex-end
     align-items: flex-start
     gap: 8px
 

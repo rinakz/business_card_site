@@ -134,7 +134,6 @@ export function AboutMePage() {
                       style={{ borderColor: colors.zeta }}
                     >
                       <div className={stls.featureHeader}>
-                        <h3 className={stls.card}>{t("aboutMe.featureLogicTitle")}</h3>
                         <span className={stls.featureIcon} style={{ color: colors.beta }}>
                           <IconSchool />
                         </span>
@@ -151,7 +150,6 @@ export function AboutMePage() {
                       style={{ borderColor: colors.zeta }}
                     >
                       <div className={stls.featureHeader}>
-                        <h3 className={stls.card}>{t("aboutMe.featureProductTitle")}</h3>
                         <span className={stls.featureIcon} style={{ color: colors.beta }}>
                           <IconProgrammist />
                         </span>
@@ -168,7 +166,6 @@ export function AboutMePage() {
                       style={{ borderColor: colors.zeta }}
                     >
                       <div className={stls.featureHeader}>
-                        <h3 className={stls.card}>{t("aboutMe.featureFutureTitle")}</h3>
                         <span className={stls.featureIcon} style={{ color: colors.beta }}>
                           <IconZnak />
                         </span>
